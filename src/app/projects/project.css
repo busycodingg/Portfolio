@@ -1,0 +1,1267 @@
+/* --- CASE STUDY STYLES --- */
+.case-study-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.case-study-hero {
+    padding: 10rem 0 4rem 0; /* Horizontal handled by .layout-wrapper */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.case-study-title {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .case-study-title {
+        line-height: 1.1;
+    }
+}
+
+.cs-title-line {
+    display: block;
+}
+
+.case-study-subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.case-study-body-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #ffffff; /* Upgraded from Zinc for higher impact — per user screenshot */
+    margin: 0 0 2.5rem 0;
+    text-align: left;
+}
+
+.cs-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .cs-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .cs-hero-left {
+        position: relative;
+        top: 0;
+    }
+}
+
+.cs-hero-left {
+    position: sticky;
+    top: 2rem;
+}
+
+.cs-hero-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-meta {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.meta-row {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+.meta-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin: 0;
+    width: 100%;
+    max-width: 320px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 120px;
+}
+
+.meta-item:first-child {
+    width: 180px;
+}
+
+.meta-label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: #71717a;
+}
+
+.meta-value {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.case-study-hero-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-height: 65vh; /* Bounded height */
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    margin-top: 4rem; /* Spacing between the title grid and the hero image */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.case-study-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 0 5vw 6rem 5vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.metric-card {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.metric-label {
+    font-size: 1.1rem;
+    color: #71717a;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.metric-value {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+    .case-study-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ── SECTION SYSTEM ── */
+.cs-section {
+    padding: 10rem 0; /* Horizontal handled by .layout-wrapper */
+}
+
+.cs-section-inner {
+    width: 100%;
+}
+
+/* Two-column editorial header grid */
+.cs-section-grid {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    gap: 4rem;
+    align-items: start;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .cs-section-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .cs-section-left {
+        position: relative;
+        top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.cs-section-left {
+    position: sticky;
+    top: 2rem;
+}
+
+.cs-section-right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.25rem;
+}
+
+.cs-section-tag {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #71717a;
+    margin-bottom: 1.5rem;
+}
+
+.cs-section-title {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0;
+    color: #ffffff;
+}
+
+.cs-section-body {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #d4d4d8; /* Zinc 300 - Brighter than Zinc 400 for better contrast */
+    margin: 0 0 3rem 0;
+}
+
+.cs-sub-heading {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem 0;
+    color: #ffffff;
+}
+
+/* ── PROBLEM CARDS ── */
+.cs-card-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .cs-card-pair {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cs-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cs-card:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.cs-card-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #71717a;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.cs-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a1a1aa;
+    margin: 0;
+}
+
+.cs-statement {
+    margin-top: 2rem;
+}
+
+.cs-blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 1.5rem 0 0 0;
+    font-style: italic;
+    opacity: 0.9;
+    border-left: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ── RESEARCH ── */
+.cs-research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .cs-research-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cs-research-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cs-research-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cs-research-type {
+    font-size: 0.8rem;
+    color: #71717a;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cs-research-stat {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* ── INSIGHTS ── */
+.cs-insights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.cs-insight {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.cs-insight-num {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: #a1a1aa;
+    margin-top: 0.2rem;
+}
+
+.cs-insight p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a1a1aa;
+    margin: 0;
+}
+
+.cs-pull-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #ffffff;
+    font-style: italic;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    padding-left: 2rem;
+    margin: 3rem 0;
+}
+
+.cs-pull-quote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    font-family: 'Outfit', sans-serif;
+    color: #71717a;
+    font-style: normal;
+    letter-spacing: 0.05em;
+}
+
+/* ── PERSONAS ── */
+.cs-personas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .cs-personas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cs-persona-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-persona-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cs-persona-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.cs-persona-identity h4 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 0.3rem 0;
+}
+
+.cs-persona-identity span {
+    font-size: 0.8rem;
+    color: #71717a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cs-persona-detail {
+    margin-bottom: 1.5rem;
+}
+
+.cs-persona-detail:last-child {
+    margin-bottom: 0;
+}
+
+.cs-persona-label {
+    font-size: 0.75rem;
+    color: #71717a;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.cs-persona-detail p {
+    font-size: 0.95rem;
+    color: #a1a1aa;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── PRINCIPLES ── */
+.cs-principles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cs-principle {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2.5rem;
+}
+
+.cs-principle-num {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #71717a;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.cs-principle-content h4 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 0.8rem 0;
+}
+
+.cs-principle-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #a1a1aa;
+    margin: 0;
+}
+
+.cs-principle-content .cs-mockup-card {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+}
+
+/* ── CONCEPTS ── */
+.cs-concepts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cs-concept {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-concept.cs-concept--chosen {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.cs-concept-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.cs-research-stat {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.cs-badge {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.cs-badge--rejected {
+    color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.cs-badge--partial {
+    color: #f59e0b;
+    background-color: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.cs-badge--chosen {
+    color: #10b981;
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.cs-concept-desc {
+    font-size: 0.95rem;
+    color: #a1a1aa;
+    margin-bottom: 1rem;
+}
+
+.cs-concept-reason {
+    font-size: 0.85rem;
+    color: #71717a;
+    font-style: italic;
+}
+
+/* ── BEFORE / AFTER ── */
+.cs-before-after {
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.cs-ba-card {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.cs-ba-card h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 0.8rem 0;
+}
+
+.cs-ba-card p {
+    font-size: 0.95rem;
+    color: #a1a1aa;
+    margin: 0;
+}
+
+.cs-ba-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.cs-ba-label--before {
+    color: #ef4444;
+}
+
+.cs-ba-label--after {
+    color: #10b981;
+}
+
+.cs-ba-arrow {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #71717a;
+    justify-content: center;
+}
+
+/* ── ITERATIONS ── */
+.cs-iterations {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.cs-iteration {
+    padding-left: 1.5rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.cs-iteration-tag {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #71717a;
+    margin-bottom: 0.5rem;
+}
+
+.cs-iteration p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a1a1aa;
+    margin: 0;
+}
+
+.cs-placeholder {
+    background-color: #0e0e0e;
+    border: 1px dashed rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 4rem;
+    text-align: center;
+}
+
+.cs-placeholder p {
+    font-size: 0.9rem;
+    color: #444444;
+    font-style: italic;
+    margin: 0;
+}
+
+/* ── OUTCOME GRID ── */
+.cs-outcome-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .cs-outcome-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cs-outcome-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-outcome-value {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.cs-outcome-delta {
+    font-size: 0.85rem;
+    color: #10b981;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.cs-outcome-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #71717a;
+    margin-top: 0.5rem;
+}
+
+/* ── REFLECTION ── */
+.cs-reflection-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cs-reflection-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.cs-reflection-card:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.cs-reflection-card h4 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.01em;
+}
+
+.cs-reflection-card p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #a1a1aa;
+    margin: 0;
+}
+/* ── PERSONA CARDS ── */
+.cs-persona-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cs-persona-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.cs-persona-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.cs-persona-identity h4 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.25rem 0;
+}
+
+.cs-persona-identity span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #71717a;
+}
+
+.cs-persona-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cs-persona-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #52525b;
+    font-weight: 700;
+}
+
+.cs-persona-detail p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #a1a1aa;
+    margin: 0;
+}
+
+/* ── MOCKUP PLACEHOLDERS ── */
+.cs-mockup-wrapper {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.cs-mockup-card {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #52525b;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    position: relative;
+    overflow: hidden;
+}
+
+.cs-mockup-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.cs-mockup-full {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #71717a;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    margin: 4rem 0;
+}
+
+/* ── MOCK MINI-UI COMPONENTS ── */
+.mock-v-tag {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: 0.6rem;
+    color: #71717a;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+.mock-v-tag-glow {
+    font-size: 0.8rem;
+    color: #10b981;
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.mock-v-nav {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+}
+
+.mock-v-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.mock-v-btn-large {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+    margin-bottom: 1rem;
+}
+
+.mock-v-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 60px;
+}
+
+.mock-v-chart .bar {
+    width: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 2px 2px 0 0;
+    transition: height 1s ease;
+}
+
+.mock-v-chart .bar:nth-child(even) {
+    background: #10b981;
+    opacity: 0.6;
+}
+
+.mock-v-badge {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.mock-v-line {
+    width: 60%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 3px;
+    margin: 4px 0;
+}
+
+/* ── DISCOVERY GRID (v4) ── */
+.cs-discovery {
+    width: 100%;
+    padding: 10rem 0; /* Horizontal handled by .layout-wrapper */
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.discovery-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.discovery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.discovery-card {
+    background-color: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.discovery-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.discovery-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background-color: #0d0d0d;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discovery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0.8;
+}
+
+.discovery-card:hover .discovery-image img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.discovery-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    color: #52525b;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+}
+
+.discovery-placeholder::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    filter: blur(20px);
+}
+
+.discovery-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 0 0 0;
+}
+
+.discovery-info h4 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.discovery-info span {
+    font-size: 0.95rem;
+    color: #71717a;
+}
+
+.discovery-header h3 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.discovery-footer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.discovery-back-link {
+    color: #71717a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.discovery-back-link:hover {
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .cs-discovery {
+        padding: 8rem 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .discovery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cs-discovery {
+        padding: 5rem 0;
+    }
+    
+    .discovery-header h3 {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .discovery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+}
+
+/* --- DISCOVERY FIXES --- */
+@media (max-width: 768px) {
+    .discovery-grid {
+        gap: 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-study-hero {
+        padding: 2.5rem 0;
+    }
+
+    .cs-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .case-study-meta {
+        flex-direction: column;
+    }
+
+    .meta-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .case-study-hero-image {
+        width: calc(100% + 48px);
+        margin-left: -24px;
+    }
+
+    .cs-section {
+        padding: 3rem 0;
+    }
+
+    .cs-section-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cs-card-pair {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-before-after {
+        flex-direction: column;
+    }
+
+    .cs-ba-arrow {
+        transform: rotate(90deg);
+        justify-content: center;
+    }
+
+    .cs-outcome-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-reflection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-footer {
+        padding: 4rem 24px 3rem 24px;
+    }
+}
+@media (max-width: 480px) {
+    .cs-card,
+    .cs-persona-card,
+    .cs-reflection-card,
+    .cs-principle,
+    .cs-outcome-card {
+        padding: 1.5rem !important;
+    }
+    
+    .cs-persona-header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .cs-persona-avatar {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .cs-persona-identity h4 {
+        font-size: 1.1rem;
+    }
+    
+    .cs-title-line {
+        font-size: 2.2rem;
+    }
+    
+    .case-study-body-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .meta-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .meta-item {
+        min-width: 0;
+    }
+    
+    .case-study-hero-image {
+        border-radius: 8px;
+    }
+}
