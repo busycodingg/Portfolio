@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 100vh;
     background-color: var(--bg-color);
-    --cs-card-bg: rgba(255, 255, 255, 0.02);
+    --cs-card-bg: rgba(255, 255, 255, 0.035);
     --cs-card-border: none;
 }
 
@@ -158,7 +158,9 @@
 
 .metric-card {
     background-color: var(--cs-card-bg);
-    border: 1px solid var(--cs-card-border);
+    border: var(--cs-card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 12px;
     padding: 2rem;
     display: flex;
@@ -284,6 +286,8 @@
 .cs-card {
     background-color: var(--cs-card-bg);
     border: var(--cs-card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 12px;
     padding: 2.5rem; /* Increased from 1.5rem for more breathing room */
     display: flex;
@@ -440,6 +444,8 @@
 .cs-persona-card {
     background-color: var(--cs-card-bg);
     border: var(--cs-card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 12px;
     padding: 2rem;
     display: flex;
@@ -511,6 +517,8 @@
 .cs-research-card {
     background-color: var(--cs-card-bg);
     border: var(--cs-card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 8px;
     padding: 2.5rem; /* Increased for breathing room */
     display: flex;
@@ -545,6 +553,8 @@
     flex-direction: column;
     background-color: var(--cs-card-bg);
     border: var(--cs-card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 12px;
     padding: 3.5rem; 
     position: relative;
@@ -599,6 +609,8 @@
 .cs-concept {
     background-color: var(--cs-card-bg);
     border: var(--cs-card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 8px;
     padding: 1.5rem;
     display: flex;
@@ -692,6 +704,8 @@
 
 .cs-ba-card {
     background-color: var(--cs-card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 16px;
     border: var(--cs-card-border);
     display: grid;
@@ -855,6 +869,8 @@
 .cs-outcome-card {
     background-color: var(--cs-card-bg);
     border: var(--cs-card-border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-radius: 8px;
     padding: 2rem;
     display: flex;
