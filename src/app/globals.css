@@ -154,7 +154,7 @@ header {
 
 /* --- NAVIGATION & HAMBURGER --- */
 .site-header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -162,11 +162,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0; /* Reduced padding for sticky state */
+    padding: 1.5rem 2rem; /* Added horizontal padding for fixed state */
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
 }
 
