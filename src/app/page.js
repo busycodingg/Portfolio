@@ -125,7 +125,7 @@ export default function Home() {
                     <div className="projects-grid">
                         <Link href="/projects/waystream" className="project-card" style={{ textDecoration: 'none' }}>
                             <div className="project-image-wrapper">
-                                <div className="project-image" style={{ backgroundImage: "url('/Waystream%20Webapp.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+                                <div className="project-image" style={{ backgroundImage: "url('/projects/waystream/thumbnail.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
                             </div>
                             <h3 className="project-title">Waystream</h3>
                             <p className="project-desc">Audio Streaming</p>

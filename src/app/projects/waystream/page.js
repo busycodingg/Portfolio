@@ -44,16 +44,15 @@ export default function WaystreamCaseStudy() {
             initial="hidden"
             animate="show"
           >
-            <motion.div className="cs-hero-left" variants={fadeUp}>
-              <h1 className="case-study-title">
+            <motion.div className="cs-hero-left" variants={staggerContainer}>
+              <motion.h1 className="case-study-title" variants={fadeUp}>
                 <span className="cs-title-line">Waystream</span>
-                {/* <span className="cs-title-line">Creator Dashboard</span> */}
-              </h1>
-            </motion.div>
-            <motion.div className="cs-hero-right" variants={staggerContainer}>
-              <motion.p variants={fadeUp} className="case-study-body-text">
+              </motion.h1>
+
+              <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
                 Africa's first audio streaming platform — built to give creators, churches, and communities a voice without bandwidth barriers or foreign payment walls.
               </motion.p>
+
               <motion.div variants={fadeUp} className="case-study-meta">
                 <div className="meta-row">
                   <div className="meta-item">
@@ -80,7 +79,7 @@ export default function WaystreamCaseStudy() {
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">8 weeks</span>
+                    <span className="meta-value">3 months</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Users</span>
@@ -89,15 +88,18 @@ export default function WaystreamCaseStudy() {
                 </div>
               </motion.div>
             </motion.div>
-          </motion.div>
 
-          <motion.div
-            className="case-study-hero-image"
-            style={{ backgroundImage: "url('/Waystream%20Webapp.png')" }}
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
-          />
+            <motion.div className="cs-hero-right" variants={staggerContainer}>
+              <motion.img
+                src="/projects/waystream/hero.png"
+                alt="Waystream Hero"
+                className="case-study-hero-image"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
+              />
+            </motion.div>
+          </motion.div>
         </section>
 
         {/* ── 02 — PROBLEM FRAMING ── */}
@@ -129,7 +131,16 @@ export default function WaystreamCaseStudy() {
                 </div>
               </motion.div>
               <motion.div variants={fadeUp} className="cs-mockup-wrapper">
-                <div className="cs-mockup-full">Current Fragmented Ecosystem Mapping</div>
+                <div className="cs-mockup-full">
+                  <motion.img
+                    src="/projects/waystream/fragmented.png"
+                    alt="Current Fragmented Ecosystem Mapping"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                  />
+                </div>
               </motion.div>
 
               <motion.div variants={fadeUp} className="cs-statement">
@@ -249,11 +260,11 @@ export default function WaystreamCaseStudy() {
           >
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">04 — Design principles</span>
-              <h2 className="cs-section-title">Three rules that guided every pixel</h2>
+              <h2 className="cs-section-title">Three rules that guided every decision</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                To solve for the Lagos church admin and the independent creator, I defined three principles that optimized for low-bandwidth reality and high-frequency use.
+                To solve for the Lagos church admin and the independent creator, I defined two principles that optimized for low-bandwidth reality and high-frequency use.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-principles">
@@ -262,37 +273,44 @@ export default function WaystreamCaseStudy() {
                   <div className="cs-principle-content">
                     <h4>One tap to live</h4>
                     <p>Broadcasting setup must be fast enough to start mid-service. Every extra field is a reason to abandon the stream.</p>
-                    <div className="cs-mockup-card">
-                      <span className="mock-v-nav"></span>
-                      <span className="mock-v-btn"></span>
-                      <span className="mock-v-tag">One-tap broadcast active</span>
+                    <div className="cs-principle-mockup">
+                      <motion.img
+                        src="/projects/waystream/Principle 01.png"
+                        alt="Principle 01: One tap to live"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                      />
                     </div>
                   </div>
                 </div>
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
-                    <h4>Show me my numbers instantly</h4>
-                    <p>Creators need real-time validation. Listener counts, engagement rate, and live donation tracking are prioritized on the primary HUD.</p>
-                    <div className="cs-mockup-card">
-                      <div className="mock-v-chart">
-                        <div className="bar" style={{ height: '30%' }}></div>
-                        <div className="bar" style={{ height: '60%' }}></div>
-                        <div className="bar" style={{ height: '45%' }}></div>
-                        <div className="bar" style={{ height: '80%' }}></div>
-                      </div>
-                      <span className="mock-v-tag">Real-time listener HUD</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="cs-principle">
-                  <span className="cs-principle-num">Principle 03</span>
-                  <div className="cs-principle-content">
                     <h4>No foreign barriers</h4>
                     <p>Optimized for mid-range Android devices on 3G/Edge networks. Native support for local payment gateways for automated donation payouts.</p>
-                    <div className="cs-mockup-card">
-                      <div className="mock-v-badge">Local Payouts</div>
-                      <span className="mock-v-tag">Naira (₦) Integration</span>
+                    <div className="cs-principle-dual-mockup">
+                      <div className="cs-principle-mockup cs-principle-mockup--mobile">
+                        <motion.img
+                          src="/projects/waystream/mobile 1.png"
+                          alt="Principle 02: Mobile view 1"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.6 }}
+                        />
+                      </div>
+                      <div className="cs-principle-mockup cs-principle-mockup--mobile">
+                        <motion.img
+                          src="/projects/waystream/mobile 2.png"
+                          alt="Principle 02: Mobile view 2"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.6, delay: 0.2 }}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -301,8 +319,8 @@ export default function WaystreamCaseStudy() {
           </motion.div>
         </section>
 
-        {/* ── 05 — DESIGN & ITERATION ── */}
         <section className="cs-section">
+          {/* Intro Row */}
           <motion.div
             className="cs-section-grid"
             variants={staggerContainer}
@@ -318,31 +336,60 @@ export default function WaystreamCaseStudy() {
               <motion.p variants={fadeUp} className="cs-section-body">
                 Started with low-fidelity wireframes to test the broadcaster setup flow — the single most critical journey on the platform. Going live had to feel like pressing one button, not configuring a studio. Progressed to high-fidelity dark-mode screens with a strict modular grid designed to work across desktop (primary broadcast surface) and mobile (channel management and monitoring).
               </motion.p>
+            </motion.div>
+          </motion.div>
 
-              <motion.div variants={fadeUp} className="cs-before-after">
-                <div className="cs-ba-card">
-                  <span className="cs-ba-label cs-ba-label--before">Current Market Benchmarks</span>
-                  <div className="cs-mockup-card">
-                    <span className="mock-v-line"></span>
-                    <span className="mock-v-line"></span>
-                    <span className="mock-v-line"></span>
-                    <span className="mock-v-line"></span>
-                  </div>
-                  <h4>Broadcast setup — 6 steps</h4>
-                  <p>YouTube and Anchor require significant configuration — title, description, category, privacy, tags, and audio input — before the 'Go Live' button becomes active.</p>
+          {/* Full-span Comparison Breakout */}
+          <motion.div 
+            className="cs-full-breakout"
+            variants={fadeUp}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="cs-before-after">
+              <div className="cs-ba-card cs-ba-card--before">
+                <span className="cs-ba-label cs-ba-label--before">Current Market Benchmarks</span>
+                <div className="cs-mockup-card">
+                  <motion.img 
+                    src="/projects/waystream/benchmarks.png" 
+                    alt="Current Market Benchmarks"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                  />
                 </div>
-                <div className="cs-ba-arrow">→</div>
-                <div className="cs-ba-card cs-ba-card--after">
-                  <span className="cs-ba-label cs-ba-label--after">Waystream Solution</span>
-                  <div className="cs-mockup-card">
-                    <span className="mock-v-btn-large"></span>
-                    <span className="mock-v-tag-glow">One Tap</span>
-                  </div>
-                  <h4>Broadcast setup — 2 steps</h4>
-                  <p>Optimized for mid-service speed. Title and Go Live. Technical settings are handled intelligently in the background and can be adjusted mid-stream.</p>
+                <h4>Broadcast setup — 6 steps</h4>
+                <p>YouTube and Anchor require significant configuration — title, description, category, privacy, tags, and audio input — before the 'Go Live' button becomes active.</p>
+              </div>
+              <div className="cs-ba-arrow">→</div>
+              <div className="cs-ba-card cs-ba-card--after">
+                <span className="cs-ba-label cs-ba-label--after">Waystream Solution</span>
+                <div className="cs-mockup-card">
+                  <motion.img 
+                    src="/projects/waystream/solution.png" 
+                    alt="Waystream Proposed Solution"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                  />
                 </div>
-              </motion.div>
+                <h4>Broadcast setup — 2 steps</h4>
+                <p>Optimized for mid-service speed. Title and Go Live. Technical settings are handled intelligently in the background and can be adjusted mid-stream.</p>
+              </div>
+            </div>
+          </motion.div>
 
+          {/* Iteration Row */}
+          <motion.div
+            className="cs-section-grid"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <div className="cs-section-left"></div>
+            <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Iteration & Refinement</motion.h3>
               <motion.div variants={fadeUp} className="cs-iterations">
                 <div className="cs-iteration">
@@ -376,8 +423,17 @@ export default function WaystreamCaseStudy() {
                 Waystream launched in Lagos as the continent's first dedicated live audio home. By solving for local friction (Naira, low-data, one-tap speed), it achieved rapid adoption from churches and independent creators alike.
               </motion.p>
 
-              <motion.div variants={fadeUp} className="cs-mockup-full">
-                Final Modular Broadcaster Dashboard Shipped
+              <motion.div variants={fadeUp} className="cs-mockup-wrapper">
+                <div className="cs-mockup-full">
+                  <motion.img 
+                    src="/projects/waystream/Modular.png" 
+                    alt="Final Modular Broadcaster Dashboard Shipped"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                  />
+                </div>
               </motion.div>
 
               <motion.div variants={fadeUp} className="cs-outcome-grid">
@@ -397,7 +453,7 @@ export default function WaystreamCaseStudy() {
                   <span className="cs-outcome-label">Live audio platform</span>
                 </div>
                 <div className="cs-outcome-card">
-                  <span className="cs-outcome-value" style={{ fontSize: '2rem' }}>Local payments</span>
+                  <span className="cs-outcome-value">Local payments</span>
                   <span className="cs-outcome-delta">Removed foreign payment barriers</span>
                   <span className="cs-outcome-label">creators across Africa can now access premium features in their local currency</span>
                 </div>
@@ -441,10 +497,10 @@ export default function WaystreamCaseStudy() {
         {/* ── 08 — DISCOVERY GRID (v4) ── */}
         <section className="cs-discovery">
           <div className="discovery-header">
-            <h2 className="discovery-label">More from my portfolio</h2>
+            <h2 className="discovery-label">Selected Case Studies</h2>
           </div>
-
-          <div className="discovery-grid">
+ 
+          <div className="discovery-grid DiscoveryGrid-2col">
             <Link href="/projects/drive45" className="discovery-card">
               <div className="discovery-image">
                 <Image src="/drive45_mobility_mockup.png" alt="Drive45" width={400} height={300} />
@@ -454,7 +510,7 @@ export default function WaystreamCaseStudy() {
                 <span>Fintech & Mobility</span>
               </div>
             </Link>
-
+ 
             <Link href="/projects/logistic-app" className="discovery-card">
               <div className="discovery-image">
                 <Image src="/logistic_app_mockup.png" alt="Logistic App" width={400} height={300} />
@@ -462,16 +518,6 @@ export default function WaystreamCaseStudy() {
               <div className="discovery-info">
                 <h4>Logistic App</h4>
                 <span>Facility Management</span>
-              </div>
-            </Link>
-
-            <Link href="/projects/design-system" className="discovery-card">
-              <div className="discovery-image">
-                <div className="discovery-placeholder">Design System Visual</div>
-              </div>
-              <div className="discovery-info">
-                <h4>Figma Design System</h4>
-                <span>Systems Design</span>
               </div>
             </Link>
           </div>

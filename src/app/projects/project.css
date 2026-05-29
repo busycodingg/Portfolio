@@ -5,10 +5,30 @@
     background-color: var(--bg-color);
 }
 
+.case-study-container header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .case-study-container header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 .case-study-hero {
-    padding: 10rem 0 4rem 0; /* Horizontal handled by .layout-wrapper */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 0 0 4vh 0; /* Minimal optical lift for professional balance */
     align-items: flex-start;
     text-align: left;
 }
@@ -48,22 +68,25 @@
 
 .cs-hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr; /* Asymmetrical editorial split */
     gap: 4rem;
-    align-items: start;
+    align-items: center;
     width: 100%;
 }
 
 @media (max-width: 1024px) {
     .cs-hero-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
     }
-    
-    .cs-hero-left {
-        position: relative;
-        top: 0;
-    }
+}
+
+.case-study-hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .cs-hero-left {
@@ -79,7 +102,8 @@
 .case-study-meta {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 2rem 0;
+    width: fit-content; /* Ensure container and children (like hr) follow content width */
 }
 
 .meta-row {
@@ -94,7 +118,6 @@
     background-color: rgba(255, 255, 255, 0.08);
     margin: 0;
     width: 100%;
-    max-width: 320px;
 }
 
 .meta-item {
@@ -121,16 +144,6 @@
     color: #ffffff;
 }
 
-.case-study-hero-image {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    max-height: 65vh; /* Bounded height */
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-    margin-top: 4rem; /* Spacing between the title grid and the hero image */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
 
 .case-study-metrics {
     display: grid;
@@ -175,6 +188,11 @@
 /* ── SECTION SYSTEM ── */
 .cs-section {
     padding: 10rem 0; /* Horizontal handled by .layout-wrapper */
+}
+
+/* Remove gap after 100vh hero */
+.case-study-hero + .cs-section {
+    padding-top: 0;
 }
 
 .cs-section-inner {
@@ -303,7 +321,8 @@
     margin: 1.5rem 0 0 0;
     font-style: italic;
     opacity: 0.9;
-    border-left: 2px solid rgba(255, 255, 255, 0.15);
+    border-left: none;
+    padding-left: 0;
 }
 
 /* ── RESEARCH ── */
@@ -392,8 +411,8 @@
     line-height: 1.5;
     color: #ffffff;
     font-style: italic;
-    border-left: 2px solid rgba(255, 255, 255, 0.1);
-    padding-left: 2rem;
+    border-left: none;
+    padding-left: 0;
     margin: 3rem 0;
 }
 
@@ -497,10 +516,14 @@
     display: flex;
     flex-direction: column;
     gap: 0;
+    min-height: min-content; /* Ensure it grows */
+    height: auto !important;
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     padding: 2.5rem;
+    overflow: visible !important;
+    position: relative;
 }
 
 .cs-principle-num {
@@ -528,7 +551,8 @@
     margin: 0;
 }
 
-.cs-principle-content .cs-mockup-card {
+.cs-principle-content .cs-mockup-card,
+.cs-principle-content .cs-principle-mockup {
     margin-top: 1.25rem;
     margin-bottom: 0;
 }
@@ -606,31 +630,93 @@
     font-style: italic;
 }
 
-/* ── BEFORE / AFTER ── */
+.cs-full-breakout {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 4rem 0 6rem 0;
+    display: flex;
+    justify-content: center;
+}
+
 .cs-before-after {
     display: flex;
-    align-items: stretch;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    flex-direction: row;
+    align-items: flex-start; /* Natural top-alignment */
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1100px; /* Expansive but controlled */
+}
+
+.cs-section-grid,
+.cs-section-right {
+    overflow: visible !important;
+}
+
+.cs-full-breakout {
+    width: 100%;
+    margin: 4rem 0 6rem 0;
 }
 
 .cs-ba-card {
     flex: 1;
     background-color: rgba(255, 255, 255, 0.02);
-    border-radius: 12px;
-    padding: 2rem;
+    border-radius: 16px;
+    padding: 1.25rem; /* Balanced scale */
     border: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-ba-arrow {
+    align-self: center;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.2);
+    /* Rotation removed to point right */
+}
+
+.cs-ba-card--before {
+    opacity: 0.8;
+}
+
+.cs-ba-card--before .cs-mockup-card {
+    filter: grayscale(1) contrast(0.8) brightness(0.8);
+}
+
+.cs-ba-card--after {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.cs-ba-card--after .cs-mockup-card {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cs-ba-card .cs-mockup-card {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    aspect-ratio: 16/10; /* Enforce consistent height for pairing */
+    overflow: hidden;
+    background: #000;
+}
+
+.cs-ba-card .cs-mockup-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .cs-ba-card h4 {
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.15rem;
+    font-weight: 600;
     color: #ffffff;
-    margin: 0 0 0.8rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .cs-ba-card p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
     color: #a1a1aa;
     margin: 0;
 }
@@ -668,8 +754,8 @@
 }
 
 .cs-iteration {
-    padding-left: 1.5rem;
-    border-left: 2px solid rgba(255, 255, 255, 0.06);
+    padding-left: 0;
+    border-left: none;
 }
 
 .cs-iteration-tag {
@@ -710,9 +796,17 @@
     gap: 1.5rem;
 }
 
+.cs-outcome-card--full {
+    grid-column: span 2;
+}
+
 @media (max-width: 768px) {
     .cs-outcome-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .cs-outcome-card--full {
+        grid-column: span 1;
     }
 }
 
@@ -875,7 +969,45 @@
     overflow: hidden;
 }
 
-.cs-mockup-card::after {
+.cs-principle-mockup {
+    width: 100%;
+    height: auto !important;
+    background: transparent;
+    border: none;
+    position: relative;
+    margin-top: 1.5rem;
+    overflow: visible !important; /* Nuclear no-crop */
+}
+
+.cs-principle-mockup--mobile {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cs-principle-dual-mockup {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Stack on mobile */
+}
+
+.cs-principle-dual-mockup .cs-principle-mockup--mobile {
+    margin: 0; /* Reset auto-margins for flex layout */
+    flex: 1 1 240px;
+    max-width: 280px;
+}
+
+.cs-principle-mockup img {
+    width: 100%;
+    height: auto !important;
+    display: block;
+    object-fit: visible !important;
+}
+
+.cs-mockup-card::after, .cs-principle-mockup::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -885,19 +1017,23 @@
 
 .cs-mockup-full {
     width: 100%;
-    aspect-ratio: 16/9;
+    box-sizing: border-box; /* Absolute safety for 100% width + padding */
     background: #0d0d0d;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
+    border-radius: 12px;
+    margin: 4rem 0;
+    padding: 2.5rem;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #71717a;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    font-size: 0.8rem;
-    margin: 4rem 0;
+}
+
+.cs-mockup-full img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 /* ── MOCK MINI-UI COMPONENTS ── */
@@ -1004,6 +1140,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     width: 100%;
+}
+
+.discovery-grid.DiscoveryGrid-2col {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px; /* Reduced to keep cards focused */
+    margin: 0 auto;
 }
 
 .discovery-card {

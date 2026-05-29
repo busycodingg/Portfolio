@@ -478,7 +478,7 @@ export default function LogisticAppCaseStudy() {
           <div className="discovery-grid">
             <Link href="/projects/waystream" className="discovery-card">
               <div className="discovery-image">
-                <Image src="/Waystream%20Webapp.png" alt="Waystream" width={400} height={300} />
+                <Image src="/projects/waystream/thumbnail.png" alt="Waystream" width={400} height={300} />
               </div>
               <div className="discovery-info">
                 <h4>Waystream</h4>

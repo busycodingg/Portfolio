@@ -1,4 +1,6 @@
-@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,400,300,900&display=swap');
+* {
+    box-sizing: border-box;
+}
 
 :root {
     --bg-color: #000000;
