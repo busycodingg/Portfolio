@@ -111,9 +111,8 @@ header {
 
 .logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    line-height: 0.85;
+    line-height: 1;
 }
 
 .logo-am {
@@ -124,7 +123,7 @@ header {
 }
 
 .logo-ajay {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 800 !important;
     position: relative;
     letter-spacing: -0.02em;
@@ -133,7 +132,7 @@ header {
 }
 
 .logo-dot {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: var(--accent-yellow);
 }
 
@@ -168,7 +167,7 @@ header {
 .nav-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 1.5rem 80px;
+    padding: 1.2rem 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
