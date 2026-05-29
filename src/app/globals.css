@@ -111,8 +111,9 @@ header {
 
 .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    line-height: 1;
+    line-height: 0.85;
 }
 
 .logo-am {
@@ -123,16 +124,16 @@ header {
 }
 
 .logo-ajay {
-    font-size: 1.4rem;
+
+    font-size: 2rem;
     font-weight: 800 !important;
     position: relative;
     letter-spacing: -0.02em;
     font-family: 'Cabinet Grotesk', sans-serif;
-    color: #ffffff !important; /* Forced white logo */
 }
 
 .logo-dot {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--accent-yellow);
 }
 
@@ -153,40 +154,12 @@ header {
 
 /* --- NAVIGATION & HAMBURGER --- */
 .site-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    position: relative;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    transition: all 0.3s ease;
-}
-
-.nav-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 1.2rem 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-@media (max-width: 1024px) {
-    .nav-container {
-        padding: 1.5rem 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-container {
-        padding: 1rem 24px;
-    }
+    padding: 2.5rem 0;
 }
 
 header nav ul {
@@ -200,10 +173,10 @@ header nav ul {
 
 header nav a {
     font-family: 'Cabinet Grotesk', sans-serif;
-    color: rgba(255, 255, 255, 0.7); /* Improved contrast from Zinc 500 */
+    color: var(--text-muted);
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 500; /* Increased weight */
+    font-weight: 400;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
