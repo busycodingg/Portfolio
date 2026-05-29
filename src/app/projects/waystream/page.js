@@ -523,8 +523,8 @@ export default function WaystreamCaseStudy() {
             </Link>
           </div>
 
-          <Footer />
         </section>
+        <Footer />
       </div>
     </main>
   );

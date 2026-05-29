@@ -498,8 +498,8 @@ export default function LogisticAppCaseStudy() {
             </Link>
           </div>
  
-          <Footer />
         </section>
+        <Footer />
       </div>
     </main>
   );

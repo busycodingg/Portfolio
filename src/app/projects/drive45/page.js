@@ -542,8 +542,8 @@ export default function Drive45CaseStudy() {
             </Link>
           </div>
  
-          <Footer />
         </section>
+        <Footer />
       </div>
     </main>
   );
