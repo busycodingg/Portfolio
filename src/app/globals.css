@@ -124,12 +124,12 @@ header {
 }
 
 .logo-ajay {
-
     font-size: 2rem;
     font-weight: 800 !important;
     position: relative;
     letter-spacing: -0.02em;
     font-family: 'Cabinet Grotesk', sans-serif;
+    color: #ffffff !important; /* Forced white logo */
 }
 
 .logo-dot {
@@ -154,12 +154,20 @@ header {
 
 /* --- NAVIGATION & HAMBURGER --- */
 .site-header {
-    position: relative;
-    z-index: 100;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0; /* Reduced padding for sticky state */
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
 }
 
 header nav ul {
@@ -173,10 +181,10 @@ header nav ul {
 
 header nav a {
     font-family: 'Cabinet Grotesk', sans-serif;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.7); /* Improved contrast from Zinc 500 */
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 400;
+    font-weight: 500; /* Increased weight */
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
