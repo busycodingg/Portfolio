@@ -156,30 +156,34 @@ header {
 .site-header {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100%;
-    max-width: 1440px; /* Match layout-wrapper */
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 80px; /* Match layout-wrapper padding */
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     transition: all 0.3s ease;
 }
 
+.nav-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1.5rem 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 @media (max-width: 1024px) {
-    .site-header {
+    .nav-container {
         padding: 1.5rem 40px;
     }
 }
 
 @media (max-width: 768px) {
-    .site-header {
-        padding: 1.5rem 24px;
+    .nav-container {
+        padding: 1rem 24px;
     }
 }
 
