@@ -722,16 +722,11 @@
 }
 
 .cs-ba-card--before {
-    opacity: 0.85;
+    opacity: 1; /* Removed dimming to match After card vibrancy */
 }
 
 .cs-ba-card--before .cs-mockup-card {
     filter: grayscale(1) contrast(0.8) brightness(0.8);
-}
-
-.cs-ba-card--after {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
-    border-color: rgba(255, 255, 255, 0.12);
 }
 
 .cs-ba-card--after .cs-mockup-card {
