@@ -131,8 +131,7 @@ export default function WaystreamCaseStudy() {
                   <p>Creators were losing audiences they'd already built — not because their content was bad, but because the tools available weren't built for their reality.</p>
                 </div>
               </motion.div>
-              </motion.div>
-              <motion.div 
+              <motion.div
                 className="cs-full-breakout"
                 variants={fadeUp}
                 initial={{ opacity: 0, y: 20 }}
@@ -249,10 +248,6 @@ export default function WaystreamCaseStudy() {
                 </div>
               </motion.div>
 
-              <motion.blockquote variants={fadeUp} className="cs-pull-quote">
-                "I just want to go live from my phone. I don't need a cameraman or a studio. I just need my congregation to hear me clearly."
-                <cite>— Broadcaster Interview, Lagos</cite>
-              </motion.blockquote>
             </motion.div>
           </motion.div>
         </section>
@@ -268,7 +263,7 @@ export default function WaystreamCaseStudy() {
           >
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">04 — Design principles</span>
-              <h2 className="cs-section-title">Three rules that guided every decision</h2>
+              <h2 className="cs-section-title">Two rules that guided every decision</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
@@ -348,7 +343,7 @@ export default function WaystreamCaseStudy() {
           </motion.div>
 
           {/* Full-span Comparison Breakout */}
-          <motion.div 
+          <motion.div
             className="cs-full-breakout"
             variants={fadeUp}
             initial={{ opacity: 0, y: 20 }}
@@ -359,8 +354,8 @@ export default function WaystreamCaseStudy() {
               <div className="cs-ba-card cs-ba-card--before">
                 <span className="cs-ba-label cs-ba-label--before">Current Market Benchmarks</span>
                 <div className="cs-mockup-card">
-                  <motion.img 
-                    src="/projects/waystream/benchmarks.png" 
+                  <motion.img
+                    src="/projects/waystream/benchmarks.png"
                     alt="Current Market Benchmarks"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -374,8 +369,8 @@ export default function WaystreamCaseStudy() {
               <div className="cs-ba-card cs-ba-card--after">
                 <span className="cs-ba-label cs-ba-label--after">Waystream Solution</span>
                 <div className="cs-mockup-card">
-                  <motion.img 
-                    src="/projects/waystream/solution.png" 
+                  <motion.img
+                    src="/projects/waystream/solution.png"
                     alt="Waystream Proposed Solution"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -412,7 +407,7 @@ export default function WaystreamCaseStudy() {
             </motion.div>
           </motion.div>
         </section>
- 
+
         {/* ── 06 — OUTCOME & IMPACT ── */}
         <section className="cs-section">
           <motion.div
@@ -433,7 +428,7 @@ export default function WaystreamCaseStudy() {
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="cs-full-breakout"
             variants={fadeUp}
             initial={{ opacity: 0, y: 20 }}
@@ -441,8 +436,8 @@ export default function WaystreamCaseStudy() {
             viewport={{ once: true }}
           >
             <div className="cs-mockup-full no-bg">
-              <motion.img 
-                src="/projects/waystream/Modular.png" 
+              <motion.img
+                src="/projects/waystream/Modular.png"
                 alt="Final Modular Broadcaster Dashboard Shipped"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -453,36 +448,32 @@ export default function WaystreamCaseStudy() {
           </motion.div>
 
           <motion.div
-            className="cs-section-grid"
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <div className="cs-section-left"></div>
-            <motion.div className="cs-section-right" variants={staggerContainer}>
-              <motion.div variants={fadeUp} className="cs-outcome-grid">
-                <div className="cs-outcome-card">
-                  <span className="cs-outcome-value">40,000+</span>
-                  <span className="cs-outcome-delta">Users on the platform</span>
-                  <span className="cs-outcome-label">Active Users</span>
-                </div>
-                <div className="cs-outcome-card">
-                  <span className="cs-outcome-value">Millions</span>
-                  <span className="cs-outcome-delta">Listeners reached</span>
-                  <span className="cs-outcome-label">Across Africa</span>
-                </div>
-                <div className="cs-outcome-card">
-                  <span className="cs-outcome-value">#1</span>
-                  <span className="cs-outcome-delta">First dedicated</span>
-                  <span className="cs-outcome-label">Live audio platform</span>
-                </div>
-                <div className="cs-outcome-card">
-                  <span className="cs-outcome-value">Local payments</span>
-                  <span className="cs-outcome-delta">Removed foreign payment barriers</span>
-                  <span className="cs-outcome-label">creators across Africa can now access premium features in their local currency</span>
-                </div>
-              </motion.div>
+            <motion.div variants={fadeUp} className="cs-outcome-grid cs-outcome-grid--full">
+              <div className="cs-outcome-card">
+                <span className="cs-outcome-value">40,000+</span>
+                <span className="cs-outcome-delta">Users on the platform</span>
+                <span className="cs-outcome-label">Active Users</span>
+              </div>
+              <div className="cs-outcome-card">
+                <span className="cs-outcome-value">Millions</span>
+                <span className="cs-outcome-delta">Listeners reached</span>
+                <span className="cs-outcome-label">Across Africa</span>
+              </div>
+              <div className="cs-outcome-card">
+                <span className="cs-outcome-value">#1</span>
+                <span className="cs-outcome-delta">First dedicated</span>
+                <span className="cs-outcome-label">Live audio platform</span>
+              </div>
+              <div className="cs-outcome-card">
+                <span className="cs-outcome-value">Local payments</span>
+                <span className="cs-outcome-delta">Removed foreign payment barriers</span>
+                <span className="cs-outcome-label">Creators across Africa can now access premium features in their local currency</span>
+              </div>
             </motion.div>
           </motion.div>
         </section>
@@ -524,7 +515,7 @@ export default function WaystreamCaseStudy() {
           <div className="discovery-header">
             <h2 className="discovery-label">Selected Case Studies</h2>
           </div>
- 
+
           <div className="discovery-grid DiscoveryGrid-2col">
             <Link href="/projects/drive45" className="discovery-card">
               <div className="discovery-image">
@@ -535,7 +526,7 @@ export default function WaystreamCaseStudy() {
                 <span>Fintech & Mobility</span>
               </div>
             </Link>
- 
+
             <Link href="/projects/logistic-app" className="discovery-card">
               <div className="discovery-image">
                 <Image src="/logistic_app_mockup.png" alt="Logistic App" width={400} height={300} />
