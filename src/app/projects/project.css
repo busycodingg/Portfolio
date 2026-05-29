@@ -543,9 +543,8 @@
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.04);
-    border-left: 3px solid rgba(255, 255, 255, 0.1); /* Strategic accent */
-    border-radius: 0 12px 12px 0;
-    padding: 3.5rem; /* More breathing room */
+    border-radius: 12px;
+    padding: 3.5rem; 
     position: relative;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -553,7 +552,6 @@
 .cs-principle:hover {
     background-color: rgba(255, 255, 255, 0.03);
     border-color: rgba(255, 255, 255, 0.08);
-    border-left-color: rgba(255, 255, 255, 0.2);
 }
 
 .cs-principle-num {
