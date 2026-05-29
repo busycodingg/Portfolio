@@ -711,6 +711,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto auto;
     gap: 0;
+    padding: 2.5rem; /* Added padding to match standard cards */
 }
 
 .cs-ba-arrow {
@@ -736,13 +737,13 @@
 
 .cs-ba-card .cs-mockup-card {
     margin-bottom: 1.5rem;
-    padding: 0.5rem;
-    min-height: 280px;
+    padding: 0; /* Stripped internal padding for max scale */
+    min-height: 380px; /* Increased from 280px */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: #000;
+    background: transparent; /* Seamless integration */
     border-radius: 8px;
 }
 
