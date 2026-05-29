@@ -283,27 +283,21 @@
     background-color: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 12px;
-    padding: 2rem;
-    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.cs-card:hover {
-    transform: translateY(-2px);
-    background-color: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.08);
+    padding: 2.5rem; /* Increased from 1.5rem for more breathing room */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .cs-card-tag {
-    font-size: 0.75rem;
+    font-size: 0.75rem; /* Increased from 0.65rem */
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     color: #71717a;
-    display: block;
-    margin-bottom: 1rem;
 }
 
 .cs-card p {
-    font-size: 1rem;
+    font-size: 1.15rem; /* Increased from 1rem for high impact */
     line-height: 1.6;
     color: #a1a1aa;
     margin: 0;
@@ -512,40 +506,68 @@
     margin-top: 1rem;
 }
 
+.cs-research-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 2.5rem; /* Increased for breathing room */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cs-research-type {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #71717a;
+}
+
+.cs-research-stat {
+    font-size: 1.3rem; /* Increased from 1.1rem */
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/* ── PRINCIPLES ── */
+.cs-principles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
 .cs-principle {
     display: flex;
     flex-direction: column;
-    gap: 0;
-    min-height: min-content; /* Ensure it grows */
-    height: auto !important;
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 2.5rem;
-    overflow: visible !important;
+    padding: 3rem; /* Increased from 2.5rem */
     position: relative;
 }
 
 .cs-principle-num {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #71717a;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     display: block;
 }
 
 .cs-principle-content h4 {
     font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 1.15rem;
-    font-weight: 500;
+    font-size: 1.4rem; /* Increased from 1.15rem to compete with screens */
+    font-weight: 600;
     color: #ffffff;
-    margin: 0 0 0.8rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .cs-principle-content p {
-    font-size: 0.95rem;
+    font-size: 1.15rem; /* Increased from 0.95rem */
     line-height: 1.7;
     color: #a1a1aa;
     margin: 0;

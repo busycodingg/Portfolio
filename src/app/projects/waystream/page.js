@@ -131,13 +131,20 @@ export default function WaystreamCaseStudy() {
                   <p>Creators were losing audiences they'd already built — not because their content was bad, but because the tools available weren't built for their reality.</p>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="cs-mockup-wrapper">
-                <div className="cs-mockup-full">
+              </motion.div>
+              <motion.div 
+                className="cs-full-breakout"
+                variants={fadeUp}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="cs-mockup-full no-bg">
                   <motion.img
                     src="/projects/waystream/fragmented.png"
                     alt="Current Fragmented Ecosystem Mapping"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                   />
@@ -395,17 +402,15 @@ export default function WaystreamCaseStudy() {
               <motion.div variants={fadeUp} className="cs-iterations">
                 <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 1: Feedback</span>
-                  <p>Initial testing showed broadcasters couldn't share their live link without leaving the 'Broadcaster HUD'. Moving away broke the session monitoring and discouraged growth.</p>
-                </div>
-                <div className="cs-iteration">
+                  <p>Initial testing showed broadcasters couldn't share their live link without leaving the 'Broadcaster HUD'. Mov                <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 2: The 'Live Share' Bridge</span>
-                  <p>Designed a persistent sharing bridge directly in the HUD. Broadcasters can now generate and send high-conversion WhatsApp/Instagram links without pausing the sermon or show.</p>
+                  <p>Designed a persistent, one-tap sharing bridge directly in the HUD. Instead of hiding the broadcast stats to find a link, broadcasters can now generate and push high-conversion WhatsApp/Instagram links mid-sermon, ensuring growth without breaking the one-tap simplicity.</p>
                 </div>
               </motion.div>
             </motion.div>
           </motion.div>
         </section>
-
+ 
         {/* ── 06 — OUTCOME & IMPACT ── */}
         <section className="cs-section">
           <motion.div
@@ -421,18 +426,41 @@ export default function WaystreamCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Waystream launched in Lagos as the continent's first dedicated live audio home. By solving for local friction (Naira, low-data, one-tap speed), it achieved rapid adoption from churches and independent creators alike.
+                Waystream launched as the continent's first dedicated live audio home—optimizing for the reality of mid-range Android devices and 3G networks. By removing technical and financial friction (Naira payments, one-tap speed), it achieved rapid adoption from the most underserved creators.
               </motion.p>
+            </motion.div>
+          </motion.div>
 
-              <motion.div variants={fadeUp} className="cs-mockup-wrapper">
-                <div className="cs-mockup-full">
-                  <motion.img 
-                    src="/projects/waystream/Modular.png" 
-                    alt="Final Modular Broadcaster Dashboard Shipped"
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
+          <motion.div 
+            className="cs-full-breakout"
+            variants={fadeUp}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="cs-mockup-full no-bg">
+              <motion.img 
+                src="/projects/waystream/Modular.png" 
+                alt="Final Modular Broadcaster Dashboard Shipped"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="cs-section-grid"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <div className="cs-section-left"></div>
+            <motion.div className="cs-section-right" variants={staggerContainer}>
+              <motion.div variants={fadeUp} className="cs-outcome-grid">
+ansition={{ duration: 0.8 }}
                   />
                 </div>
               </motion.div>
