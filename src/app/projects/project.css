@@ -4,7 +4,7 @@
     min-height: 100vh;
     background-color: var(--bg-color);
     --cs-card-bg: rgba(255, 255, 255, 0.02);
-    --cs-card-border: rgba(255, 255, 255, 0.04);
+    --cs-card-border: none;
 }
 
 .case-study-container header {
@@ -282,8 +282,8 @@
 }
 
 .cs-card {
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    background-color: var(--cs-card-bg);
+    border: var(--cs-card-border);
     border-radius: 12px;
     padding: 2.5rem; /* Increased from 1.5rem for more breathing room */
     display: flex;
@@ -438,8 +438,8 @@
 }
 
 .cs-persona-card {
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    background-color: var(--cs-card-bg);
+    border: var(--cs-card-border);
     border-radius: 12px;
     padding: 2rem;
     display: flex;
@@ -509,8 +509,8 @@
 }
 
 .cs-research-card {
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    background-color: var(--cs-card-bg);
+    border: var(--cs-card-border);
     border-radius: 8px;
     padding: 2.5rem; /* Increased for breathing room */
     display: flex;
@@ -543,8 +543,8 @@
 .cs-principle {
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    background-color: var(--cs-card-bg);
+    border: var(--cs-card-border);
     border-radius: 12px;
     padding: 3.5rem; 
     position: relative;
@@ -597,8 +597,8 @@
 }
 
 .cs-concept {
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    background-color: var(--cs-card-bg);
+    border: var(--cs-card-border);
     border-radius: 8px;
     padding: 1.5rem;
     display: flex;
@@ -691,10 +691,9 @@
 }
 
 .cs-ba-card {
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: var(--cs-card-bg);
     border-radius: 16px;
-    padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: var(--cs-card-border);
     display: grid;
     grid-template-rows: auto 1fr auto auto;
     gap: 0;
@@ -854,8 +853,8 @@
 }
 
 .cs-outcome-card {
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    background-color: var(--cs-card-bg);
+    border: var(--cs-card-border);
     border-radius: 8px;
     padding: 2rem;
     display: flex;
