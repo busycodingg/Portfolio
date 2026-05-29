@@ -130,6 +130,7 @@ header {
     position: relative;
     letter-spacing: -0.02em;
     font-family: 'Cabinet Grotesk', sans-serif;
+    color: #ffffff; /* Improved contrast */
 }
 
 .logo-dot {
