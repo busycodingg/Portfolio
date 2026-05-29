@@ -8,6 +8,7 @@ import { HugeiconsIcon } from '@hugeicons/react';
 import { Linkedin02Icon, File01Icon } from '@hugeicons-pro/core-solid-rounded';
 
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const WordSpan = ({ word, scrollYProgress, start, end, isHighlight }) => {
     const targetColor = isHighlight ? "rgba(250, 204, 21, 1)" : "rgba(255, 255, 255, 1)";
@@ -229,35 +230,7 @@ export default function Home() {
                     </div>
                 </section> */}
 
-                <section id="contact" className="section-contact">
-                    <h2 className="contact-headline">
-                        Interested in<br />
-                        <span className="font-playfair" style={{ fontWeight: 400, paddingLeft: '0.1em', fontStyle: 'italic' }}>Working Together?</span>
-                    </h2>
-
-                    <div className="contact-info">
-                        <a href="mailto:amokograce@gmail.com" className="email-link font-playfair" style={{ fontWeight: 400 }}>
-                            amokograce@gmail.com
-                        </a>
-                        <div className="social-links">
-                            {/* <a href="#">Twitter ↗</a>
-                            <a href="#">Instagram ↗</a> */}
-                            <a href="#">
-                                <HugeiconsIcon icon={Linkedin02Icon} size={20} color="currentColor" />
-                                LinkedIn
-                            </a>
-                            {/* <a href="#">Figma ↗</a> */}
-                            <a href="#">
-                                <HugeiconsIcon icon={File01Icon} size={20} color="currentColor" />
-                                Resume
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* <div className="footer-credits">
-                        Site developed by <strong>Odule Enoch</strong>
-                    </div> */}
-                </section>
+                <Footer />
             </div>
         </>
     );

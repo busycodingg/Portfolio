@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import "../project.css";
 
 const staggerContainer = {
@@ -522,12 +523,7 @@ export default function WaystreamCaseStudy() {
             </Link>
           </div>
 
-          <div className="discovery-footer">
-            <Link href="/#work" className="discovery-back-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-              Return to Portfolio
-            </Link>
-          </div>
+          <Footer />
         </section>
       </div>
     </main>

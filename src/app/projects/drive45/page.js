@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import "../project.css";
 
 const staggerContainer = {
@@ -516,10 +517,10 @@ export default function Drive45CaseStudy() {
         {/* ── 08 — DISCOVERY GRID ── */}
         <section className="cs-discovery">
           <div className="discovery-header">
-            <h2 className="discovery-label">More from my portfolio</h2>
+            <h2 className="discovery-label">Selected Case Studies</h2>
           </div>
-
-          <div className="discovery-grid">
+ 
+          <div className="discovery-grid DiscoveryGrid-2col">
             <Link href="/projects/waystream" className="discovery-card">
               <div className="discovery-image">
                 <Image src="/projects/waystream/thumbnail.png" alt="Waystream" width={400} height={300} />
@@ -529,7 +530,7 @@ export default function Drive45CaseStudy() {
                 <span>Audio Streaming &amp; Fintech</span>
               </div>
             </Link>
-
+ 
             <Link href="/projects/logistic-app" className="discovery-card">
               <div className="discovery-image">
                 <Image src="/logistic_app_mockup.png" alt="Logistic App" width={400} height={300} />
@@ -539,24 +540,9 @@ export default function Drive45CaseStudy() {
                 <span>Facility Management</span>
               </div>
             </Link>
-
-            <Link href="/projects/design-system" className="discovery-card">
-              <div className="discovery-image">
-                <div className="discovery-placeholder">Design System Visual</div>
-              </div>
-              <div className="discovery-info">
-                <h4>Figma Design System</h4>
-                <span>Systems Design</span>
-              </div>
-            </Link>
           </div>
-
-          <div className="discovery-footer">
-            <Link href="/#work" className="discovery-back-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-              Return to Portfolio
-            </Link>
-          </div>
+ 
+          <Footer />
         </section>
       </div>
     </main>
