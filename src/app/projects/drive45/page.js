@@ -46,43 +46,44 @@ export default function Drive45CaseStudy() {
           >
             <motion.div className="cs-hero-left" variants={fadeUp}>
               <h1 className="case-study-title">
-                <span className="cs-title-line">Drive45 Mobility</span>
+                <span className="cs-title-line">Drive45</span>
+                <span className="cs-title-line">Mobility</span>
               </h1>
             </motion.div>
             <motion.div className="cs-hero-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="case-study-body-text">
-                Designing a rent-to-own vehicle subscription platform — from onboarding to ownership, across 5 distinct user types.
+                Designing a rent-to-own vehicle subscription platform — from onboarding to ownership, across 5 distinct user types in the Nigerian market.
               </motion.p>
               <motion.div variants={fadeUp} className="case-study-meta">
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label dimmed">Role</span>
+                    <span className="meta-label">Role</span>
                     <span className="meta-value">Solo UX/UI Designer</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label dimmed">Platform</span>
-                    <span className="meta-value">Web App</span>
+                    <span className="meta-label">Platform</span>
+                    <span className="meta-value">Web Application</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label dimmed">Tools</span>
+                    <span className="meta-label">Tools</span>
                     <span className="meta-value">Figma, FigJam</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label dimmed">Status</span>
-                    <span className="meta-value">Shipped</span>
+                    <span className="meta-label">Status</span>
+                    <span className="meta-value">Shipped & Live</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">8 weeks</span>
+                    <span className="meta-label">Timeline</span>
+                    <span className="meta-value">8 Weeks (2024)</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label dimmed">User Types</span>
+                    <span className="meta-label">User Types</span>
                     <span className="meta-value">5 Distinct Roles</span>
                   </div>
                 </div>
@@ -91,12 +92,20 @@ export default function Drive45CaseStudy() {
           </motion.div>
 
           <motion.div
-            className="case-study-hero-image"
-            style={{ backgroundImage: "url('/drive45_mobility_mockup.png')" }}
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
+            className="cs-hero-visual"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
-          />
+          >
+            <Image 
+              src="/drive45_mobility_mockup.png" 
+              alt="Drive45 Mobility Mockup" 
+              width={1600} 
+              height={900} 
+              className="case-study-hero-image"
+              priority
+            />
+          </motion.div>
         </section>
 
         {/* ── 02 — PROBLEM FRAMING ── */}
@@ -514,7 +523,7 @@ export default function Drive45CaseStudy() {
           </motion.div>
         </section>
 
-        {/* ── 08 — DISCOVERY GRID ── */}
+        {/* ── 08 — DISCOVERY GRID (v4) ── */}
         <section className="cs-discovery">
           <div className="discovery-header">
             <h2 className="discovery-label">Selected Case Studies</h2>
@@ -541,7 +550,6 @@ export default function Drive45CaseStudy() {
               </div>
             </Link>
           </div>
- 
         </section>
         <Footer />
       </div>
