@@ -17,7 +17,6 @@ export default function Navigation() {
 
   return (
     <header className="site-header">
-      <div className="nav-container">
         <div className="logo">
             <Link href="/" style={{ textDecoration: 'none' }} onClick={() => setIsOpen(false)}>
               <span className="logo-ajay">Omoológò<span className="logo-dot">.</span></span>
@@ -40,7 +39,6 @@ export default function Navigation() {
             <span className="hamburger-line"></span>
             <span className="hamburger-line"></span>
         </button>
-      </div>
 
         {/* Mobile Nav Overlay */}
         <AnimatePresence>
