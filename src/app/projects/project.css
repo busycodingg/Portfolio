@@ -3,6 +3,8 @@
     width: 100%;
     min-height: 100vh;
     background-color: var(--bg-color);
+    --cs-card-bg: rgba(255, 255, 255, 0.02);
+    --cs-card-border: rgba(255, 255, 255, 0.04);
 }
 
 .case-study-container header {
@@ -155,8 +157,8 @@
 }
 
 .metric-card {
-    background-color: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: var(--cs-card-bg);
+    border: 1px solid var(--cs-card-border);
     border-radius: 12px;
     padding: 2rem;
     display: flex;
@@ -1059,11 +1061,11 @@
 .cs-mockup-full {
     width: 100%;
     box-sizing: border-box; /* Absolute safety for 100% width + padding */
-    background: #0d0d0d;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: transparent; /* Removed grey box */
+    border: none;
     border-radius: 12px;
     margin: 4rem 0;
-    padding: 2.5rem;
+    padding: 0;
     overflow: hidden;
     display: flex;
     align-items: center;
