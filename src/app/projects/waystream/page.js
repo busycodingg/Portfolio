@@ -402,7 +402,9 @@ export default function WaystreamCaseStudy() {
               <motion.div variants={fadeUp} className="cs-iterations">
                 <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 1: Feedback</span>
-                  <p>Initial testing showed broadcasters couldn't share their live link without leaving the 'Broadcaster HUD'. Mov                <div className="cs-iteration">
+                  <p>Initial testing showed broadcasters couldn't share their live link without leaving the 'Broadcaster HUD'. Moving away broke the session monitoring and discouraged growth.</p>
+                </div>
+                <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 2: The 'Live Share' Bridge</span>
                   <p>Designed a persistent, one-tap sharing bridge directly in the HUD. Instead of hiding the broadcast stats to find a link, broadcasters can now generate and push high-conversion WhatsApp/Instagram links mid-sermon, ensuring growth without breaking the one-tap simplicity.</p>
                 </div>
@@ -459,12 +461,6 @@ export default function WaystreamCaseStudy() {
           >
             <div className="cs-section-left"></div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
-              <motion.div variants={fadeUp} className="cs-outcome-grid">
-ansition={{ duration: 0.8 }}
-                  />
-                </div>
-              </motion.div>
-
               <motion.div variants={fadeUp} className="cs-outcome-grid">
                 <div className="cs-outcome-card">
                   <span className="cs-outcome-value">40,000+</span>
