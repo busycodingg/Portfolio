@@ -19,7 +19,7 @@ const staggerContainer = {
 };
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
     y: 0,
@@ -139,7 +139,13 @@ export default function Drive45CaseStudy() {
                   <p>Potential subscribers had no transparent, accessible way to apply for a vehicle subscription, track their payments, or understand their path to ownership.</p>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="cs-mockup-wrapper">
+              <motion.div
+                className="cs-full-breakout"
+                variants={fadeUp}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
                 <div className="cs-mockup-full">Drive45 Subscription Lifecycle Mapping</div>
               </motion.div>
 
@@ -461,8 +467,14 @@ export default function Drive45CaseStudy() {
                 Drive45 launched as a fully operational vehicle subscription platform — the first of its kind in Nigeria to manage the complete lifecycle through a single digital interface.
               </motion.p>
 
-              <motion.div variants={fadeUp} className="cs-mockup-full">
-                Final Modular Platform Dashboard Shipped
+              <motion.div
+                className="cs-full-breakout"
+                variants={fadeUp}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="cs-mockup-full">Final Modular Platform Dashboard Shipped</div>
               </motion.div>
 
               <motion.div variants={fadeUp} className="cs-outcome-grid">

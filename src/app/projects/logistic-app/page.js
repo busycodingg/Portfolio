@@ -19,7 +19,7 @@ const staggerContainer = {
 };
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
     y: 0,
@@ -138,7 +138,13 @@ export default function LogisticAppCaseStudy() {
                   <p>Facility managers had no single source of truth. Internal staff had no reliable way to request items. And members of the public had no formal channel to make requests at all — they relied entirely on knowing the right person to call.</p>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="cs-mockup-wrapper">
+              <motion.div
+                className="cs-full-breakout"
+                variants={fadeUp}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
                 <div className="cs-mockup-full">Integrated Facility & Request Ecosystem Mapping</div>
               </motion.div>
 
