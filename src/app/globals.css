@@ -1088,7 +1088,7 @@ header nav a:hover {
 }
 
 .project-card:hover .project-image {
-    transform: scale(1.04);
+    transform: scale(1.06);
     /* Subtler — aligned with Waystream */
 }
 

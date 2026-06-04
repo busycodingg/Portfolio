@@ -19,7 +19,7 @@ const staggerContainer = {
 };
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30 },
   show: {
     opacity: 1,
     y: 0,
@@ -44,67 +44,60 @@ export default function Drive45CaseStudy() {
             initial="hidden"
             animate="show"
           >
-            <motion.div className="cs-hero-left" variants={fadeUp}>
-              <h1 className="case-study-title">
-                <span className="cs-title-line">Drive45</span>
-                <span className="cs-title-line">Mobility</span>
-              </h1>
-            </motion.div>
-            <motion.div className="cs-hero-right" variants={staggerContainer}>
-              <motion.p variants={fadeUp} className="case-study-body-text">
-                Designing a rent-to-own vehicle subscription platform — from onboarding to ownership, across 5 distinct user types in the Nigerian market.
-              </motion.p>
+            <motion.div className="cs-hero-left" variants={staggerContainer}>
+              <motion.h1 className="case-study-title" variants={fadeUp}>
+                <span className="cs-title-line">Drive45 Mobility</span>
+              </motion.h1>
+
+              <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
+                Most Nigerians can't afford a vehicle outright. Drive45 changes that through a rent-to-own subscription model. Designed from scratch — and now putting people in cars across Nigeria.              </motion.p>
+
               <motion.div variants={fadeUp} className="case-study-meta">
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label">Role</span>
-                    <span className="meta-value">Solo UX/UI Designer</span>
+                    <span className="meta-label dimmed">Role</span>
+                    <span className="meta-value">Lead UX/UI Designer</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label">Platform</span>
+                    <span className="meta-label dimmed">Platform</span>
                     <span className="meta-value">Web Application</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label">Tools</span>
+                    <span className="meta-label dimmed">Tools</span>
                     <span className="meta-value">Figma, FigJam</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label">Status</span>
-                    <span className="meta-value">Shipped & Live</span>
+                    <span className="meta-label dimmed">Status</span>
+                    <span className="meta-value">Shipped &amp; Live</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label">Timeline</span>
-                    <span className="meta-value">8 Weeks (2024)</span>
+                    <span className="meta-label dimmed">Timeline</span>
+                    <span className="meta-value">12 Weeks</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label">User Types</span>
+                    <span className="meta-label dimmed">User Types</span>
                     <span className="meta-value">5 Distinct Roles</span>
                   </div>
                 </div>
               </motion.div>
             </motion.div>
-          </motion.div>
 
-          <motion.div
-            className="cs-hero-visual"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
-          >
-            <Image 
-              src="/drive45_mobility_mockup.png" 
-              alt="Drive45 Mobility Mockup" 
-              width={1600} 
-              height={900} 
-              className="case-study-hero-image"
-              priority
-            />
+            <motion.div className="cs-hero-right" variants={staggerContainer}>
+              <motion.img
+                src="/projects/drive45/hero.png"
+                alt="Drive45 Mobility Mockup"
+                className="case-study-hero-image"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
+              />
+            </motion.div>
           </motion.div>
         </section>
 
@@ -146,7 +139,17 @@ export default function Drive45CaseStudy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="cs-mockup-full">Drive45 Subscription Lifecycle Mapping</div>
+                <div className="cs-mockup-full no-bg">
+                  <motion.img
+                    src="/projects/drive45/Section 2.png"
+                    alt="Drive45 Subscription Lifecycle Mapping"
+                    style={{ width: "100%", aspectRatio: "1310/896", objectFit: "cover", objectPosition: "top", borderRadius: "12px" }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                  />
+                </div>
               </motion.div>
 
               <motion.div variants={fadeUp} className="cs-statement">
@@ -337,10 +340,16 @@ export default function Drive45CaseStudy() {
                   <div className="cs-principle-content">
                     <h4>Progressive disclosure for subscribers</h4>
                     <p>The subscriber journey is long and involves sensitive financial decisions. Show only what's needed at each step — never overwhelm with complexity upfront.</p>
-                    <div className="cs-mockup-card">
-                      <span className="mock-v-nav"></span>
-                      <span className="mock-v-btn"></span>
-                      <span className="mock-v-tag">Step-by-step onboarding</span>
+                    <div className="cs-principle-mockup">
+                      <motion.img
+                        src="/projects/drive45/Principle 1.png"
+                        alt="Principle 01: Progressive disclosure for subscribers"
+                        style={{ borderRadius: "12px" }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -349,14 +358,16 @@ export default function Drive45CaseStudy() {
                   <div className="cs-principle-content">
                     <h4>Separation of concerns for internal tools</h4>
                     <p>Application Officers, Fleet Supervisors, and Admins have completely different jobs. Their interfaces reflect that — purpose-built dashboards with no overlap.</p>
-                    <div className="cs-mockup-card">
-                      <div className="mock-v-chart">
-                        <div className="bar" style={{ height: '40%' }}></div>
-                        <div className="bar" style={{ height: '70%' }}></div>
-                        <div className="bar" style={{ height: '55%' }}></div>
-                        <div className="bar" style={{ height: '85%' }}></div>
-                      </div>
-                      <span className="mock-v-tag">Role-specific dashboards</span>
+                    <div className="cs-principle-mockup">
+                      <motion.img
+                        src="/projects/drive45/Principle 2.png"
+                        alt="Principle 02: Separation of concerns for internal tools"
+                        style={{ borderRadius: "12px" }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -365,9 +376,16 @@ export default function Drive45CaseStudy() {
                   <div className="cs-principle-content">
                     <h4>Transparency builds trust</h4>
                     <p>For a platform handling money, clarity is everything. Payment breakdowns, application status, tenure progress — every piece of data must be legible.</p>
-                    <div className="cs-mockup-card">
-                      <div className="mock-v-badge">₦ Transparent</div>
-                      <span className="mock-v-tag">Payment clarity engine</span>
+                    <div className="cs-principle-mockup">
+                      <motion.img
+                        src="/projects/drive45/Principle 3.png"
+                        alt="Principle 03: Transparency builds trust"
+                        style={{ borderRadius: "12px" }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -376,11 +394,7 @@ export default function Drive45CaseStudy() {
                   <div className="cs-principle-content">
                     <h4>The investor sees a business, not a backend</h4>
                     <p>The investor view had to feel like an executive dashboard — clean data, clear metrics, and export functionality. No operational clutter.</p>
-                    <div className="cs-mockup-card">
-                      <span className="mock-v-line"></span>
-                      <span className="mock-v-line"></span>
-                      <span className="mock-v-tag">Executive data view</span>
-                    </div>
+
                   </div>
                 </div>
               </motion.div>
@@ -390,6 +404,7 @@ export default function Drive45CaseStudy() {
 
         {/* ── 05 — DESIGN & ITERATION ── */}
         <section className="cs-section">
+          {/* Intro Row */}
           <motion.div
             className="cs-section-grid"
             variants={staggerContainer}
@@ -403,45 +418,69 @@ export default function Drive45CaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Started with the subscriber onboarding flow — the longest and most critical journey on the platform. Mapped the full end-to-end flow in FigJam before a single screen was designed. Progressed to high-fidelity dark-mode screens with a strict modular grid designed to work across all five user roles.
+                Started with the subscriber onboarding flow — the longest and most critical journey on the platform. Mapped the full end-to-end flow in FigJam before a single screen was designed. Progressed to high-fidelity screens with a strict modular grid designed to work across all five user roles.
               </motion.p>
+            </motion.div>
+          </motion.div>
 
-              <motion.div variants={fadeUp} className="cs-before-after">
-                <div className="cs-ba-card">
-                  <span className="cs-ba-label cs-ba-label--before">Current Market State</span>
-                  <div className="cs-mockup-card">
-                    <span className="mock-v-line"></span>
-                    <span className="mock-v-line"></span>
-                    <span className="mock-v-line"></span>
-                    <span className="mock-v-line"></span>
-                  </div>
-                  <h4>Unguided application — high drop-off</h4>
-                  <p>Applicants browsed vehicles without knowing eligibility, leading to high drop-off at the offer stage. No visibility into application status after submission.</p>
+          {/* Full-span Comparison Breakout */}
+          <motion.div
+            className="cs-full-breakout"
+            variants={fadeUp}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="cs-before-after" style={{ gridTemplateColumns: "1fr 1fr" }}>
+              <div className="cs-ba-card cs-ba-card--before">
+                <div className="cs-mockup-card" style={{ border: "none" }}>
+                  <motion.img
+                    src="/projects/drive45/Section 5 1.png"
+                    alt="Current Market State"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                  />
                 </div>
-                <div className="cs-ba-arrow">→</div>
-                <div className="cs-ba-card cs-ba-card--after">
-                  <span className="cs-ba-label cs-ba-label--after">Drive45 Solution</span>
-                  <div className="cs-mockup-card">
-                    <span className="mock-v-btn-large"></span>
-                    <span className="mock-v-tag-glow">Pre-determined</span>
-                  </div>
-                  <h4>Pre-determination first — expectations set</h4>
-                  <p>Short income profile surfaces filtered listings based on eligibility. Expectations set before commitment. Real-time status tracking throughout.</p>
+                <p>Applicants browsed vehicles without knowing eligibility, leading to high drop-off at the offer stage. No visibility into application status after submission.</p>
+              </div>
+              <div className="cs-ba-card cs-ba-card--after">
+                <div className="cs-mockup-card" style={{ border: "none" }}>
+                  <motion.img
+                    src="/projects/drive45/Section 5 2.png"
+                    alt="Drive45 Solution"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                  />
                 </div>
-              </motion.div>
+                <p>Short income profile surfaces filtered listings based on eligibility. Expectations set before commitment. Real-time status tracking throughout.</p>
+              </div>
+            </div>
+          </motion.div>
 
+          {/* Iteration Row */}
+          <motion.div
+            className="cs-section-grid"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <div className="cs-section-left"></div>
+            <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Iteration & Refinement</motion.h3>
               <motion.div variants={fadeUp} className="cs-iterations">
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 1: Due Diligence Drop-off</span>
+                  <span className="cs-iteration-tag">Iteration 1: Feedback</span>
                   <p>Subscribers were abandoning the flow at the due diligence payment step — the jump felt abrupt and unexplained. Users didn't understand why they were being asked to pay before receiving a vehicle.</p>
                 </div>
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 2: The Explanation Screen</span>
+                  <span className="cs-iteration-tag">Iteration 2: Refinement</span>
                   <p>Added a dedicated due diligence explanation screen breaking down the fee (ID verification, credit check, background check). Framed as protection for the subscriber. Drop-off at this step reduced significantly.</p>
                 </div>
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 3: Internal Role Clarity</span>
+                  <span className="cs-iteration-tag">Iteration 3: Role Clarity</span>
                   <p>Early internal dashboards tried to share components across roles — Application Officers and Fleet Supervisors saw the same tables. After feedback, each role got purpose-built views with only the data they needed.</p>
                 </div>
               </motion.div>
@@ -466,39 +505,55 @@ export default function Drive45CaseStudy() {
               <motion.p variants={fadeUp} className="cs-section-body">
                 Drive45 launched as a fully operational vehicle subscription platform — the first of its kind in Nigeria to manage the complete lifecycle through a single digital interface.
               </motion.p>
+            </motion.div>
+          </motion.div>
 
-              <motion.div
-                className="cs-full-breakout"
-                variants={fadeUp}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+          <motion.div
+            className="cs-full-breakout"
+            variants={fadeUp}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="cs-mockup-full no-bg">
+              <motion.img
+                src="/projects/drive45/Section 6.png"
+                alt="Final Modular Platform Dashboard Shipped"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-              >
-                <div className="cs-mockup-full">Final Modular Platform Dashboard Shipped</div>
-              </motion.div>
+                transition={{ duration: 0.8 }}
+              />
+            </div>
+          </motion.div>
 
-              <motion.div variants={fadeUp} className="cs-outcome-grid">
-                <div className="cs-outcome-card">
-                  <span className="cs-outcome-value">5</span>
-                  <span className="cs-outcome-delta">Distinct user roles served</span>
-                  <span className="cs-outcome-label">User Types</span>
-                </div>
-                <div className="cs-outcome-card">
-                  <span className="cs-outcome-value">100%</span>
-                  <span className="cs-outcome-delta">End-to-end digital</span>
-                  <span className="cs-outcome-label">Lifecycle Coverage</span>
-                </div>
-                <div className="cs-outcome-card">
-                  <span className="cs-outcome-value">Live</span>
-                  <span className="cs-outcome-delta">Shipped and operational</span>
-                  <span className="cs-outcome-label">Platform Status</span>
-                </div>
-                <div className="cs-outcome-card">
-                  <span className="cs-outcome-value" style={{ fontSize: '2rem' }}>Onboarding → Ownership</span>
-                  <span className="cs-outcome-delta">Full subscriber journey digitised</span>
-                  <span className="cs-outcome-label">Complete lifecycle in one platform</span>
-                </div>
-              </motion.div>
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <motion.div variants={fadeUp} className="cs-outcome-grid cs-outcome-grid--full">
+              <div className="cs-outcome-card">
+                <span className="cs-outcome-value">5</span>
+                <span className="cs-outcome-delta">Distinct user roles served</span>
+                <span className="cs-outcome-label">User Types</span>
+              </div>
+              <div className="cs-outcome-card">
+                <span className="cs-outcome-value">100%</span>
+                <span className="cs-outcome-delta">End-to-end digital</span>
+                <span className="cs-outcome-label">Lifecycle Coverage</span>
+              </div>
+              <div className="cs-outcome-card">
+                <span className="cs-outcome-value">Live</span>
+                <span className="cs-outcome-delta">Shipped and operational</span>
+                <span className="cs-outcome-label">Platform Status</span>
+              </div>
+              <div className="cs-outcome-card">
+                <span className="cs-outcome-value" style={{ fontSize: '2rem' }}>Onboarding → Ownership</span>
+                <span className="cs-outcome-delta">Full subscriber journey digitised</span>
+                <span className="cs-outcome-label">Complete lifecycle in one platform</span>
+              </div>
             </motion.div>
           </motion.div>
         </section>
@@ -540,7 +595,7 @@ export default function Drive45CaseStudy() {
           <div className="discovery-header">
             <h2 className="discovery-label">Selected Case Studies</h2>
           </div>
- 
+
           <div className="discovery-grid DiscoveryGrid-2col">
             <Link href="/projects/waystream" className="discovery-card">
               <div className="discovery-image">
@@ -551,7 +606,7 @@ export default function Drive45CaseStudy() {
                 <span>Audio Streaming &amp; Fintech</span>
               </div>
             </Link>
- 
+
             <Link href="/projects/logistic-app" className="discovery-card">
               <div className="discovery-image">
                 <Image src="/logistic_app_mockup.png" alt="Logistic App" width={400} height={300} />

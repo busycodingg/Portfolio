@@ -19,7 +19,7 @@ const staggerContainer = {
 };
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30 },
   show: {
     opacity: 1,
     y: 0,
@@ -44,66 +44,61 @@ export default function LogisticAppCaseStudy() {
             initial="hidden"
             animate="show"
           >
-            <motion.div className="cs-hero-left" variants={fadeUp}>
-              <h1 className="case-study-title">
+            <motion.div className="cs-hero-left" variants={staggerContainer}>
+              <motion.h1 className="case-study-title" variants={fadeUp}>
                 <span className="cs-title-line">Logistic App</span>
-              </h1>
-            </motion.div>
-            <motion.div className="cs-hero-right" variants={staggerContainer}>
-              <motion.p variants={fadeUp} className="case-study-body-text">
+              </motion.h1>
+
+              <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
                 Designing an inventory and facility management system for a nonprofit — replacing years of manual processes with a single seamless platform.
               </motion.p>
+
               <motion.div variants={fadeUp} className="case-study-meta">
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label">Role</span>
+                    <span className="meta-label dimmed">Role</span>
                     <span className="meta-value">Solo UX/UI Designer</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label">Platform</span>
+                    <span className="meta-label dimmed">Platform</span>
                     <span className="meta-value">Web Application</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label">Tools</span>
+                    <span className="meta-label dimmed">Tools</span>
                     <span className="meta-value">Figma, FigJam</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label">Status</span>
-                    <span className="meta-value">Shipped & Operational</span>
+                    <span className="meta-label dimmed">Status</span>
+                    <span className="meta-value">Shipped &amp; Operational</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label">Timeline</span>
+                    <span className="meta-label dimmed">Timeline</span>
                     <span className="meta-value">8 Weeks (2024)</span>
                   </div>
                   <div className="meta-item">
-                    <span className="meta-label">User Types</span>
+                    <span className="meta-label dimmed">User Types</span>
                     <span className="meta-value">3 Key Roles</span>
                   </div>
                 </div>
               </motion.div>
             </motion.div>
-          </motion.div>
 
-          <motion.div
-            className="cs-hero-visual"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
-          >
-            <Image 
-              src="/logistic_app_mockup.png" 
-              alt="Logistic App Mockup" 
-              width={1600} 
-              height={900} 
-              className="case-study-hero-image"
-              priority
-            />
+            <motion.div className="cs-hero-right" variants={staggerContainer}>
+              <motion.img
+                src="/projects/Logistic/hero.png"
+                alt="Logistic App Mockup"
+                className="case-study-hero-image"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
+              />
+            </motion.div>
           </motion.div>
         </section>
 
@@ -145,7 +140,17 @@ export default function LogisticAppCaseStudy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="cs-mockup-full">Integrated Facility & Request Ecosystem Mapping</div>
+                <div className="cs-mockup-full no-bg">
+                  <motion.img
+                    src="/projects/Logistic/Section 2.png"
+                    alt="Integrated Facility & Request Ecosystem Mapping"
+                    style={{ width: "100%", maxWidth: "1310px", height: "auto", aspectRatio: "1310/896", objectFit: "cover", objectPosition: "top", borderRadius: "12px" }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                  />
+                </div>
               </motion.div>
 
               <motion.div variants={fadeUp} className="cs-statement">
@@ -302,10 +307,16 @@ export default function LogisticAppCaseStudy() {
                   <div className="cs-principle-content">
                     <h4>Logging should take seconds, not minutes</h4>
                     <p>If adding a record to the system takes longer than writing it on paper, staff will write it on paper. Every log entry had to be completable in the fewest possible steps.</p>
-                    <div className="cs-mockup-card">
-                      <span className="mock-v-nav"></span>
-                      <span className="mock-v-btn"></span>
-                      <span className="mock-v-tag">Optimized entry flow</span>
+                    <div className="cs-principle-mockup">
+                      <motion.img
+                        src="/projects/Logistic/Principle 1.png"
+                        alt="Principle 01: Logging should take seconds, not minutes"
+                        style={{ width: "100%", aspectRatio: "5640/2829", objectFit: "cover", objectPosition: "top", borderRadius: "12px" }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -314,14 +325,16 @@ export default function LogisticAppCaseStudy() {
                   <div className="cs-principle-content">
                     <h4>Visibility over everything</h4>
                     <p>The core problem was invisibility. Every module was designed to surface the most critical status information immediately, without requiring staff to dig for it.</p>
-                    <div className="cs-mockup-card">
-                      <div className="mock-v-chart">
-                        <div className="bar" style={{ height: '30%' }}></div>
-                        <div className="bar" style={{ height: '60%' }}></div>
-                        <div className="bar" style={{ height: '45%' }}></div>
-                        <div className="bar" style={{ height: '80%' }}></div>
-                      </div>
-                      <span className="mock-v-tag">Visual status engine</span>
+                    <div className="cs-principle-mockup">
+                      <motion.img
+                        src="/projects/Logistic/Principle 2.png"
+                        alt="Principle 02: Visibility over everything"
+                        style={{ width: "100%", aspectRatio: "5640/2829", objectFit: "cover", objectPosition: "top", borderRadius: "12px" }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -330,10 +343,7 @@ export default function LogisticAppCaseStudy() {
                   <div className="cs-principle-content">
                     <h4>Build for low technical literacy</h4>
                     <p>Language had to be plain, actions self-explanatory, and error states had to guide users back on track without technical jargon.</p>
-                    <div className="cs-mockup-card">
-                      <div className="mock-v-badge">Zero Jargon</div>
-                      <span className="mock-v-tag">Plain language UI</span>
-                    </div>
+
                   </div>
                 </div>
                 <div className="cs-principle">
@@ -341,11 +351,7 @@ export default function LogisticAppCaseStudy() {
                   <div className="cs-principle-content">
                     <h4>Anyone should be able to request, not just insiders</h4>
                     <p>The request experience had to work for a complete stranger — no jargon, no assumed knowledge, no login barrier. Simple and fast submission.</p>
-                    <div className="cs-mockup-card">
-                      <span className="mock-v-line"></span>
-                      <span className="mock-v-line"></span>
-                      <span className="mock-v-tag">Public access channel</span>
-                    </div>
+
                   </div>
                 </div>
               </motion.div>
@@ -371,36 +377,44 @@ export default function LogisticAppCaseStudy() {
                 The challenge with EGFM wasn't designing one complex flow — it was designing six distinct modules that solved different problems for three different user types, while making the entire platform feel cohesive and consistent. Started with the Request Log and Inventory modules as the foundation — the two modules where all three user types intersected — then built the remaining four modules on top of the same component library and interaction patterns.
               </motion.p>
 
-              <motion.div variants={fadeUp} className="cs-before-after">
-                <div className="cs-ba-card">
-                  <span className="cs-ba-label cs-ba-label--before">Manual State</span>
-                  <div className="cs-mockup-card">
-                    <span className="mock-v-line"></span>
-                    <span className="mock-v-line"></span>
+              <motion.div
+                className="cs-full-breakout"
+                variants={fadeUp}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="cs-before-after">
+                  <div className="cs-ba-card cs-ba-card--before">
+                    <span className="cs-ba-label cs-ba-label--before">Manual State</span>
+                    <div className="cs-mockup-card">
+                      <div className="mock-v-line"></div>
+                      <div className="mock-v-line"></div>
+                    </div>
+                    <h4>Item requesting — entirely manual</h4>
+                    <p>Internal staff submitted requests verbally or on paper with no confirmation and no tracking. Members of the public had no channel at all.</p>
                   </div>
-                  <h4>Item requesting — entirely manual</h4>
-                  <p>Internal staff submitted requests verbally or on paper with no confirmation and no tracking. Members of the public had no channel at all.</p>
-                </div>
-                <div className="cs-ba-arrow">→</div>
-                <div className="cs-ba-card cs-ba-card--after">
-                  <span className="cs-ba-label cs-ba-label--after">Digital State</span>
-                  <div className="cs-mockup-card">
-                    <span className="mock-v-btn-large"></span>
-                    <span className="mock-v-tag-glow">Open Access</span>
+                  <div className="cs-ba-arrow">→</div>
+                  <div className="cs-ba-card cs-ba-card--after">
+                    <span className="cs-ba-label cs-ba-label--after">Digital State</span>
+                    <div className="cs-mockup-card">
+                      <div className="mock-v-btn-large"></div>
+                      <div className="mock-v-tag-glow">Open Access</div>
+                    </div>
+                    <h4>Item requesting — open, digital, and trackable</h4>
+                    <p>Requesters receive automatic status updates at every stage. Facility managers see all pending requests (internal and external) in one unified queue.</p>
                   </div>
-                  <h4>Item requesting — open, digital, and trackable</h4>
-                  <p>Requesters receive automatic status updates at every stage. Facility managers see all pending requests (internal and external) in one unified queue.</p>
                 </div>
               </motion.div>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Iteration & Refinement</motion.h3>
               <motion.div variants={fadeUp} className="cs-iterations">
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 1: Duplicate Request Noise</span>
+                  <span className="cs-iteration-tag">Iteration 1: Feedback</span>
                   <p>Staff requesters were submitting duplicate requests for the same item because they had no confirmation that their first request had been received. This created noise and confusion over fulfilment.</p>
                 </div>
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 2: The Immediate Confirmation</span>
+                  <span className="cs-iteration-tag">Iteration 2: Refinement</span>
                   <p>Added an immediate in-app confirmation screen after every request submission — showing the request details, a reference number, and the expected response time. Duplicate submissions dropped significantly after the change.</p>
                 </div>
               </motion.div>
@@ -426,7 +440,7 @@ export default function LogisticAppCaseStudy() {
                 EGFM shipped as a fully operational internal platform — replacing the organisation's entire manual facility management and item request process with a single digital system.
               </motion.p>
 
-              <motion.div variants={fadeUp} className="cs-outcome-grid">
+              <motion.div variants={fadeUp} className="cs-outcome-grid cs-outcome-grid--full">
                 <div className="cs-outcome-card">
                   <span className="cs-outcome-value">6</span>
                   <span className="cs-outcome-delta">Modules designed and shipped</span>
