@@ -17,11 +17,11 @@ export default function Footer() {
           amokograce@gmail.com
         </a>
         <div className="social-links">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/amoko-grace" target="_blank" rel="noopener noreferrer">
             <HugeiconsIcon icon={Linkedin02Icon} size={20} color="currentColor" />
             LinkedIn
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="/Grace_Resume.pdf" target="_blank" rel="noopener noreferrer" download>
             <HugeiconsIcon icon={File01Icon} size={20} color="currentColor" />
             Resume
           </a>

@@ -25,6 +25,13 @@
     }
 }
 
+@media (max-width: 768px) {
+    .case-study-container header {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
 .case-study-hero {
     min-height: 100vh;
     display: flex;
@@ -63,7 +70,7 @@
 .case-study-body-text {
     font-size: 1.15rem;
     line-height: 1.7;
-    color: #ffffff; /* Upgraded from Zinc for higher impact — per user screenshot */
+    color: #ffffff; /* Upgraded from Zinc for higher impact  per user screenshot */
     margin: 0 0 2.5rem 0;
     text-align: left;
 }
@@ -133,6 +140,15 @@
     width: 180px;
 }
 
+@media (max-width: 768px) {
+    .meta-item:first-child {
+        width: auto;
+    }
+    .meta-item {
+        min-width: 0;
+    }
+}
+
 .meta-label {
     text-transform: uppercase;
     font-size: 0.7rem;
@@ -187,11 +203,27 @@
     .case-study-metrics {
         grid-template-columns: repeat(2, 1fr);
     }
+    .metric-value {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-study-metrics {
+        grid-template-columns: 1fr;
+        padding: 0 0 3rem 0;
+    }
 }
 
 /* ── SECTION SYSTEM ── */
 .cs-section {
     padding: 10rem 0; /* Horizontal handled by .layout-wrapper */
+}
+
+@media (max-width: 1024px) {
+    .cs-section {
+        padding: 6rem 0;
+    }
 }
 
 /* Remove gap after 100vh hero */
@@ -314,7 +346,7 @@
 }
 
 .cs-blockquote {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-playfair), 'Playfair Display', serif;
     font-size: 1.8rem;
     line-height: 1.4;
     color: #ffffff;
@@ -323,6 +355,12 @@
     opacity: 0.9;
     border-left: none;
     padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    .cs-blockquote {
+        font-size: 1.3rem;
+    }
 }
 
 /* ── RESEARCH ── */
@@ -406,7 +444,7 @@
 }
 
 .cs-pull-quote {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-playfair), 'Playfair Display', serif;
     font-size: 1.6rem;
     line-height: 1.5;
     color: #ffffff;
@@ -414,6 +452,13 @@
     border-left: none;
     padding-left: 0;
     margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .cs-pull-quote {
+        font-size: 1.2rem;
+        margin: 2rem 0;
+    }
 }
 
 .cs-pull-quote cite {
@@ -435,9 +480,16 @@
     margin-bottom: 3rem;
 }
 
+.cs-persona-card--full {
+    grid-column: span 2;
+}
+
 @media (max-width: 768px) {
     .cs-personas-grid {
         grid-template-columns: 1fr;
+    }
+    .cs-persona-card--full {
+        grid-column: span 1;
     }
 }
 
@@ -561,6 +613,12 @@
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .cs-principle {
+        padding: 2rem;
+    }
+}
+
 .cs-principle:hover {
     background-color: rgba(255, 255, 255, 0.03);
     border-color: rgba(255, 255, 255, 0.08);
@@ -584,6 +642,12 @@
     color: #ffffff;
     margin: 0 0 1.25rem 0;
     letter-spacing: -0.01em;
+}
+
+@media (max-width: 480px) {
+    .cs-principle-content h4 {
+        font-size: 1.2rem;
+    }
 }
 
 .cs-principle-content p {
@@ -692,14 +756,30 @@
     margin: 0 auto;
 }
 
+.cs-before-after--no-arrow {
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .cs-before-after--no-arrow {
+        grid-template-columns: 1fr;
+    }
+}
+
 .cs-section-grid,
 .cs-section-right {
-    overflow: visible !important;
+    overflow: visible;
 }
 
 .cs-full-breakout {
     width: 100%;
     margin: 4rem 0 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .cs-full-breakout {
+        margin: 2rem 0 1rem 0;
+    }
 }
 
 .cs-ba-card {
@@ -860,6 +940,14 @@
     .cs-outcome-card--full {
         grid-column: span 1;
     }
+
+    .cs-outcome-grid--full {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-outcome-value {
+        font-size: 1.8rem;
+    }
 }
 
 .cs-outcome-card {
@@ -880,6 +968,16 @@
     color: #ffffff;
     line-height: 1;
     margin-bottom: 0.5rem;
+}
+
+.cs-outcome-value--text {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .cs-outcome-value--text {
+        font-size: 1.4rem;
+    }
 }
 
 .cs-outcome-delta {
@@ -1030,7 +1128,7 @@
     border: none;
     position: relative;
     margin-top: 1.5rem;
-    overflow: visible !important; /* Nuclear no-crop */
+    overflow: visible; /* No-crop */
 }
 
 .cs-principle-mockup--mobile {
@@ -1081,6 +1179,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .cs-mockup-full {
+        margin: 2rem 0;
+    }
 }
 
 .cs-mockup-full img {
@@ -1198,6 +1302,12 @@
 
 .discovery-grid.DiscoveryGrid-2col {
     grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+    .discovery-grid.DiscoveryGrid-2col {
+        grid-template-columns: 1fr;
+    }
 }
 
 .discovery-card {

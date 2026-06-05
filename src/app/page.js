@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Linkedin02Icon, File01Icon } from '@hugeicons-pro/core-solid-rounded';
 
@@ -82,6 +82,16 @@ const ScrollRevealNarrative = ({ paragraphs, highlightPhrases = [] }) => {
 
 
 export default function Home() {
+    const words = ["invisible", "effortless", "human"];
+    const [wordIndex, setWordIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setWordIndex((prev) => (prev + 1) % words.length);
+        }, 3000); // changes word every 3 seconds
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <>
             <div className="bg-reflections">
@@ -100,10 +110,27 @@ export default function Home() {
                             </div>
                             <div className="headline-row">
                                 {/* <span className="pill image-pill headshot"></span>  */}
-                                a Creative
+                                 a Product Designer
                             </div>
                             <div className="headline-row">
-                                Product Designer
+                                I make complexity
+                            </div>
+                            <div className="headline-row">
+                                feel{" "}
+                                <span className="rotating-word-container">
+                                    <AnimatePresence mode="wait">
+                                        <motion.span
+                                            key={words[wordIndex]}
+                                            initial={{ y: 10, opacity: 0 }}
+                                            animate={{ y: 0, opacity: 1 }}
+                                            exit={{ y: -10, opacity: 0 }}
+                                            transition={{ duration: 0.25 }}
+                                            className="rotating-word"
+                                        >
+                                            {words[wordIndex]}.
+                                        </motion.span>
+                                    </AnimatePresence>
+                                </span>
                             </div>
                             {/* <div className="headline-row">
                                 based in
@@ -126,24 +153,48 @@ export default function Home() {
                     <div className="projects-grid">
                         <Link href="/projects/waystream" className="project-card" style={{ textDecoration: 'none' }}>
                             <div className="project-image-wrapper">
-                                <div className="project-image" style={{ backgroundImage: "url('/projects/waystream/thumbnail.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+                                <div className="project-image" style={{ position: 'relative' }}>
+                                    <Image
+                                        src="/projects/waystream/hero.png"
+                                        alt="Waystream Case Study"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        style={{ objectFit: 'cover' }}
+                                    />
+                                </div>
                             </div>
                             <h3 className="project-title">Waystream</h3>
-                            <p className="project-desc">Audio Streaming</p>
+                            <p className="project-desc">Audio &amp; Creator Economy</p>
                         </Link>
                         <Link href="/projects/drive45" className="project-card" style={{ textDecoration: 'none' }}>
                             <div className="project-image-wrapper">
-                                <div className="project-image" style={{ backgroundImage: "url('/drive45_mobility_mockup.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+                                <div className="project-image" style={{ position: 'relative' }}>
+                                    <Image
+                                        src="/projects/drive45/hero.png"
+                                        alt="Drive45 Mobility Case Study"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        style={{ objectFit: 'cover' }}
+                                    />
+                                </div>
                             </div>
                             <h3 className="project-title">Drive45 Mobility</h3>
-                            <p className="project-desc">Fintech & Mobility</p>
+                            <p className="project-desc">Fintech &amp; Mobility</p>
                         </Link>
                         <Link href="/projects/logistic-app" className="project-card" style={{ textDecoration: 'none' }}>
                             <div className="project-image-wrapper">
-                                <div className="project-image" style={{ backgroundImage: "url('/logistic_app_mockup.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+                                <div className="project-image" style={{ position: 'relative' }}>
+                                    <Image
+                                        src="/projects/Logistic/hero.png"
+                                        alt="Logistic App Case Study"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        style={{ objectFit: 'cover' }}
+                                    />
+                                </div>
                             </div>
                             <h3 className="project-title">Logistic App</h3>
-                            <p className="project-desc">Facility Management</p>
+                            <p className="project-desc">Logistics &amp; Operations</p>
                         </Link>
                     </div>
                 </section>
@@ -153,7 +204,7 @@ export default function Home() {
                         <ScrollRevealNarrative
                             paragraphs={[
                                 "I'm a product designer who believes good design starts with understanding people, not pixels.",
-                                "I work at the intersection of research and craft — turning messy problems into experiences that feel effortless to use."
+                                "I work at the intersection of research and craft  turning messy problems into experiences that feel effortless to use."
                             ]}
                             highlightPhrases={["understanding people", "experiences that feel effortless to use"]}
                         />
@@ -199,7 +250,7 @@ export default function Home() {
                                             <p>Senior Specialist - Growth, Hevo Data</p>
                                         </div>
                                     </div>
-                                    <p className="t-body">I had the chance to work closely with Ajay, and he truly stands out as a hardworking and thoughtful product designer. He has a sharp eye for user journeys, always designing with the end-user in mind, which led to consistently responsive and intuitive experiences. What really adds to his edge is his analytical approach — he backs his design decisions with data, ensuring they're both creative and effective. A great mix of user-first thinking and data-driven execution.</p>
+                                    <p className="t-body">I had the chance to work closely with Ajay, and he truly stands out as a hardworking and thoughtful product designer. He has a sharp eye for user journeys, always designing with the end-user in mind, which led to consistently responsive and intuitive experiences. What really adds to his edge is his analytical approach  he backs his design decisions with data, ensuring they're both creative and effective. A great mix of user-first thinking and data-driven execution.</p>
                                 </div>
                             </div>
 
