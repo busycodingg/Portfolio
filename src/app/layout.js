@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 
 export const metadata = {
   title: "Omoologo Portfolio",
-  description: "Portfolio of amajaying - Hybrid Creative based in NIGERIA. Bringing to life through design.",
+  description: "Portfolio of Omoologo - a Product Designer I make complexity feel invisible",
 };
 
 export default function RootLayout({ children }) {
