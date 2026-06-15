@@ -1,4 +1,5 @@
 import { Outfit, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const outfit = Outfit({ 
@@ -21,7 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${outfit.className} ${playfair.variable}`} suppressHydrationWarning>{children}</body>
+      <body className={`${outfit.className} ${playfair.variable}`} suppressHydrationWarning>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
