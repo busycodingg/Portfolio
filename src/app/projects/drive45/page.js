@@ -609,10 +609,10 @@ export default function Drive45CaseStudy() {
 
             <Link href="/projects/logistic-app" className="discovery-card">
               <div className="discovery-image">
-                <Image src="/projects/Logistic/hero.png" alt="Logistic App" width={400} height={300} />
+                <Image src="/projects/Logistic/hero.png" alt="Operations Management Platform" width={400} height={300} />
               </div>
               <div className="discovery-info">
-                <h4>Logistic App</h4>
+                <h4>Operations Management Platform</h4>
                 <span>Logistics &amp; Operations</span>
               </div>
             </Link>

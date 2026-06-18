@@ -186,14 +186,14 @@ export default function Home() {
                                 <div className="project-image" style={{ position: 'relative' }}>
                                     <Image
                                         src="/projects/Logistic/hero.png"
-                                        alt="Logistic App Case Study"
+                                        alt="Operations Management Platform Case Study"
                                         fill
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         style={{ objectFit: 'cover' }}
                                     />
                                 </div>
                             </div>
-                            <h3 className="project-title">Logistic App</h3>
+                            <h3 className="project-title">Operations Management Platform</h3>
                             <p className="project-desc">Logistics &amp; Operations</p>
                         </Link>
                     </div>

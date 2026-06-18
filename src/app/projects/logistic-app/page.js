@@ -46,7 +46,7 @@ export default function LogisticAppCaseStudy() {
           >
             <motion.div className="cs-hero-left" variants={staggerContainer}>
               <motion.h1 className="case-study-title" variants={fadeUp}>
-                <span className="cs-title-line">Logistic App</span>
+                <span className="cs-title-line">Operations Management Platform</span>
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
@@ -79,7 +79,7 @@ export default function LogisticAppCaseStudy() {
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">5 Months</span>
+                    <span className="meta-value">4 Months</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">User Types</span>
@@ -92,7 +92,7 @@ export default function LogisticAppCaseStudy() {
             <motion.div className="cs-hero-right" variants={staggerContainer}>
               <motion.img
                 src="/projects/Logistic/hero.png"
-                alt="Logistic App Mockup"
+                alt="Operations Management Platform Mockup"
                 className="case-study-hero-image"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
