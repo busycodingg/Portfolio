@@ -33,7 +33,7 @@ const fadeUp = {
 export default function WaystreamCaseStudy() {
 
   return (
-    <main className="case-study-container">
+    <main className="case-study-container case-study-container--waystream">
       <div className="layout-wrapper">
         <Navigation />
 
@@ -46,12 +46,24 @@ export default function WaystreamCaseStudy() {
             animate="show"
           >
             <motion.div className="cs-hero-left" variants={staggerContainer}>
+              <motion.div className="flagship-badge" variants={fadeUp}>
+                <span className="pulse-dot"></span>
+                Flagship Case Study
+                <div className="flagship-audio-wave" style={{ marginLeft: "10px" }}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </motion.div>
+
               <motion.h1 className="case-study-title" variants={fadeUp}>
-                <span className="cs-title-line">Waystream</span>
+                <span className="cs-title-line text-gradient-audio">Waystream</span>
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
-                Africa's first audio streaming platform  built to give creators, churches, and communities a voice without bandwidth barriers or foreign payment walls.
+                Africa's first audio streaming platform built to give creators, churches, and communities a voice without bandwidth barriers or foreign payment walls.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
@@ -85,6 +97,36 @@ export default function WaystreamCaseStudy() {
                   <div className="meta-item">
                     <span className="meta-label dimmed">Users</span>
                     <span className="meta-value">40,000+</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div className="floating-player-mockup" variants={fadeUp}>
+                <div className="player-header">
+                  <div className="player-status-badge">
+                    <span className="live-dot"></span>
+                    Live Broadcast
+                  </div>
+                  <div className="player-track-info">
+                    40k+ listening
+                  </div>
+                </div>
+                <div className="player-body">
+                  <div className="player-art">
+                    📻
+                  </div>
+                  <div className="player-details">
+                    <h5>Lagos Sunday Service</h5>
+                    <p>Grace Sanctuary Choir</p>
+                  </div>
+                  <div className="player-controls">
+                    <div className="player-visualizer">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </div>
                 </div>
               </motion.div>
