@@ -78,7 +78,7 @@ export default function Drive45CaseStudy() {
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">12 Weeks</span>
+                    <span className="meta-value">6 Months</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">User Types</span>

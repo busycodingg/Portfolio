@@ -79,7 +79,7 @@ export default function LogisticAppCaseStudy() {
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">8 Weeks</span>
+                    <span className="meta-value">5 Months</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">User Types</span>

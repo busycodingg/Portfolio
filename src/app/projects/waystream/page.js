@@ -80,7 +80,7 @@ export default function WaystreamCaseStudy() {
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">24 weeks</span>
+                    <span className="meta-value">3+ Years</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Users</span>
