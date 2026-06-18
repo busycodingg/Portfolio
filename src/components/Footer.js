@@ -21,7 +21,7 @@ export default function Footer() {
             <HugeiconsIcon icon={Linkedin02Icon} size={20} color="currentColor" />
             LinkedIn
           </a>
-          <a href="/Grace_Resume.pdf" target="_blank" rel="noopener noreferrer" download>
+          <a href="/Grace_Amoko_Resume.pdf" target="_blank" rel="noopener noreferrer" download>
             <HugeiconsIcon icon={File01Icon} size={20} color="currentColor" />
             Resume
           </a>
