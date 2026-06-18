@@ -57,7 +57,7 @@ export default function LogisticAppCaseStudy() {
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Role</span>
-                    <span className="meta-value">UX/UI Designer</span>
+                    <span className="meta-value">Lead Product Designer</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Platform</span>
