@@ -19,7 +19,7 @@ export default function Navigation() {
     <header className="site-header">
         <div className="logo">
             <Link href="/" style={{ textDecoration: 'none' }} onClick={() => setIsOpen(false)}>
-              <span className="logo-ajay">Omoológò<span className="logo-dot">.</span></span>
+              <span className="logo-ajay">Grace<span className="logo-dot">.</span></span>
             </Link>
         </div>
         

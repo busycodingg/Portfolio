@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "Omoologo Portfolio",
-  description: "Portfolio of Omoologo - a Product Designer I make complexity feel invisible",
+  title: "Grace Portfolio",
+  description: "Portfolio of Grace - a Product Designer I make complexity feel invisible",
 };
 
 export default function RootLayout({ children }) {

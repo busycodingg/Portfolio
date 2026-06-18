@@ -106,7 +106,7 @@ export default function Home() {
                     <main className="hero">
                         <h1 className="headline">
                             <div className="headline-row">
-                                I'm Omoológò,
+                                I'm Grace,
                             </div>
                             <div className="headline-row">
                                 {/* <span className="pill image-pill headshot"></span>  */}
