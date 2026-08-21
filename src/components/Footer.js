@@ -7,6 +7,7 @@ import { Linkedin02Icon, File01Icon } from '@hugeicons-pro/core-solid-rounded';
 export default function Footer() {
   return (
     <section id="contact" className="section-contact">
+      <p className="section-eyebrow">{"// Contact"}</p>
       <h2 className="contact-headline">
         Interested in<br />
         <span className="font-playfair" style={{ fontWeight: 400, paddingLeft: '0.1em', fontStyle: 'italic' }}>Working Together?</span>

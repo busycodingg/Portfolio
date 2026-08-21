@@ -38,6 +38,45 @@ html {
     overflow-x: hidden;
 }
 
+/* Film-grain texture: adds depth to the flat black background without any image asset */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Custom cursor: desktop with a precise pointer only. Touch/trackpad-only devices keep the native cursor. */
+@media (pointer: fine) {
+    * {
+        cursor: none !important;
+    }
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: exclusion;
+}
+
+@media (pointer: coarse) {
+    .custom-cursor {
+        display: none;
+    }
+}
+
 /* Background elements */
 .grid-overlay {
     position: absolute;
@@ -48,8 +87,8 @@ html {
     height: 100%;
     /* Dynamically obeys the rigid 100vh fold lock instead of the document body! */
     background-image:
-        linear-gradient(to right, rgba(255, 255, 255, 0.014) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.014) 1px, transparent 1px);
+        linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
     background-size: 60px 60px;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
@@ -341,17 +380,14 @@ header nav a:hover {
     font-size: clamp(3.5rem, 5.5vw, 5.5rem);
     font-weight: 900;
     /* Increased weight */
-    line-height: 1.02;
-    /* Slightly tighter for weight 900 */
+    line-height: 1.08;
     margin-bottom: 4rem;
-    letter-spacing: -0.04em;
-    /* Tighter tracking for heavier weight */
+    letter-spacing: normal;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 0.1rem;
-    /* Extremely tight for bold impact */
 }
 
 .rotating-word-container {
@@ -359,13 +395,16 @@ header nav a:hover {
     position: relative;
     vertical-align: top;
     justify-content: center;
-}
-
-.rotating-word {
     font-family: var(--font-playfair), 'Playfair Display', serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 0.85em; /* Scaled down slightly to fit beautifully and minimize layout shifts */
+    font-size: 0.85em;
+    /* Reserves space for the widest rotating word ("effortless.") so the line
+       doesn't reflow/shift each time AnimatePresence swaps in a different word. */
+    min-width: 6.8ch;
+}
+
+.rotating-word {
     color: var(--accent-yellow);
     display: inline-block;
 }
@@ -1017,10 +1056,20 @@ header nav a:hover {
     z-index: 10;
 }
 
+.section-eyebrow {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 0 1rem 0;
+}
+
 .projects-section-title {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
     letter-spacing: -0.02em;
     text-transform: none;
     color: #ffffff;
@@ -1030,82 +1079,24 @@ header nav a:hover {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 2.5rem;
     width: 100%;
 }
 
 .project-card {
-    background: #111111;
-    padding: 1.25rem;
-    border-radius: 0.75rem;
-    transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.03);
     cursor: pointer;
 }
 
-.project-card:hover {
-    background: #161616;
-    border-color: rgba(255, 255, 255, 0.08);
-    transform: translateY(-4px);
-}
-
-.project-card .project-image-wrapper {
-    aspect-ratio: 16/10;
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-
-.project-card .project-title {
-    margin: 0;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.project-card .project-desc {
-    margin: -0.75rem 0 0 0;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: 400;
-}
-
-@media (max-width: 1100px) {
-    .projects-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .project-card {
-        padding: 1rem;
-    }
-
-    .projects-section-title {
-        margin-bottom: 2rem;
-    }
-}
-
-/* cursor added to .project-card above */
-
 .project-image-wrapper {
     width: 100%;
-    aspect-ratio: 16 / 10;
-    border-radius: 12px;
-    /* Aligned with Waystream card radius */
+    aspect-ratio: 3 / 2;
+    border-radius: 1rem;
     overflow: hidden;
-    margin-bottom: 1rem;
     background-color: #0d0d0d;
-    /* Deeper black  aligned with Waystream */
-    border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .project-image {
@@ -1113,31 +1104,83 @@ header nav a:hover {
     height: 100%;
     background-color: #222222;
     transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    /* Elegant fluid physics scale snap */
 }
 
 .project-card:hover .project-image {
-    transform: scale(1.06);
-    /* Subtler  aligned with Waystream */
+    transform: scale(1.05);
 }
 
-.project-card:hover .project-image-wrapper {
-    border-color: rgba(255, 255, 255, 0.08);
+.project-view-pill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: #ffffff;
+    color: #111111;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    padding: 0.7rem 1.6rem;
+    border-radius: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+    pointer-events: none;
+}
+
+.project-card:hover .project-view-pill {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.project-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .project-title {
     font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 0 0 0.1rem 0;
+    margin: 0 0 0.4rem 0;
     color: #ffffff;
 }
 
 .project-desc {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    color: #e0e0e0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
     margin: 0;
+}
+
+.project-arrow {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: transform 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.project-card:hover .project-arrow {
+    transform: translate(3px, -3px);
+}
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-section-title {
+        margin-bottom: 2rem;
+    }
 }
 
 

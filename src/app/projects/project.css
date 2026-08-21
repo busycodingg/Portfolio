@@ -90,10 +90,19 @@
     }
 }
 
+/* Every case study hero.png is pre-cropped at the source to exactly 3:2
+   cropped by hand per image so nothing important gets cut (sidebar
+   labels, side panels, etc.), rather than
+   leaving it to CSS object-fit, which either crops unpredictably (cover)
+   or leaves visible letterbox gaps (contain) since the raw screenshots
+   span everything from portrait to wide landscape. Because every source
+   file already matches this box's ratio, cover here is just a safety net
+   against future images that aren't pre-cropped exactly right. */
 .case-study-hero-image {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: top;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
@@ -137,7 +146,14 @@
 }
 
 .meta-item:first-child {
-    width: 180px;
+    /* Wide enough for longer role titles (e.g. "UX/UI Designer & Copywriter")
+       to stay on one line, matching the second column's height instead of
+       wrapping and throwing the row out of alignment. flex-shrink:0 keeps
+       this column locked at that width even when the second column's own
+       text is long  otherwise flex compresses it unevenly per row, and
+       the second column starts at a different x position in every row. */
+    width: 220px;
+    flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
@@ -260,6 +276,14 @@
 .cs-section-left {
     position: sticky;
     top: 2rem;
+}
+
+/* Centers a section-grid row's content on the page instead of the usual
+   35%/65% split against an empty left column. */
+.cs-section-grid--centered {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .cs-section-right {
@@ -1461,9 +1485,22 @@
     }
 }
 
+/* The site header overlays the hero (position: absolute) rather than
+   pushing it down. That's fine at desktop widths where the title stays on
+   one line, but the hero grid collapses to a single column at <=1024px, so
+   long titles wrap to 2-4 lines and the vertically-centered content block
+   grows tall enough to run under the header. Explicit padding-top here
+   guarantees clearance regardless of how many lines the title wraps to. */
+@media (max-width: 1024px) {
+    .case-study-hero {
+        padding-top: 140px;
+    }
+}
+
 @media (max-width: 768px) {
     .case-study-hero {
-        padding: 2.5rem 0;
+        padding-top: 120px;
+        padding-bottom: 2.5rem;
     }
 
     .cs-hero-grid {
