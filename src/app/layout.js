@@ -33,6 +33,9 @@ export const metadata = {
     title: "Grace — Product Designer",
     description: "Portfolio of Grace, a Product Designer who makes complexity feel invisible.",
   },
+  verification: {
+    google: "6rkRtAfjbx3i3Z16M6SVQ3wPao0Gb-X6RMw73fO7yj4",
+  },
 };
 
 export default function RootLayout({ children }) {
