@@ -164,8 +164,13 @@ export default function Home() {
                 </div>
 
                 <section id="work" className="section-projects">
-                    <p className="section-eyebrow">{"// Work"}</p>
-                    <h2 className="projects-section-title"> Some of my latest work</h2>
+                    <div className="projects-header">
+                        <div>
+                            <p className="section-eyebrow">{"// Work"}</p>
+                            <h2 className="projects-section-title">Some of my latest work</h2>
+                        </div>
+                        <p className="projects-header-desc">Each case study here reflects how I work: understanding the problem first, then designing experiences that feel effortless to use.</p>
+                    </div>
 
                     <motion.div
                         className="projects-grid"
@@ -174,7 +179,7 @@ export default function Home() {
                         whileInView="show"
                         viewport={{ once: true, margin: "-80px" }}
                     >
-                        <motion.div variants={fadeUp}>
+                        <motion.div variants={fadeUp} className="project-card-featured">
                             <Link href="/projects/waystream" className="project-card" style={{ textDecoration: 'none' }}>
                                 <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
@@ -182,29 +187,20 @@ export default function Home() {
                                             src="/projects/waystream/hero.png"
                                             alt="Waystream Case Study"
                                             fill
-                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            sizes="100vw"
                                             style={{ objectFit: 'cover', objectPosition: 'top' }}
                                         />
-                                        <span className="project-view-pill">VIEW</span>
                                     </div>
                                 </div>
                                 <div className="project-card-footer">
-                                    <div>
-                                        <h3 className="project-title">Waystream</h3>
-                                        <p className="project-desc">Audio &amp; Creator Economy</p>
-                                    </div>
-                                    <span className="project-arrow" aria-hidden="true">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                                            <polyline points="7 7 17 7 17 17"></polyline>
-                                        </svg>
-                                    </span>
+                                    <h3 className="project-title">Waystream</h3>
+                                    <p className="project-desc">Audio &amp; Creator Economy</p>
                                 </div>
                             </Link>
                         </motion.div>
                         <motion.div variants={fadeUp}>
                             <Link href="/projects/drive45" className="project-card" style={{ textDecoration: 'none' }}>
-                                <div className="project-image-wrapper" style={{ aspectRatio: '5760 / 3567' }}>
+                                <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
                                         <Image
                                             src="/projects/drive45/hero.png"
@@ -213,20 +209,11 @@ export default function Home() {
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                             style={{ objectFit: 'cover' }}
                                         />
-                                        <span className="project-view-pill">VIEW</span>
                                     </div>
                                 </div>
                                 <div className="project-card-footer">
-                                    <div>
-                                        <h3 className="project-title">Drive45 Mobility</h3>
-                                        <p className="project-desc">Fintech &amp; Mobility</p>
-                                    </div>
-                                    <span className="project-arrow" aria-hidden="true">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                                            <polyline points="7 7 17 7 17 17"></polyline>
-                                        </svg>
-                                    </span>
+                                    <h3 className="project-title">Drive45 Mobility</h3>
+                                    <p className="project-desc">Fintech &amp; Mobility</p>
                                 </div>
                             </Link>
                         </motion.div>
@@ -241,20 +228,11 @@ export default function Home() {
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                             style={{ objectFit: 'cover', objectPosition: 'top' }}
                                         />
-                                        <span className="project-view-pill">VIEW</span>
                                     </div>
                                 </div>
                                 <div className="project-card-footer">
-                                    <div>
-                                        <h3 className="project-title">Operations Management Platform</h3>
-                                        <p className="project-desc">Logistics &amp; Operations</p>
-                                    </div>
-                                    <span className="project-arrow" aria-hidden="true">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                                            <polyline points="7 7 17 7 17 17"></polyline>
-                                        </svg>
-                                    </span>
+                                    <h3 className="project-title">Operations Management Platform</h3>
+                                    <p className="project-desc">Logistics &amp; Operations</p>
                                 </div>
                             </Link>
                         </motion.div>
@@ -269,20 +247,11 @@ export default function Home() {
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                             style={{ objectFit: 'cover', objectPosition: 'top' }}
                                         />
-                                        <span className="project-view-pill">VIEW</span>
                                     </div>
                                 </div>
                                 <div className="project-card-footer">
-                                    <div>
-                                        <h3 className="project-title">Contraktek</h3>
-                                        <p className="project-desc">Construction &amp; Procurement</p>
-                                    </div>
-                                    <span className="project-arrow" aria-hidden="true">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                                            <polyline points="7 7 17 7 17 17"></polyline>
-                                        </svg>
-                                    </span>
+                                    <h3 className="project-title">Contraktek</h3>
+                                    <p className="project-desc">Construction &amp; Procurement</p>
                                 </div>
                             </Link>
                         </motion.div>
@@ -297,20 +266,11 @@ export default function Home() {
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                             style={{ objectFit: 'cover', objectPosition: 'top' }}
                                         />
-                                        <span className="project-view-pill">VIEW</span>
                                     </div>
                                 </div>
                                 <div className="project-card-footer">
-                                    <div>
-                                        <h3 className="project-title">Erastus Quartus Projects</h3>
-                                        <p className="project-desc">Construction &amp; Structural Engineering</p>
-                                    </div>
-                                    <span className="project-arrow" aria-hidden="true">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                                            <polyline points="7 7 17 7 17 17"></polyline>
-                                        </svg>
-                                    </span>
+                                    <h3 className="project-title">Erastus Quartus Projects</h3>
+                                    <p className="project-desc">Construction &amp; Structural Engineering</p>
                                 </div>
                             </Link>
                         </motion.div>
