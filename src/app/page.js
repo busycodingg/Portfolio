@@ -184,11 +184,11 @@ export default function Home() {
                                 <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
                                         <Image
-                                            src="/projects/waystream/hero.png"
+                                            src="/projects/waystream/mockup-featured.jpg"
                                             alt="Waystream Case Study"
                                             fill
                                             sizes="100vw"
-                                            style={{ objectFit: 'cover', objectPosition: 'top' }}
+                                            style={{ objectFit: 'cover' }}
                                         />
                                     </div>
                                 </div>
@@ -203,7 +203,7 @@ export default function Home() {
                                 <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
                                         <Image
-                                            src="/projects/drive45/hero.png"
+                                            src="/projects/drive45/mockup-card.jpg"
                                             alt="Drive45 Mobility Case Study"
                                             fill
                                             sizes="(max-width: 768px) 100vw, 50vw"
@@ -222,11 +222,11 @@ export default function Home() {
                                 <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
                                         <Image
-                                            src="/projects/Logistic/hero.png"
+                                            src="/projects/Logistic/mockup-card.jpg"
                                             alt="Operations Management Platform Case Study"
                                             fill
                                             sizes="(max-width: 768px) 100vw, 50vw"
-                                            style={{ objectFit: 'cover', objectPosition: 'top' }}
+                                            style={{ objectFit: 'cover' }}
                                         />
                                     </div>
                                 </div>
@@ -241,11 +241,11 @@ export default function Home() {
                                 <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
                                         <Image
-                                            src="/projects/contraktek/hero.png"
+                                            src="/projects/contraktek/mockup-card.jpg"
                                             alt="Contraktek Case Study"
                                             fill
                                             sizes="(max-width: 768px) 100vw, 50vw"
-                                            style={{ objectFit: 'cover', objectPosition: 'top' }}
+                                            style={{ objectFit: 'cover' }}
                                         />
                                     </div>
                                 </div>
@@ -260,11 +260,11 @@ export default function Home() {
                                 <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
                                         <Image
-                                            src="/projects/erastus-quartus/hero.png"
+                                            src="/projects/erastus-quartus/mockup-card.jpg"
                                             alt="Erastus Quartus Projects Case Study"
                                             fill
                                             sizes="(max-width: 768px) 100vw, 50vw"
-                                            style={{ objectFit: 'cover', objectPosition: 'top' }}
+                                            style={{ objectFit: 'cover' }}
                                         />
                                     </div>
                                 </div>

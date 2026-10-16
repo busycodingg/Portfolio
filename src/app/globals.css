@@ -1121,7 +1121,13 @@ header nav a:hover {
 }
 
 .project-card-featured .project-image-wrapper {
-    aspect-ratio: 21 / 9;
+    aspect-ratio: 16 / 10;
+    background-color: #000;
+}
+
+.project-card-featured .project-image {
+    -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 48%, #000 55%, transparent 100%);
+    mask-image: radial-gradient(ellipse 85% 85% at 50% 48%, #000 55%, transparent 100%);
 }
 
 .project-image {
