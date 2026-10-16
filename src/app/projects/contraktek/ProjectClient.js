@@ -545,13 +545,13 @@ export default function ContraktekCaseStudy() {
           </div>
 
           <div className="discovery-grid DiscoveryGrid-2col">
-            <Link href="/projects/erastus-quartus" className="discovery-card">
+            <Link href="/projects/drive45" className="discovery-card">
               <div className="discovery-image">
-                <Image src="/projects/erastus-quartus/hero.png" alt="Erastus Quartus Projects" width={400} height={300} />
+                <Image src="/projects/drive45/hero.png" alt="Drive45 Mobility" width={400} height={300} />
               </div>
               <div className="discovery-info">
-                <h4>Erastus Quartus Projects</h4>
-                <span>Construction &amp; Structural Engineering</span>
+                <h4>Drive45 Mobility</h4>
+                <span>Fintech &amp; Mobility</span>
               </div>
             </Link>
 

@@ -3,7 +3,6 @@ export default function sitemap() {
 
   const projects = [
     "contraktek",
-    "erastus-quartus",
     "waystream",
     "drive45",
     "logistic-app",

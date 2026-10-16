@@ -236,7 +236,7 @@ export default function Home() {
                                 </div>
                             </Link>
                         </motion.div>
-                        <motion.div variants={fadeUp}>
+                        <motion.div variants={fadeUp} className="project-card-featured">
                             <Link href="/projects/contraktek" className="project-card" style={{ textDecoration: 'none' }}>
                                 <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
@@ -244,7 +244,7 @@ export default function Home() {
                                             src="/projects/contraktek/mockup-card.jpg"
                                             alt="Contraktek Case Study"
                                             fill
-                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            sizes="100vw"
                                             style={{ objectFit: 'cover' }}
                                         />
                                     </div>
@@ -252,25 +252,6 @@ export default function Home() {
                                 <div className="project-card-footer">
                                     <h3 className="project-title">Contraktek</h3>
                                     <p className="project-desc">Construction &amp; Procurement</p>
-                                </div>
-                            </Link>
-                        </motion.div>
-                        <motion.div variants={fadeUp}>
-                            <Link href="/projects/erastus-quartus" className="project-card" style={{ textDecoration: 'none' }}>
-                                <div className="project-image-wrapper">
-                                    <div className="project-image" style={{ position: 'relative' }}>
-                                        <Image
-                                            src="/projects/erastus-quartus/mockup-card.jpg"
-                                            alt="Erastus Quartus Projects Case Study"
-                                            fill
-                                            sizes="(max-width: 768px) 100vw, 50vw"
-                                            style={{ objectFit: 'cover' }}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="project-card-footer">
-                                    <h3 className="project-title">Erastus Quartus Projects</h3>
-                                    <p className="project-desc">Construction &amp; Structural Engineering</p>
                                 </div>
                             </Link>
                         </motion.div>
