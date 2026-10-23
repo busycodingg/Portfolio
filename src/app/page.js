@@ -236,7 +236,26 @@ export default function Home() {
                                 </div>
                             </Link>
                         </motion.div>
-                        <motion.div variants={fadeUp} className="project-card-featured">
+                        <motion.div variants={fadeUp}>
+                            <Link href="/projects/whitestone" className="project-card" style={{ textDecoration: 'none' }}>
+                                <div className="project-image-wrapper">
+                                    <div className="project-image" style={{ position: 'relative' }}>
+                                        <Image
+                                            src="/projects/whitestone/mockup-card.jpg"
+                                            alt="Whitestone Case Study"
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="project-card-footer">
+                                    <h3 className="project-title">Whitestone</h3>
+                                    <p className="project-desc">Healthcare &amp; Special Needs</p>
+                                </div>
+                            </Link>
+                        </motion.div>
+                        <motion.div variants={fadeUp}>
                             <Link href="/projects/contraktek" className="project-card" style={{ textDecoration: 'none' }}>
                                 <div className="project-image-wrapper">
                                     <div className="project-image" style={{ position: 'relative' }}>
@@ -244,7 +263,7 @@ export default function Home() {
                                             src="/projects/contraktek/mockup-card.jpg"
                                             alt="Contraktek Case Study"
                                             fill
-                                            sizes="100vw"
+                                            sizes="(max-width: 768px) 100vw, 50vw"
                                             style={{ objectFit: 'cover' }}
                                         />
                                     </div>

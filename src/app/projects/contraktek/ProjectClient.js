@@ -50,7 +50,7 @@ export default function ContraktekCaseStudy() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
-                A procurement trust platform for Nigeria's construction industry — giving clients certainty over their money and materials, and giving the Super Admin one system to manage every order, vendor, and driver from placement to payout.
+                A procurement trust platform for Nigeria's construction industry. It gives clients certainty over their money and materials, and giving the Super Admin one system to manage every order, vendor, and driver from placement to payout.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
@@ -72,14 +72,14 @@ export default function ContraktekCaseStudy() {
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Status</span>
-                    <span className="meta-value">Design &amp; Prototype Complete — Not Yet Live</span>
+                    <span className="meta-value">Design &amp; Prototype Complete, Not Yet Live</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">June — August 2026</span>
+                    <span className="meta-value">June to August 2026</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">User Types</span>
@@ -117,20 +117,20 @@ export default function ContraktekCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Procuring materials for a construction project in Nigeria typically means sending money to a vendor and hoping the right items arrive, in the right quantity, on time — with little visibility in between. Contraktek was conceived by its founder to close that gap: a platform where payment is held in escrow, delivery is confirmed directly by the client, and the Super Admin has one system that tracks every order, vendor, and driver from placement to payout.
+                Procuring materials for a construction project in Nigeria typically means sending money to a vendor and hoping the right items arrive, in the right quantity, on time, with little visibility in between. Contraktek was conceived by its founder to close that gap: a platform where payment is held in escrow, delivery is confirmed directly by the client, and the Super Admin has one system that tracks every order, vendor, and driver from placement to payout.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
-                I joined Contraktek as its founding — and sole — product designer during its formative stage, translating the founder's documented business rules into a usable, coherent product for the platform's two real user roles — plus the vendor and driver directory the Super Admin manages behind the scenes.
+                I joined Contraktek as its founding and only product designer during its formative stage, translating the founder's documented business rules into a usable, coherent product for the platform's two real user roles, plus the vendor and driver directory the Super Admin manages behind the scenes.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-card-pair">
                 <div className="cs-card">
                   <span className="cs-card-tag">Business problem</span>
-                  <p>No shared system existed for tracking procurement money and materials end-to-end — clients, vendors, and logistics ran on separate, disconnected channels (calls, transfers, paper receipts).</p>
+                  <p>No shared system existed for tracking procurement money and materials end-to-end. Clients, vendors, and logistics ran on separate, disconnected channels (calls, transfers, paper receipts).</p>
                 </div>
                 <div className="cs-card">
                   <span className="cs-card-tag">User problem</span>
-                  <p>Clients had no reliable way to confirm their money was safe or their order was progressing, and the operations team had no single system tracking vendor and driver assignment, delivery status, and disputes — everything lived in phone calls and spreadsheets.</p>
+                  <p>Clients had no reliable way to confirm their money was safe or their order was progressing, and the operations team had no single system tracking vendor and driver assignment, delivery status, and disputes. Everything lived in phone calls and spreadsheets.</p>
                 </div>
               </motion.div>
               <motion.div
@@ -155,7 +155,7 @@ export default function ContraktekCaseStudy() {
               <motion.div variants={fadeUp} className="cs-statement">
                 <span className="cs-card-tag">Problem statement</span>
                 <blockquote className="cs-blockquote">
-                  "How might we make a construction client — often sending a significant sum to a vendor they've never met — feel certain their money and materials are accounted for at every step?"
+                  "How might we make a construction client, often sending a significant sum to a vendor they've never met, feel certain their money and materials are accounted for at every step?"
                 </blockquote>
               </motion.div>
             </motion.div>
@@ -174,11 +174,11 @@ export default function ContraktekCaseStudy() {
           >
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">03  Understanding the operating model</span>
-              <h2 className="cs-section-title">The source of truth wasn't a research deck — it was the business itself.</h2>
+              <h2 className="cs-section-title">The source of truth wasn't a research deck. It was the business itself.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Contraktek's operating logic — how escrow is released, how a delivery gets confirmed, how a dispute is raised and resolved — was documented by the founder in a detailed MVP Business Rules specification, built from firsthand knowledge of how procurement actually breaks down on Nigerian construction sites. My job wasn't to run discovery research from scratch; it was to read that operating model closely, ask where it was ambiguous, and turn it into an interface for the platform's two real roles, plus a directory model for tracking vendors and drivers who never log in at all.
+                Contraktek's operating logic (how escrow is released, how a delivery gets confirmed, how a dispute is raised and resolved) was documented by the founder in a detailed MVP Business Rules specification, built from firsthand knowledge of how procurement actually breaks down on Nigerian construction sites. My job wasn't to run discovery research from scratch; it was to read that operating model closely, ask where it was ambiguous, and turn it into an interface for the platform's two real roles, plus a directory model for tracking vendors and drivers who never log in at all.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -216,19 +216,19 @@ export default function ContraktekCaseStudy() {
               <motion.div variants={fadeUp} className="cs-insights">
                 <div className="cs-insight">
                   <span className="cs-insight-num">1</span>
-                  <p>Delivery confirmation needed to be anchored entirely in the client's own word — the moment they confirm, the system trusts it completely and releases payment automatically, with no intermediate manual step.</p>
+                  <p>Delivery confirmation needed to be anchored entirely in the client's own word. The moment they confirm, the system trusts it completely and releases payment automatically, with no intermediate manual step.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
-                  <p>Vendors and drivers don't need logins of their own — they're structured records the Super Admin manages directly: assigned to orders, tracked through delivery, and paid out automatically. Keeping that data in one place mattered more than giving them separate accounts.</p>
+                  <p>Vendors and drivers don't need logins of their own. They're structured records the Super Admin manages directly: assigned to orders, tracked through delivery, and paid out automatically. Keeping that data in one place mattered more than giving them separate accounts.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">3</span>
-                  <p>A generic "order category" wasn't specific enough — a client ordering cement and a client ordering tile need different information at delivery, so the item itself, not just its category, had to drive what each screen shows.</p>
+                  <p>A generic "order category" wasn't specific enough. A client ordering cement and a client ordering tile need different information at delivery, so the item itself, not just its category, had to drive what each screen shows.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">4</span>
-                  <p>The client's anxiety doesn't end the moment they pay — it was just as important that the platform stay visibly "alive" between escrow and delivery: pickup confirmed, in transit, or running behind schedule, rather than going quiet until the order shows up.</p>
+                  <p>The client's anxiety doesn't end the moment they pay. It was just as important that the platform stay visibly "alive" between escrow and delivery: pickup confirmed, in transit, or running behind schedule, rather than going quiet until the order shows up.</p>
                 </div>
               </motion.div>
 
@@ -244,7 +244,7 @@ export default function ContraktekCaseStudy() {
                   </div>
                   <div className="cs-persona-detail">
                     <span className="cs-persona-label">Core Need</span>
-                    <p>Certainty that funds are held safely and released only against a confirmed delivery — with real-time visibility into pickup, transit, and delay status along the way, and a simple way to confirm delivery themselves.</p>
+                    <p>Certainty that funds are held safely and released only against a confirmed delivery, with real-time visibility into pickup, transit, and delay status along the way, and a simple way to confirm delivery themselves.</p>
                   </div>
                   <div className="cs-persona-detail">
                     <span className="cs-persona-label">Primary Frustration</span>
@@ -273,7 +273,7 @@ export default function ContraktekCaseStudy() {
 
               <motion.div variants={fadeUp} className="cs-card" style={{ marginTop: '2rem' }}>
                 <span className="cs-card-tag">Deliberately not a role</span>
-                <p>Vendors and drivers aren't logged-in users — they're structured records the Super Admin adds and manages directly: assigned to orders, tracked through delivery, and paid out automatically the moment the client confirms. No separate vendor or driver dashboard exists, by design — it keeps trust and accountability centralized in one system instead of split across multiple logins.</p>
+                <p>Vendors and drivers aren't logged-in users. They're structured records the Super Admin adds and manages directly: assigned to orders, tracked through delivery, and paid out automatically the moment the client confirms. No separate vendor or driver dashboard exists, by design. It keeps trust and accountability centralized in one system instead of split across multiple logins.</p>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -302,7 +302,7 @@ export default function ContraktekCaseStudy() {
                   <span className="cs-principle-num">Principle 01</span>
                   <div className="cs-principle-content">
                     <h4>Escrow legibility for a nervous client</h4>
-                    <p>A client sending a large sum to a vendor they've never met needs to see exactly what's held, what's been released, and where their order physically stands — picked up, in transit, or delayed — at every stage, not just at the end.</p>
+                    <p>A client sending a large sum to a vendor they've never met needs to see exactly what's held, what's been released, and where their order physically stands (picked up, in transit, or delayed) at every stage, not just at the end.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/contraktek/principle 1.png"
@@ -320,7 +320,7 @@ export default function ContraktekCaseStudy() {
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
                     <h4>The client's confirmation is the trigger, not just the record</h4>
-                    <p>The moment a client confirms delivery, escrow releases automatically. There's no intermediate human step between the client's word and the vendor's payout — the confirmation does the work.</p>
+                    <p>The moment a client confirms delivery, escrow releases automatically. There's no intermediate human step between the client's word and the vendor's payout. The confirmation does the work.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/contraktek/principle 2.png"
@@ -338,7 +338,7 @@ export default function ContraktekCaseStudy() {
                   <span className="cs-principle-num">Principle 03</span>
                   <div className="cs-principle-content">
                     <h4>Vendors and drivers are data, not dashboards</h4>
-                    <p>Rather than building separate logins, vendors and drivers are managed entirely inside the Super Admin's system — assigned, tracked, and paid without an account of their own. One auditable record beats truth split across three apps.</p>
+                    <p>Rather than building separate logins, vendors and drivers are managed entirely inside the Super Admin's system: assigned, tracked, and paid without an account of their own. One auditable record beats truth split across three apps.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/contraktek/principle 3.png"
@@ -380,10 +380,10 @@ export default function ContraktekCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Started by mapping every rule in the MVP Business Rules document to a screen and an action — one column per role (including the vendor and driver directory), one row per rule — before opening Figma. That mapping surfaced the questions the document didn't answer (what happens during a dispute, what the Super Admin can override) and became the running list I brought back to the founder for clarification.
+                Started by mapping every rule in the MVP Business Rules document to a screen and an action, with one column per role (including the vendor and driver directory) and one row per rule, before opening Figma. That mapping surfaced the questions the document didn't answer (what happens during a dispute, what the Super Admin can override) and became the running list I brought back to the founder for clarification.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
-                From there, I built the escrow and order-status system first — it underpins everything else — then the client's confirmation flow, and the Super Admin's oversight view, including how vendors and drivers are added, assigned, and tracked as managed records rather than separate logins, keeping a shared visual language across both surfaces so the platform reads as one product.
+                From there, I built the escrow and order-status system first, since it underpins everything else, then the client's confirmation flow, and the Super Admin's oversight view, including how vendors and drivers are added, assigned, and tracked as managed records rather than separate logins, keeping a shared visual language across both surfaces so the platform reads as one product.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -421,15 +421,15 @@ export default function ContraktekCaseStudy() {
               <motion.div variants={fadeUp} className="cs-iterations">
                 <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 1: Early direction</span>
-                  <p>My first pass on delivery confirmation assumed a driver would log into the system to confirm each delivery — closer to a logistics app than a trust platform. Revisiting the business rules with the founder clarified that drivers don't need a login at all; the client's own confirmation should be the trigger.</p>
+                  <p>My first pass on delivery confirmation assumed a driver would log into the system to confirm each delivery, closer to a logistics app than a trust platform. Revisiting the business rules with the founder clarified that drivers don't need a login at all; the client's own confirmation should be the trigger.</p>
                 </div>
                 <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 2: Refinement</span>
-                  <p>Removed the intermediate confirmation step entirely and made the client's own confirmation release escrow automatically — cutting a redundant internal action and putting trust exactly where it belongs.</p>
+                  <p>Removed the intermediate confirmation step entirely and made the client's own confirmation release escrow automatically, cutting a redundant internal action and putting trust exactly where it belongs.</p>
                 </div>
                 <div className="cs-iteration">
                   <span className="cs-iteration-tag">Iteration 3: Vendor &amp; driver management</span>
-                  <p>Early drafts considered giving vendors their own login to check payment status. Decided against it — vendors and drivers are managed as records inside the Super Admin's system instead, keeping trust and accountability centralized rather than split across logins.</p>
+                  <p>Early drafts considered giving vendors their own login to check payment status. Decided against it. Vendors and drivers are managed as records inside the Super Admin's system instead, keeping trust and accountability centralized rather than split across logins.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -451,7 +451,7 @@ export default function ContraktekCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Design and prototype are complete — Contraktek hasn't launched publicly yet, but the design system is finished: both real user roles, plus a full vendor and driver management model, translated directly from the founder's documented operating model and ready to move into build.
+                Design and prototype are complete. Contraktek hasn't launched publicly yet, but the design system is finished: both real user roles, plus a full vendor and driver management model, translated directly from the founder's documented operating model and ready to move into build.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -489,7 +489,7 @@ export default function ContraktekCaseStudy() {
               </div>
               <div className="cs-outcome-card">
                 <span className="cs-outcome-value cs-outcome-value--text">Complete</span>
-                <span className="cs-outcome-delta">Design &amp; prototype finished — ready for build</span>
+                <span className="cs-outcome-delta">Design &amp; prototype finished, ready for build</span>
                 <span className="cs-outcome-label">Platform Status</span>
               </div>
               <div className="cs-outcome-card">
@@ -527,7 +527,7 @@ export default function ContraktekCaseStudy() {
                 </div>
                 <div className="cs-reflection-card">
                   <h4>What I'd do differently</h4>
-                  <p>Push earlier for direct conversations with the founder about edge cases — disputes, partial deliveries, refunds — rather than inferring them from the document alone. Several assumptions needed correcting once I asked directly.</p>
+                  <p>Push earlier for direct conversations with the founder about edge cases like disputes, partial deliveries and refunds, rather than inferring them from the document alone. Several assumptions needed correcting once I asked directly.</p>
                 </div>
                 <div className="cs-reflection-card">
                   <h4>Next steps</h4>

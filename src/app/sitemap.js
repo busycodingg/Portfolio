@@ -6,6 +6,7 @@ export default function sitemap() {
     "waystream",
     "drive45",
     "logistic-app",
+    "whitestone",
   ];
 
   return [
