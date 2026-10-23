@@ -50,7 +50,8 @@ export default function Drive45CaseStudy() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
-                Most Nigerians can't afford a vehicle outright. Drive45 changes that through a rent-to-own subscription model. Designed from scratch  and now putting people in cars across Nigeria.              </motion.p>
+                A rent-to-own vehicle subscription platform that helps people in Nigeria get into a car now and own it over time. Designed from scratch, shipped and live.
+              </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
                 <div className="meta-row">
@@ -86,6 +87,18 @@ export default function Drive45CaseStudy() {
                   </div>
                 </div>
               </motion.div>
+
+              <motion.div variants={fadeUp} style={{ marginTop: "1.5rem" }}>
+                <a
+                  href="https://drive45mobility.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="meta-value"
+                  style={{ textDecoration: "underline", textUnderlineOffset: "4px" }}
+                >
+                  View the live site ↗
+                </a>
+              </motion.div>
             </motion.div>
 
             <motion.div className="cs-hero-right" variants={staggerContainer}>
@@ -112,24 +125,24 @@ export default function Drive45CaseStudy() {
           >
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">02  Problem framing</span>
-              <h2 className="cs-section-title">Vehicle ownership in Nigeria is broken  Drive45 set out to fix it.</h2>
+              <h2 className="cs-section-title">Vehicle ownership in Nigeria is broken. Drive45 set out to fix it.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                For most Nigerians, owning a vehicle outright is out of reach. Upfront costs are prohibitive, financing options are limited, and the few lease or hire-purchase arrangements that exist are opaque, paper-heavy, and entirely offline. Drive45 was built to change that  a subscription-based platform that puts people in a vehicle immediately and moves them toward full ownership over time.
+                For most Nigerians, buying a vehicle outright is out of reach. Upfront costs are high, financing is limited, and the few lease or hire-purchase options are opaque, paper-heavy and entirely offline. Drive45 is a subscription platform that puts people in a vehicle immediately and moves them toward full ownership over time.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
-                But building the platform meant solving two problems simultaneously: a consumer-facing experience simple enough for first-time subscribers, and a powerful internal toolset for the Drive45 team to manage users, vehicles, applications, and payments across the entire lifecycle.
+                Building it meant solving two problems at once: a consumer experience simple enough for first-time subscribers, and an internal toolset for the Drive45 team to manage users, vehicles, applications and payments across the whole lifecycle.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-card-pair">
                 <div className="cs-card">
                   <span className="cs-card-tag">Business problem</span>
-                  <p>No digital platform existed to manage the full vehicle subscription lifecycle  from application and due diligence to payment tracking, asset management, and ownership transfer.</p>
+                  <p>No digital platform managed the full vehicle subscription lifecycle, from application and due diligence to payment tracking, asset management and ownership transfer.</p>
                 </div>
                 <div className="cs-card">
                   <span className="cs-card-tag">User problem</span>
-                  <p>Potential subscribers had no transparent, accessible way to apply for a vehicle subscription, track their payments, or understand their path to ownership.</p>
+                  <p>Potential subscribers had no transparent, accessible way to apply for a vehicle subscription, track their payments or understand their path to ownership.</p>
                 </div>
               </motion.div>
               <motion.div
@@ -173,25 +186,25 @@ export default function Drive45CaseStudy() {
           >
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">03  Research &amp; discovery</span>
-              <h2 className="cs-section-title">Five users. One platform. Completely different needs.</h2>
+              <h2 className="cs-section-title">Five users. One platform. Very different needs.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Drive45 was unique in its complexity  not one user type, but five, each with fundamentally different goals, mental models, and workflows. Understanding each one before touching Figma was non-negotiable.
+                Drive45 had five user types, each with different goals, mental models and workflows. Understanding each one before opening Figma was non-negotiable.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-research-grid">
                 <div className="cs-research-card">
                   <span className="cs-research-type">Stakeholder interviews</span>
-                  <span className="cs-research-stat">Drive45 founders, operations leads</span>
+                  <span className="cs-research-stat">Drive45 founders and operations leads</span>
                 </div>
                 <div className="cs-research-card">
                   <span className="cs-research-type">PRD analysis</span>
-                  <span className="cs-research-stat">Product requirements deep-dive</span>
+                  <span className="cs-research-stat">A deep dive into the product requirements</span>
                 </div>
                 <div className="cs-research-card">
                   <span className="cs-research-type">Competitive audit</span>
-                  <span className="cs-research-stat">Fleet management &amp; subscription platforms</span>
+                  <span className="cs-research-stat">Fleet management and subscription platforms</span>
                 </div>
               </motion.div>
 
@@ -199,35 +212,35 @@ export default function Drive45CaseStudy() {
               <motion.div variants={fadeUp} className="cs-insights">
                 <div className="cs-insight">
                   <span className="cs-insight-num">1</span>
-                  <p>The subscriber journey was the longest and most emotionally loaded  applicants needed constant reassurance at every stage that their application was progressing and their money was safe.</p>
+                  <p>The subscriber journey was the longest and most emotionally loaded. Applicants needed reassurance at every stage that their application was moving and their money was safe.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
-                  <p>Internal staff (Application Officers and Fleet Supervisors) needed completely different tools  one focused on reviewing and approving, the other on monitoring assets and sending notifications.</p>
+                  <p>Internal staff needed very different tools. Application Officers review and approve; Fleet Supervisors monitor assets and send notifications.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">3</span>
-                  <p>The investor view was the simplest but the most high-stakes  one wrong data point visible to a financier could undermine trust in the entire business.</p>
+                  <p>The investor view was the simplest but the highest-stakes. One wrong figure in front of a financier could undermine trust in the whole business.</p>
                 </div>
               </motion.div>
 
-              <motion.h3 variants={fadeUp} className="cs-sub-heading">Target User Archetypes</motion.h3>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Target user archetypes</motion.h3>
               <motion.div variants={fadeUp} className="cs-personas-grid">
                 <div className="cs-persona-card">
                   <div className="cs-persona-header">
                     <div className="cs-persona-avatar">📋</div>
                     <div className="cs-persona-identity">
                       <h4>The Subscriber</h4>
-                      <span>Salaried / Gig Worker</span>
+                      <span>Salaried or gig worker</span>
                     </div>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>A transparent, guided journey from application to vehicle pick-up  with clear visibility of payments, tenure, and path to ownership.</p>
+                    <span className="cs-persona-label">Core need</span>
+                    <p>A transparent, guided journey from application to vehicle pick-up, with clear visibility of payments, tenure and the path to ownership.</p>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>Existing options were offline, opaque, and required endless back-and-forth with staff just to understand basics.</p>
+                    <span className="cs-persona-label">Primary frustration</span>
+                    <p>Existing options were offline and opaque, with endless back-and-forth with staff just to understand the basics.</p>
                   </div>
                 </div>
 
@@ -236,16 +249,16 @@ export default function Drive45CaseStudy() {
                     <div className="cs-persona-avatar">✅</div>
                     <div className="cs-persona-identity">
                       <h4>The Application Officer</h4>
-                      <span>Approval Focused</span>
+                      <span>Approval-focused</span>
                     </div>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>A clean, efficient interface to review applications, approve or reject them, and track analytics without switching tools.</p>
+                    <span className="cs-persona-label">Core need</span>
+                    <p>One clean interface to review applications, approve or reject them, and track analytics.</p>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>No centralised system  application reviews were manual, scattered, and time-consuming.</p>
+                    <span className="cs-persona-label">Primary frustration</span>
+                    <p>Reviews were manual, scattered and slow.</p>
                   </div>
                 </div>
               </motion.div>
@@ -256,16 +269,16 @@ export default function Drive45CaseStudy() {
                     <div className="cs-persona-avatar">🚗</div>
                     <div className="cs-persona-identity">
                       <h4>The Fleet Supervisor</h4>
-                      <span>Operations Focused</span>
+                      <span>Operations-focused</span>
                     </div>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>Full visibility of all vehicles and subscribers  with the ability to assign assets, send notifications, and monitor transactions.</p>
+                    <span className="cs-persona-label">Core need</span>
+                    <p>Full visibility of vehicles and subscribers, with the ability to assign assets, send notifications and monitor transactions.</p>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>Relied on spreadsheets and phone calls to track vehicle assignments and subscriber payment statuses.</p>
+                    <span className="cs-persona-label">Primary frustration</span>
+                    <p>Spreadsheets and phone calls to track assignments and payment status.</p>
                   </div>
                 </div>
 
@@ -274,16 +287,16 @@ export default function Drive45CaseStudy() {
                     <div className="cs-persona-avatar">⚙️</div>
                     <div className="cs-persona-identity">
                       <h4>The Admin</h4>
-                      <span>Super User</span>
+                      <span>Super user</span>
                     </div>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>Full platform control  onboarding users, managing data, enabling/disabling accounts, and overseeing activity.</p>
+                    <span className="cs-persona-label">Core need</span>
+                    <p>Full platform control, from onboarding users and managing data to enabling or disabling accounts.</p>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>No single dashboard to manage all user types and platform settings  everything was fragmented across tools.</p>
+                    <span className="cs-persona-label">Primary frustration</span>
+                    <p>No single dashboard; everything was spread across tools.</p>
                   </div>
                 </div>
               </motion.div>
@@ -294,23 +307,23 @@ export default function Drive45CaseStudy() {
                     <div className="cs-persona-avatar">📊</div>
                     <div className="cs-persona-identity">
                       <h4>The Investor</h4>
-                      <span>Financier &middot; Read-Only</span>
+                      <span>Financier, read-only</span>
                     </div>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>A clean, trustworthy dashboard to view and export platform data  without being overwhelmed by operational detail.</p>
+                    <span className="cs-persona-label">Core need</span>
+                    <p>A clean, trustworthy dashboard to view and export platform data without operational detail.</p>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>Previous reporting was done via manually assembled slide decks  no real-time access to platform health or financial metrics.</p>
+                    <span className="cs-persona-label">Primary frustration</span>
+                    <p>Reporting came as manually assembled slide decks, with no real-time view of platform health or financials.</p>
                   </div>
                 </div>
               </motion.div>
 
               <motion.blockquote variants={fadeUp} className="cs-pull-quote">
                 "I just want to know my application is moving. Nobody tells me anything until something goes wrong."
-                <cite> Subscriber research participant</cite>
+                <cite>Subscriber research participant</cite>
               </motion.blockquote>
             </motion.div>
           </motion.div>
@@ -331,15 +344,15 @@ export default function Drive45CaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                With five user types and a complex operational workflow, I needed a clear set of principles to anchor every design decision  especially when the needs of different users pulled in opposite directions.
+                With five user types and a complex operational workflow, I set four principles to anchor every decision, especially when users' needs pulled in opposite directions.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-principles">
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 01</span>
                   <div className="cs-principle-content">
-                    <h4>Progressive disclosure for subscribers</h4>
-                    <p>The subscriber journey is long and involves sensitive financial decisions. Show only what's needed at each step  never overwhelm with complexity upfront.</p>
+                    <h4>Progressive disclosure for subscribers.</h4>
+                    <p>The subscriber journey is long and involves sensitive financial decisions. Show only what each step needs, and never front-load complexity.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/drive45/Principle 1.png"
@@ -356,8 +369,8 @@ export default function Drive45CaseStudy() {
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
-                    <h4>Separation of concerns for internal tools</h4>
-                    <p>Application Officers, Fleet Supervisors, and Admins have completely different jobs. Their interfaces reflect that  purpose-built dashboards with no overlap.</p>
+                    <h4>Separation of concerns for internal tools.</h4>
+                    <p>Application Officers, Fleet Supervisors and Admins do different jobs, so each gets a purpose-built dashboard with no overlap.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/drive45/Principle 2.png"
@@ -374,8 +387,8 @@ export default function Drive45CaseStudy() {
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 03</span>
                   <div className="cs-principle-content">
-                    <h4>Transparency builds trust</h4>
-                    <p>For a platform handling money, clarity is everything. Payment breakdowns, application status, tenure progress  every piece of data must be legible.</p>
+                    <h4>Transparency builds trust.</h4>
+                    <p>On a platform handling money, clarity is everything. Payment breakdowns, application status and tenure progress must all be easy to read.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/drive45/Principle 3.png"
@@ -392,8 +405,8 @@ export default function Drive45CaseStudy() {
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 04</span>
                   <div className="cs-principle-content">
-                    <h4>The investor sees a business, not a backend</h4>
-                    <p>The investor view had to feel like an executive dashboard  clean data, clear metrics, and export functionality. No operational clutter.</p>
+                    <h4>The investor sees a business, not a backend.</h4>
+                    <p>The investor view reads like an executive dashboard: clean data, clear metrics and export. No operational clutter.</p>
 
                   </div>
                 </div>
@@ -418,7 +431,7 @@ export default function Drive45CaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Started with the subscriber onboarding flow  the longest and most critical journey on the platform. Mapped the full end-to-end flow in FigJam before a single screen was designed. Progressed to high-fidelity screens with a strict modular grid designed to work across all five user roles.
+                I started with the subscriber onboarding flow, the longest and most critical journey, and mapped it end to end in FigJam before designing a single screen. High-fidelity screens followed, on a modular grid shared across all five roles.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -442,7 +455,7 @@ export default function Drive45CaseStudy() {
                     viewport={{ once: true }}
                   />
                 </div>
-                <p>Applicants browsed vehicles without knowing eligibility, leading to high drop-off at the offer stage. No visibility into application status after submission.</p>
+                <p>Applicants browsed vehicles without knowing whether they were eligible, so many dropped off at the offer stage. After applying, they couldn't see their application's status.</p>
               </div>
               <div className="cs-ba-card cs-ba-card--after">
                 <div className="cs-mockup-card" style={{ border: "none" }}>
@@ -454,7 +467,7 @@ export default function Drive45CaseStudy() {
                     viewport={{ once: true }}
                   />
                 </div>
-                <p>Short income profile surfaces filtered listings based on eligibility. Expectations set before commitment. Real-time status tracking throughout.</p>
+                <p>A short income profile filters listings by eligibility, setting expectations before commitment, with real-time status tracking throughout.</p>
               </div>
             </div>
           </motion.div>
@@ -472,16 +485,16 @@ export default function Drive45CaseStudy() {
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Iteration & Refinement</motion.h3>
               <motion.div variants={fadeUp} className="cs-iterations">
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 1: Feedback</span>
-                  <p>Subscribers were abandoning the flow at the due diligence payment step  the jump felt abrupt and unexplained. Users didn't understand why they were being asked to pay before receiving a vehicle.</p>
+                  <span className="cs-iteration-tag">Iteration 1 · Feedback</span>
+                  <p>Subscribers were abandoning the flow at the due diligence payment. The step felt abrupt: they didn't understand why they were paying before receiving a vehicle.</p>
                 </div>
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 2: Refinement</span>
-                  <p>Added a dedicated due diligence explanation screen breaking down the fee (ID verification, credit check, background check). Framed as protection for the subscriber. Drop-off at this step reduced significantly.</p>
+                  <span className="cs-iteration-tag">Iteration 2 · Refinement</span>
+                  <p>I added a screen explaining the due diligence fee (ID verification, credit check, background check), framed as protection for the subscriber. Drop-off at this step fell significantly.</p>
                 </div>
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 3: Role Clarity</span>
-                  <p>Early internal dashboards tried to share components across roles  Application Officers and Fleet Supervisors saw the same tables. After feedback, each role got purpose-built views with only the data they needed.</p>
+                  <span className="cs-iteration-tag">Iteration 3 · Role clarity</span>
+                  <p>Early internal dashboards shared components across roles, so Application Officers and Fleet Supervisors saw the same tables. After feedback, each role got a purpose-built view with only the data it needed.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -503,7 +516,7 @@ export default function Drive45CaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Drive45 launched as a fully operational vehicle subscription platform  the first of its kind in Nigeria to manage the complete lifecycle through a single digital interface.
+                Drive45 launched as a fully operational vehicle subscription platform, managing the whole lifecycle, from application to ownership, in one digital interface.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -551,8 +564,8 @@ export default function Drive45CaseStudy() {
               </div>
               <div className="cs-outcome-card">
                 <span className="cs-outcome-value cs-outcome-value--text">Onboarding → Ownership</span>
-                <span className="cs-outcome-delta">Full subscriber journey digitised</span>
-                <span className="cs-outcome-label">Complete lifecycle in one platform</span>
+                <span className="cs-outcome-delta">The full subscriber journey, digitised</span>
+                <span className="cs-outcome-label">Complete Lifecycle</span>
               </div>
             </motion.div>
           </motion.div>
@@ -575,15 +588,15 @@ export default function Drive45CaseStudy() {
               <motion.div variants={fadeUp} className="cs-reflection-grid">
                 <div className="cs-reflection-card">
                   <h4>What worked well</h4>
-                  <p>Mapping the full end-to-end flow in FigJam before designing a single screen. With five user types and dozens of conditional states, having a shared flow diagram was the single most important artifact of the project  it aligned stakeholders, revealed edge cases, and prevented scope creep during high-fidelity execution.</p>
+                  <p>Mapping the full flow in FigJam before designing a single screen. With five user types and dozens of conditional states, that shared diagram was the most important artifact of the project. It aligned stakeholders, revealed edge cases and kept scope in check during high-fidelity work.</p>
                 </div>
                 <div className="cs-reflection-card">
                   <h4>What I'd do differently</h4>
-                  <p>Push for usability testing with actual subscribers earlier in the process  specifically around the due diligence step. The drop-off at that stage could have been caught sooner with even a single round of prototype testing before development started.</p>
+                  <p>Push for usability testing with real subscribers earlier, especially around the due diligence step. Even one round of prototype testing before development would have caught that drop-off sooner.</p>
                 </div>
                 <div className="cs-reflection-card">
-                  <h4>Next steps / v2</h4>
-                  <p>A mobile companion app for subscribers  focused on payment tracking, maintenance notifications, and tenure progress. The web platform serves operations; mobile should serve the subscriber's day-to-day relationship with their vehicle.</p>
+                  <h4>Next steps</h4>
+                  <p>A mobile companion app for subscribers, focused on payment tracking, maintenance notifications and tenure progress. The web platform serves operations; mobile should serve the subscriber's day-to-day relationship with their vehicle.</p>
                 </div>
               </motion.div>
             </motion.div>

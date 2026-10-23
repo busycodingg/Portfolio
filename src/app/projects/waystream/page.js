@@ -3,11 +3,11 @@ import ProjectClient from "./ProjectClient";
 export const metadata = {
   title: "Waystream Case Study | Grace",
   description:
-    "Africa's first audio streaming platform built to give creators, churches, and communities a voice without bandwidth barriers or foreign payment walls.",
+    "An audio streaming platform for African creators, churches and communities, built for low bandwidth and local payments.",
   openGraph: {
     title: "Waystream Case Study | Grace",
     description:
-      "Africa's first audio streaming platform built to give creators, churches, and communities a voice without bandwidth barriers or foreign payment walls.",
+      "An audio streaming platform for African creators, churches and communities, built for low bandwidth and local payments.",
     images: ["/projects/waystream/hero.png"],
   },
 };

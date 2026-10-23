@@ -88,7 +88,7 @@ export default function WhitestoneCaseStudy() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: "2rem" }}>
-                A website for a Lagos clinic supporting neurodiverse children, designed, written and built so parents who aren&apos;t sure where to start can understand the services, see the path ahead, and book a free consultation.
+                A website and admin portal for a Lagos children&apos;s clinic, built to turn a parent&apos;s worry into a booked consultation.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
@@ -99,29 +99,29 @@ export default function WhitestoneCaseStudy() {
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Platform</span>
-                    <span className="meta-value">Website</span>
+                    <span className="meta-value">Website + Web App (Admin Portal)</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Domain</span>
-                    <span className="meta-value">Therapy &amp; Special Needs Support</span>
+                    <span className="meta-value">Healthcare &amp; Child Development</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Status</span>
-                    <span className="meta-value">Live, Still Being Refined</span>
+                    <span className="meta-value">Website live · Admin portal live for clinic staff</span>
                   </div>
                 </div>
                 <hr className="meta-divider" />
                 <div className="meta-row">
                   <div className="meta-item">
-                    <span className="meta-label dimmed">Audience</span>
-                    <span className="meta-value">Parents, Caregivers &amp; Educators</span>
+                    <span className="meta-label dimmed">Timeline</span>
+                    <span className="meta-value">Jul – Sep 2026</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">Scope</span>
-                    <span className="meta-value">Structure, UX, Copy &amp; Build</span>
+                    <span className="meta-value">4-page public site · Admin portal</span>
                   </div>
                 </div>
               </motion.div>
@@ -161,20 +161,20 @@ export default function WhitestoneCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Whitestone is a Lagos-based clinic supporting neurodiverse children and vulnerable learners, from autism and ADHD to speech delay and learning disabilities. It offers on-site care in Lagos and remote support for families across Nigeria and abroad.
+                Whitestone supports neurodiverse children and vulnerable learners in Lagos, from autism and ADHD to speech delay and learning disabilities. Families come to it on site, from across Nigeria and from abroad.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The challenge was a site that could hold a wide range of specialised services without overwhelming the person reading it: a parent who has noticed something about their child and isn&apos;t sure what to call it, what an assessment involves, or whether this clinic is the right fit. I designed the structure, wrote the on-page copy, and built the site, aiming for a tone that is warm and clear rather than clinical.
+                The clinic needed two things. A public site that could explain a wide range of specialised services to a parent who has noticed something about their child but doesn&apos;t yet know what to call it. And, behind it, the start of a private portal where therapists can share progress with families. I designed the structure, wrote the copy and built the site, then designed and built the portal&apos;s admin layer.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-card-pair">
                 <div className="cs-card">
                   <span className="cs-card-tag">Business problem</span>
-                  <p>A clinic with a broad, specialised service range needed a website that explains what it offers, shows its credentials, and turns concern into a booked consultation.</p>
+                  <p>A clinic with a broad, specialised service range needed a website that turns concern into a booked consultation, and a secure foundation for keeping families informed once therapy begins.</p>
                 </div>
                 <div className="cs-card">
                   <span className="cs-card-tag">User problem</span>
-                  <p>A parent noticing delays in speech, attention, learning or behaviour needs reassurance and a clear next step, not clinical jargon or a long catalogue of services.</p>
+                  <p>A parent noticing delays in speech, attention, learning or behaviour needs reassurance and a clear next step, not clinical jargon or a long catalogue of services. Clinic staff need one place to control who can access the portal before therapists and parents join it.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -187,7 +187,7 @@ export default function WhitestoneCaseStudy() {
               <motion.div variants={fadeUp} className="cs-statement">
                 <span className="cs-card-tag">Problem statement</span>
                 <blockquote className="cs-blockquote">
-                  &quot;How might we help a worried parent understand the support available and take a first step, without needing to know the clinical terms first?&quot;
+                  &quot;How might we help a worried parent take a first step, and give the clinic a secure way to keep families informed once therapy begins?&quot;
                 </blockquote>
               </motion.div>
             </motion.div>
@@ -199,26 +199,26 @@ export default function WhitestoneCaseStudy() {
           <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">03  Structuring the content</span>
-              <h2 className="cs-section-title">Organise by concern first, then by service.</h2>
+              <h2 className="cs-section-title">Concern first, services second.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Whitestone offers a lot: ABA therapy, psychoeducational assessments, consultations, caregiver training, IEP development, speech therapy and re-evaluations. A clinical list like that reads well to professionals and poorly to a parent. The structure starts from the concern a family recognises, and only then moves into the services.
+                Whitestone offers ABA therapy, psychoeducational assessments, consultations, caregiver training, IEP development, speech therapy and re-evaluations. Listed like that, it reads well to professionals and poorly to a parent. So the site starts from the concern a family recognises, and only then introduces the service.
               </motion.p>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">What shaped the structure</motion.h3>
               <motion.div variants={fadeUp} className="cs-insights">
                 <div className="cs-insight">
                   <span className="cs-insight-num">1</span>
-                  <p>The homepage leads with the conditions families already recognise (autism, ADHD, Down syndrome, speech and language delay, learning disabilities and developmental delay), each with its own card, so a parent can find their child before meeting any clinical terminology.</p>
+                  <p>The homepage leads with six conditions families already recognise: autism, ADHD, Down syndrome, speech and language delay, learning disabilities and developmental delay. Each has its own card, so a parent finds their child before meeting any clinical terms.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
-                  <p>The detailed service list lives on its own Services page, for visitors who already know what they are looking for, rather than competing with the homepage story.</p>
+                  <p>The full service list lives on its own page, for visitors who already know what they need.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">3</span>
-                  <p>Families come from Lagos, across Nigeria and abroad, so remote consultation is stated plainly in the services copy and the FAQ instead of being left for a phone call to reveal.</p>
+                  <p>Remote consultation is stated plainly in the services copy and the FAQ. Families come from across Nigeria and abroad, and shouldn&apos;t need a phone call to find out.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -230,31 +230,31 @@ export default function WhitestoneCaseStudy() {
           <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">04  Design principles</span>
-              <h2 className="cs-section-title">Three rules for turning concern into confidence</h2>
+              <h2 className="cs-section-title">Three rules for turning concern into confidence.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.div variants={fadeUp} className="cs-principles">
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 01</span>
                   <div className="cs-principle-content">
-                    <h4>Start with the child, not the clinic</h4>
-                    <p>Each condition gets a full-width card with a photo, a plain-language description and a consultation button, so the page speaks to a specific child instead of listing clinical services.</p>
+                    <h4>Start with the child, not the clinic.</h4>
+                    <p>Each condition gets a full-width card with a photo, a plain-language description and a consultation button. The page speaks to one child, not a list of services.</p>
                     {principleImg("/projects/whitestone/principle-1.jpg", "Principle 01: Start with the child, not the clinic")}
                   </div>
                 </div>
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
-                    <h4>Show the whole path before the first call</h4>
-                    <p>A six-step journey, from first enquiry and parent interview through assessment, planning, therapy and ongoing re-evaluation, makes the process visible, so booking feels less like a leap into the unknown.</p>
+                    <h4>Show the whole path before the first call.</h4>
+                    <p>A six-step journey, from first enquiry and parent interview to assessment, planning, therapy and re-evaluation, shows parents what happens next. Booking stops feeling like a leap.</p>
                     {principleImg("/projects/whitestone/principle-2.jpg", "Principle 02: Show the whole path before the first call")}
                   </div>
                 </div>
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 03</span>
                   <div className="cs-principle-content">
-                    <h4>Let credentials and warmth sit side by side</h4>
-                    <p>The About page puts the founder&apos;s message and qualifications next to the clinic&apos;s values, pairing professional credibility with the human tone parents are looking for.</p>
+                    <h4>Let credentials and warmth sit side by side.</h4>
+                    <p>The About page places the founder&apos;s message and qualifications next to the clinic&apos;s values, so parents see professional credibility and a human tone in one view.</p>
                     {principleImg("/projects/whitestone/principle-3.jpg", "Principle 03: Let credentials and warmth sit side by side")}
                   </div>
                 </div>
@@ -263,39 +263,27 @@ export default function WhitestoneCaseStudy() {
           </motion.div>
         </section>
 
-        {/* ── 05  DESIGN & ITERATION ── */}
+        {/* ── 05  DESIGN & BUILD ── */}
         <section className="cs-section">
           <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
-              <span className="cs-section-tag">05  Design &amp; iteration</span>
-              <h2 className="cs-section-title">Four pages, one clear action</h2>
+              <span className="cs-section-tag">05  Design &amp; build</span>
+              <h2 className="cs-section-title">Four pages, one clear action.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The site is organised into Home, About, Services and Blog, with a &quot;Book Free Consultation&quot; button in the header of every page and repeated at the end of the home and services pages, so the next step is never more than a click away.
+                The site has four pages, Home, About, Services and Blog, with a &quot;Book Free Consultation&quot; button in every header and again at the end of the Home and Services pages. The next step is never more than a click away.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
                 Type and colour keep a sensitive subject approachable: a bold grotesque for headlines with a single italic accent, soft pastel service cards, generous white space, and one strong blue reserved for every booking action.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
-                I built the site myself using Next.js, Tailwind CSS and TypeScript, hosted on Vercel, so the design decisions above went live exactly as intended, with no handoff in between.
+                I built the site myself in Next.js and Tailwind CSS, so these decisions went live as designed, with no handoff in between. It&apos;s live and still being refined.
               </motion.p>
             </motion.div>
           </motion.div>
 
           {breakout("/projects/whitestone/sitemap.jpg", "Whitestone Site Map")}
-
-          <motion.div {...sectionProps} className="cs-section-grid cs-section-grid--centered">
-            <motion.div className="cs-section-right" variants={staggerContainer}>
-              <motion.h3 variants={fadeUp} className="cs-sub-heading">Ongoing refinement</motion.h3>
-              <motion.div variants={fadeUp} className="cs-iterations">
-                <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Status: Live, still being refined</span>
-                  <p>The site is published and continues to be refined, so this case study documents its current structure and decisions rather than a finished version.</p>
-                </div>
-              </motion.div>
-            </motion.div>
-          </motion.div>
         </section>
 
         {/* ── 06  ADMIN PORTAL ── */}
@@ -303,11 +291,11 @@ export default function WhitestoneCaseStudy() {
           <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">06  Admin portal</span>
-              <h2 className="cs-section-title">The website brings families in. The portal is how the clinic will keep them informed.</h2>
+              <h2 className="cs-section-title">The website brings families in. The portal will keep them informed.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                Alongside the public site, Whitestone is building a private portal where therapists log session feedback and parents follow their child&apos;s progress. I designed and built its foundation: the admin portal.
+                Once therapy begins, parents want to know how it&apos;s going. The clinic plans a private portal where therapists log session feedback and parents follow their child&apos;s progress. I designed and built its foundation: the admin portal.
               </motion.p>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">What it does</motion.h3>
@@ -344,12 +332,12 @@ export default function WhitestoneCaseStudy() {
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">How I built it</motion.h3>
               <motion.p variants={fadeUp} className="cs-section-body">
-                I designed and built the admin portal using AI-assisted development with Claude and Claude Code. It&apos;s live for clinic staff.
+                I designed it, then built it with Claude and Claude Code, using AI-assisted development to move from design to working software quickly. It&apos;s live for clinic staff.
               </motion.p>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">What&apos;s next</motion.h3>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The therapist and parent portals are planned as the next phase, building on the access controls the admin portal already manages.
+                Therapist and parent portals are the next phase, built on the access controls the admin portal already manages.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -360,11 +348,11 @@ export default function WhitestoneCaseStudy() {
           <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">07  Outcome &amp; impact</span>
-              <h2 className="cs-section-title">A live site built around the first step</h2>
+              <h2 className="cs-section-title">A live front door, and the foundation behind it.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer} style={{ paddingTop: "39px" }}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The site is live and gives families a clear route from first worry to booked consultation, across four pages and a single consistent call to action. Behind the public site, a live admin portal lays the foundation for therapist and parent access.
+                The site gives families a clear route from first worry to booked consultation, across four pages and one consistent call to action. Behind it, a live admin portal lays the foundation for therapist and parent access.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -389,11 +377,6 @@ export default function WhitestoneCaseStudy() {
                 <span className="cs-outcome-label">Reach</span>
               </div>
               <div className="cs-outcome-card">
-                <span className="cs-outcome-value cs-outcome-value--text">Live</span>
-                <span className="cs-outcome-delta">Published and still being refined</span>
-                <span className="cs-outcome-label">Status</span>
-              </div>
-              <div className="cs-outcome-card cs-outcome-card--full">
                 <span className="cs-outcome-value">1</span>
                 <span className="cs-outcome-delta">Admin portal, live for clinic staff</span>
                 <span className="cs-outcome-label">Client Portal</span>
@@ -407,17 +390,17 @@ export default function WhitestoneCaseStudy() {
           <motion.div {...sectionProps}>
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">08  Reflection</span>
-              <h2 className="cs-section-title">Designing, writing and building, together</h2>
+              <h2 className="cs-section-title">From first sketch to live site, in one pair of hands.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.div variants={fadeUp} className="cs-reflection-grid">
                 <div className="cs-reflection-card">
                   <h4>What worked well</h4>
-                  <p>Organising the homepage around the concerns families already recognise, and keeping the detailed services on their own page, kept a broad specialist offer approachable.</p>
+                  <p>Leading with the concerns families recognise, and keeping detailed services on their own page, made a broad specialist offer approachable. Building the site myself meant nothing was lost between design and code.</p>
                 </div>
                 <div className="cs-reflection-card">
                   <h4>Next steps</h4>
-                  <p>Keep refining the site as the clinic&apos;s needs evolve, including the content and structure of the blog, while keeping the single consultation action consistent across every page. Design and build the therapist and parent portals on top of the admin portal, so families can follow their child&apos;s progress between sessions.</p>
+                  <p>Design and build the therapist and parent portals on top of the admin portal, so families can follow their child&apos;s progress between sessions. Keep refining the site and blog as the clinic grows, with the single consultation action consistent on every page.</p>
                 </div>
               </motion.div>
             </motion.div>

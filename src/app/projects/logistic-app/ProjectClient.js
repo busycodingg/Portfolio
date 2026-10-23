@@ -50,7 +50,7 @@ export default function LogisticAppCaseStudy() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="case-study-body-text" style={{ marginTop: '2rem' }}>
-                Designing an inventory and facility management system for a nonprofit  replacing years of manual processes with a single seamless platform.
+                An inventory and facility management platform for a nonprofit, replacing years of manual processes with one system.
               </motion.p>
 
               <motion.div variants={fadeUp} className="case-study-meta">
@@ -79,7 +79,7 @@ export default function LogisticAppCaseStudy() {
                 <div className="meta-row">
                   <div className="meta-item">
                     <span className="meta-label dimmed">Timeline</span>
-                    <span className="meta-value">4 Months</span>
+                    <span className="meta-value">Jun – Oct 2024</span>
                   </div>
                   <div className="meta-item">
                     <span className="meta-label dimmed">User Types</span>
@@ -117,20 +117,20 @@ export default function LogisticAppCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                EGFM had been managing its facilities the same way for years  paper logs, spreadsheets, and human memory. The result was predictable: items went missing without anyone noticing, maintenance was delayed until damage was already done, internal staff had no way to track their requests, and members of the public had no formal channel to make requests at all.
+                EGFM had managed its facilities the same way for years: paper logs, spreadsheets and memory. Items went missing unnoticed, maintenance waited until damage was done, staff couldn't track their requests, and members of the public had no formal way to make one.
               </motion.p>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The cost wasn't just financial. Facility managers spent more time chasing paperwork than actually managing the facility. Staff submitted requests that disappeared into a black hole. And people outside the organisation who needed something had to rely entirely on knowing the right person to call  with no guarantee their request would ever be seen.
+                The cost wasn't only financial. Facility managers spent more time chasing paperwork than managing the facility. Staff requests disappeared without a trace. And people outside the organisation had to know the right person to call, with no guarantee their request would ever be seen.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-card-pair">
                 <div className="cs-card">
                   <span className="cs-card-tag">Business problem</span>
-                  <p>No centralised system existed to manage inventory, maintenance schedules, generator usage, facility complaints, or item requests from both internal staff and the public  leading to undetected losses, excess costs, and operational blind spots.</p>
+                  <p>No central system existed for inventory, maintenance schedules, generator usage, facility complaints, or item requests from staff and the public. The result was undetected losses, extra costs and operational blind spots.</p>
                 </div>
                 <div className="cs-card">
                   <span className="cs-card-tag">User problem</span>
-                  <p>Facility managers had no single source of truth. Internal staff had no reliable way to request items. And members of the public had no formal channel to make requests at all  they relied entirely on knowing the right person to call.</p>
+                  <p>Facility managers had no single source of truth. Staff had no reliable way to request items. And members of the public had no formal channel at all; they relied on knowing the right person to call.</p>
                 </div>
               </motion.div>
               <motion.div
@@ -156,7 +156,7 @@ export default function LogisticAppCaseStudy() {
               <motion.div variants={fadeUp} className="cs-statement">
                 <span className="cs-card-tag">Problem statement</span>
                 <blockquote className="cs-blockquote">
-                  "How might we design a facility management system so intuitive that facility managers, internal staff, and complete strangers can all log, track, and manage every item and request in the ministry  without a single paper form?"
+                  "How might we design a facility management system so intuitive that facility managers, internal staff and complete strangers can all log, track and manage every item and request in the ministry, without a single paper form?"
                 </blockquote>
               </motion.div>
             </motion.div>
@@ -174,11 +174,11 @@ export default function LogisticAppCaseStudy() {
           >
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">03  Research &amp; discovery</span>
-              <h2 className="cs-section-title">Three users. One platform. Completely different needs.</h2>
+              <h2 className="cs-section-title">Three users. One platform. Very different needs.</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                EGFM served three distinct user types with fundamentally different relationships to the platform. Facility managers needed to oversee and control everything. Internal staff needed a simple way to request items. And members of the public needed a way to make requests without any prior knowledge of how the organisation worked  or who to contact. Understanding all three before touching Figma was non-negotiable.
+                EGFM's platform had three user types with very different relationships to it. Facility managers needed to oversee everything. Staff needed a simple way to request items. And members of the public needed a way to make requests without knowing how the organisation worked or who to contact. Understanding all three before opening Figma was non-negotiable.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-research-grid">
@@ -196,7 +196,7 @@ export default function LogisticAppCaseStudy() {
                 </div>
                 <div className="cs-research-card">
                   <span className="cs-research-type">Pain point analysis</span>
-                  <span className="cs-research-stat">Where manual processes were breaking down most frequently</span>
+                  <span className="cs-research-stat">Where manual processes broke down most often</span>
                 </div>
               </motion.div>
 
@@ -204,35 +204,35 @@ export default function LogisticAppCaseStudy() {
               <motion.div variants={fadeUp} className="cs-insights">
                 <div className="cs-insight">
                   <span className="cs-insight-num">1</span>
-                  <p>The biggest pain point for facility managers wasn't missing items  it was not knowing items were missing until it was too late. There was no trigger to alert anyone when something left and didn't come back.</p>
+                  <p>The biggest pain point for facility managers wasn't missing items. It was not knowing items were missing until it was too late. Nothing alerted anyone when something left and didn't come back.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">2</span>
-                  <p>For internal staff requesters the frustration was invisibility  requests submitted verbally or on paper disappeared into a black hole with no confirmation, no status update, and no way to follow up without physically finding the facility manager.</p>
+                  <p>For staff, the frustration was invisibility. Requests made verbally or on paper vanished: no confirmation, no status update, and no way to follow up without finding the facility manager in person.</p>
                 </div>
                 <div className="cs-insight">
                   <span className="cs-insight-num">3</span>
-                  <p>Members of the public had no formal request channel at all  they relied on personal connections or showing up in person. Requests that came in this way were unrecorded, untracked, and frequently lost entirely.</p>
+                  <p>Members of the public had no formal channel at all. They relied on personal connections or turning up in person, so their requests went unrecorded, untracked and often lost.</p>
                 </div>
               </motion.div>
 
-              <motion.h3 variants={fadeUp} className="cs-sub-heading">Target User Archetypes</motion.h3>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Target user archetypes</motion.h3>
               <motion.div variants={fadeUp} className="cs-personas-grid">
                 <div className="cs-persona-card">
                   <div className="cs-persona-header">
                     <div className="cs-persona-avatar">🏢</div>
                     <div className="cs-persona-identity">
                       <h4>The Facility Manager</h4>
-                      <span>Operations-focused &middot; Multi-responsibility</span>
+                      <span>Operations-focused &middot; Many responsibilities</span>
                     </div>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>A single platform to oversee all facility assets, approve and fulfil item requests from both staff and the public, manage maintenance schedules, monitor generator usage, and resolve complaints.</p>
+                    <span className="cs-persona-label">Core need</span>
+                    <p>One platform to oversee all assets, approve and fulfil requests from staff and the public, manage maintenance schedules, monitor generator usage and resolve complaints.</p>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>No visibility into item status, request history, maintenance records, or complaint resolution  everything existed in someone's head or a physical file.</p>
+                    <span className="cs-persona-label">Primary frustration</span>
+                    <p>No visibility into item status, request history, maintenance records or complaints; everything lived in someone's head or a physical file.</p>
                   </div>
                 </div>
 
@@ -241,16 +241,16 @@ export default function LogisticAppCaseStudy() {
                     <div className="cs-persona-avatar">📥</div>
                     <div className="cs-persona-identity">
                       <h4>The Staff Requester</h4>
-                      <span>Internal Staff &middot; Needs-focused</span>
+                      <span>Internal &middot; Needs-focused</span>
                     </div>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>A simple, fast way to request items from the facility store  with real-time visibility into the status of their request without having to chase anyone down.</p>
+                    <span className="cs-persona-label">Core need</span>
+                    <p>A simple, fast way to request items from the store, with real-time status and no chasing.</p>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>The existing process was entirely verbal or paper-based  requests got lost, forgotten, or disputed with no record of what was asked for.</p>
+                    <span className="cs-persona-label">Primary frustration</span>
+                    <p>The process was verbal or on paper, so requests got lost, forgotten or disputed with no record.</p>
                   </div>
                 </div>
               </motion.div>
@@ -261,23 +261,23 @@ export default function LogisticAppCaseStudy() {
                     <div className="cs-persona-avatar">🌍</div>
                     <div className="cs-persona-identity">
                       <h4>The Member of the Public</h4>
-                      <span>External &middot; First-time User</span>
+                      <span>External &middot; First-time user</span>
                     </div>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Core Need</span>
-                    <p>A clear, welcoming way to request items from the organisation without needing to know anyone internally, navigate bureaucracy, or make a phone call.</p>
+                    <span className="cs-persona-label">Core need</span>
+                    <p>A clear, welcoming way to request items without knowing anyone inside, navigating bureaucracy or making a phone call.</p>
                   </div>
                   <div className="cs-persona-detail">
-                    <span className="cs-persona-label">Primary Frustration</span>
-                    <p>No formal channel existed for external requests  members of the public had to rely on personal connections or showing up in person.</p>
+                    <span className="cs-persona-label">Primary frustration</span>
+                    <p>No formal channel existed, only personal connections or turning up in person.</p>
                   </div>
                 </div>
               </motion.div>
 
               <motion.blockquote variants={fadeUp} className="cs-pull-quote">
                 "I put in a request two weeks ago. I still don't know if anyone saw it."
-                <cite> Staff requester</cite>
+                <cite>Staff requester</cite>
               </motion.blockquote>
             </motion.div>
           </motion.div>
@@ -298,15 +298,15 @@ export default function LogisticAppCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                With three user types and six modules, I needed a clear set of principles to anchor every design decision  especially when the needs of facility managers, internal staff, and members of the public pulled in different directions.
+                With three user types and six modules, I set four principles to anchor every decision, especially when users' needs pulled in different directions.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-principles">
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 01</span>
                   <div className="cs-principle-content">
-                    <h4>Logging should take seconds, not minutes</h4>
-                    <p>If adding a record to the system takes longer than writing it on paper, staff will write it on paper. Every log entry had to be completable in the fewest possible steps.</p>
+                    <h4>Logging should take seconds, not minutes.</h4>
+                    <p>If adding a record takes longer than writing it on paper, staff will write it on paper. Every entry had to take as few steps as possible.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/Logistic/Principle 1.png"
@@ -323,8 +323,8 @@ export default function LogisticAppCaseStudy() {
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 02</span>
                   <div className="cs-principle-content">
-                    <h4>Visibility over everything</h4>
-                    <p>The core problem was invisibility. Every module was designed to surface the most critical status information immediately, without requiring staff to dig for it.</p>
+                    <h4>Visibility over everything.</h4>
+                    <p>The core problem was invisibility, so every module surfaces the most important status information immediately, with no digging.</p>
                     <div className="cs-principle-mockup">
                       <motion.img
                         src="/projects/Logistic/Principle 2.png"
@@ -341,16 +341,16 @@ export default function LogisticAppCaseStudy() {
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 03</span>
                   <div className="cs-principle-content">
-                    <h4>Build for low technical literacy</h4>
-                    <p>Language had to be plain, actions self-explanatory, and error states had to guide users back on track without technical jargon.</p>
+                    <h4>Build for low technical literacy.</h4>
+                    <p>Plain language, self-explanatory actions, and error states that guide people back on track without jargon.</p>
 
                   </div>
                 </div>
                 <div className="cs-principle">
                   <span className="cs-principle-num">Principle 04</span>
                   <div className="cs-principle-content">
-                    <h4>Anyone should be able to request, not just insiders</h4>
-                    <p>The request experience had to work for a complete stranger  no jargon, no assumed knowledge, no login barrier. Simple and fast submission.</p>
+                    <h4>Anyone should be able to request, not just insiders.</h4>
+                    <p>The request flow had to work for a complete stranger: no jargon, no assumed knowledge, no login. Simple, fast submission.</p>
 
                   </div>
                 </div>
@@ -371,11 +371,11 @@ export default function LogisticAppCaseStudy() {
           >
             <motion.div className="cs-section-left" variants={fadeUp}>
               <span className="cs-section-tag">05  Design &amp; iteration</span>
-              <h2 className="cs-section-title">Building six modules that worked for three completely different users</h2>
+              <h2 className="cs-section-title">Six modules, three very different users</h2>
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                The challenge with EGFM wasn't designing one complex flow  it was designing six distinct modules that solved different problems for three different user types, while making the entire platform feel cohesive and consistent. Started with the Request Log and Inventory modules as the foundation  the two modules where all three user types intersected  then built the remaining four modules on top of the same component library and interaction patterns.
+                The challenge wasn't one complex flow. It was six modules solving different problems for three user types, while the whole platform still felt like one product. I started with the Request Log and Inventory modules, where all three user types meet, then built the other four on the same component library and interaction patterns.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -413,12 +413,12 @@ export default function LogisticAppCaseStudy() {
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Iteration & Refinement</motion.h3>
               <motion.div variants={fadeUp} className="cs-iterations">
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 1: Feedback</span>
-                  <p>Staff requesters were submitting duplicate requests for the same item because they had no confirmation that their first request had been received. This created noise and confusion over fulfilment.</p>
+                  <span className="cs-iteration-tag">Iteration 1 · Feedback</span>
+                  <p>Staff were submitting duplicate requests for the same item because nothing confirmed their first request had arrived. It created noise and confusion over fulfilment.</p>
                 </div>
                 <div className="cs-iteration">
-                  <span className="cs-iteration-tag">Iteration 2: Refinement</span>
-                  <p>Added an immediate in-app confirmation screen after every request submission  showing the request details, a reference number, and the expected response time. Duplicate submissions dropped significantly after the change.</p>
+                  <span className="cs-iteration-tag">Iteration 2 · Refinement</span>
+                  <p>I added a confirmation screen after every request, showing the request details, a reference number and the expected response time. Duplicate submissions dropped significantly.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -440,7 +440,7 @@ export default function LogisticAppCaseStudy() {
             </motion.div>
             <motion.div className="cs-section-right" variants={staggerContainer}>
               <motion.p variants={fadeUp} className="cs-section-body">
-                EGFM shipped as a fully operational internal platform  replacing the organisation's entire manual facility management and item request process with a single digital system.
+                EGFM shipped as a fully operational internal platform, replacing the organisation's manual facility management and item request process with one digital system.
               </motion.p>
 
               <motion.div variants={fadeUp} className="cs-outcome-grid cs-outcome-grid--full">
@@ -451,17 +451,17 @@ export default function LogisticAppCaseStudy() {
                 </div>
                 <div className="cs-outcome-card">
                   <span className="cs-outcome-value">3</span>
-                  <span className="cs-outcome-delta">User types served on one unified platform</span>
+                  <span className="cs-outcome-delta">User types served on one platform</span>
                   <span className="cs-outcome-label">User Diversity</span>
                 </div>
                 <div className="cs-outcome-card">
                   <span className="cs-outcome-value">Open Access</span>
-                  <span className="cs-outcome-delta">Public can submit requests directly</span>
+                  <span className="cs-outcome-delta">The public can submit requests directly</span>
                   <span className="cs-outcome-label">External Inclusion</span>
                 </div>
                 <div className="cs-outcome-card">
                   <span className="cs-outcome-value cs-outcome-value--text">Full visibility</span>
-                  <span className="cs-outcome-delta">Into inventory, maintenance, and requests</span>
+                  <span className="cs-outcome-delta">Into inventory, maintenance and requests</span>
                   <span className="cs-outcome-label">For the first time</span>
                 </div>
               </motion.div>
@@ -486,15 +486,15 @@ export default function LogisticAppCaseStudy() {
               <motion.div variants={fadeUp} className="cs-reflection-grid">
                 <div className="cs-reflection-card">
                   <h4>What worked well</h4>
-                  <p>Designing the Request Log module as the intersection point between all three user types early in the process gave the rest of the platform a clear interaction model. The component library built for the request flow scaled cleanly across all six modules.</p>
+                  <p>Designing the Request Log early, as the point where all three user types meet, gave the rest of the platform a clear interaction model. The component library built for the request flow scaled cleanly across all six modules.</p>
                 </div>
                 <div className="cs-reflection-card">
                   <h4>What I'd do differently</h4>
-                  <p>I'd invest more time testing the public-facing request flow with actual members of the public earlier. Designing for someone with zero context about the organisation is a fundamentally different challenge than designing for internal staff.</p>
+                  <p>Test the public request flow with real members of the public earlier. Designing for someone with no context about the organisation is a very different challenge from designing for staff.</p>
                 </div>
                 <div className="cs-reflection-card">
-                  <h4>Next steps / v2</h4>
-                  <p>A mobile companion app focused on the request experience  for both internal staff and members of the public who need to submit and track item requests from their phone without accessing the full web platform.</p>
+                  <h4>Next steps</h4>
+                  <p>A mobile companion app for the request experience, so staff and members of the public can submit and track requests from their phones without the full web platform.</p>
                 </div>
               </motion.div>
             </motion.div>
