@@ -27,7 +27,6 @@ Rules from the brief: use real Waystream exports only, no stock images or illust
 | Screen 04D | Creator subscription and billing management · Subscription plans | `screen-04d-2-subscription-plans.png` | 16/10 (added) |
 | Screen 04D | Creator subscription and billing management · Billing management | `screen-04d-3-billing.png` | 16/10 (added) |
 | Flow 05A | Discover and listen · Discover | `flow-05a-1-discover.png` | 9/19.5 (added) |
-| Flow 05A | Discover and listen · Creator or broadcast | `flow-05a-2-creator-detail.png` | 9/19.5 (added: Lively Hub channel, top of page) |
 | Flow 05A | Discover and listen · Listen live | `flow-05a-3-live-listening.png` | 9/19.5 (added) |
 | Screen 05B | Live engagement · Live chat | `screen-05b-1-live-chat.png` | 9/19.5 (added) |
 | Screen 05B | Live engagement · Send a gift | `screen-05b-2-gifting.png` | 9/19.5 (added) |
@@ -47,7 +46,6 @@ Rules from the brief: use real Waystream exports only, no stock images or illust
 | Flow 08B | Marketing website: before and after · Pricing | `flow-08b-3-website-pricing.png` | 408/219 (added) |
 | Screen 08C | Referral and social-sharing touchpoints · Creator referral | `screen-08b-1-referral-invite.png` | 16/10 (added) |
 | Screen 08C | Referral and social-sharing touchpoints · Share prompt on going live | `screen-08b-2-go-live-share-modal.png` | 16/10 (added) |
-| Screen 08C | Referral and social-sharing touchpoints · In-stream share | `screen-08b-3-in-stream-share.png` | 16/10 (added, full desktop live page) |
 | Screen 09 | Broadcast controls: tested experience and improvements · Tested | `screen-09-1-controls-tested.png` | 2000/1003 (added) |
 | Screen 09 | Broadcast controls: tested experience and improvements · Improved | `screen-09-2-controls-improved.png` | 2000/1003 (added) |
 | Screen 10A | Design system foundations and components · Typography | `screen-10a-1-typography.png` | 1387/1770 (added) |

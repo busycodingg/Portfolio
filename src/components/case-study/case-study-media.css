@@ -571,6 +571,22 @@
     margin-top: 3rem;
 }
 
+/* Hero summary: the problem-statement voice, scaled down to sit under the meta. */
+.cs-blockquote.csm-hero-summary {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 38rem;
+}
+
+@media (max-width: 768px) {
+    .cs-blockquote.csm-hero-summary {
+        font-size: 1.15rem;
+    }
+}
+
 /* Full-width problem statement: keep the quote to a readable measure. */
 .csm-statement {
     margin-top: 4rem;

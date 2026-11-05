@@ -114,10 +114,9 @@ export const SLOTS = {
     title: "Discover and listen",
     layout: "sequence",
     device: "mobile",
-    show: "Listener home or discovery screen, a creator or broadcast detail view, and the live listening screen.",
+    show: "Listener home or discovery screen and the live listening screen.",
     items: [
       { file: "flow-05a-1-discover", ratio: MOBILE, title: "Discover", caption: "Browse by genre in a full-screen feed, with likes, comments and sharing", alt: "Listener home feed with genre filters" },
-      { file: "flow-05a-2-creator-detail", ratio: MOBILE, title: "Creator channel", caption: "Subscribe, share, browse audio and playlists, or join the live broadcast", alt: "Lively Hub channel page with a live broadcast" },
       { file: "flow-05a-3-live-listening", ratio: MOBILE, title: "Listen live", caption: "Tune in live with playback controls, likes, comments, giving and one-tap subscribe", alt: "Listener live streaming screen for Lively Hub" },
     ],
   },
@@ -189,12 +188,11 @@ export const SLOTS = {
     label: "Screen 08C",
     title: "Referral and social-sharing touchpoints",
     layout: "grid",
-    columns: 3,
-    show: "Referral invitation screen (if available), the go-live sharing modal and the in-stream share control.",
+    columns: 2,
+    show: "Referral invitation screen and the go-live sharing modal.",
     items: [
       { file: "screen-08b-1-referral-invite", ratio: DESKTOP, title: "Creator referral", caption: "Share a referral link on WhatsApp, Facebook or X, then track invites, joins and earnings", alt: "Creator referral link and referral tracking" },
       { file: "screen-08b-2-go-live-share-modal", ratio: DESKTOP, title: "Share prompt on going live", caption: "The moment a creator goes live, they are prompted to share the stream", alt: "You are live prompt with share options" },
-      { file: "screen-08b-3-in-stream-share", ratio: DESKTOP, title: "In-stream share", caption: "While live, creators share to WhatsApp, Facebook or X, or copy the link", alt: "Share panel inside the live broadcast studio" },
     ],
   },
 

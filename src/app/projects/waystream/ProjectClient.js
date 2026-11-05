@@ -147,6 +147,10 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                     View the live site ↗
                   </a>
                 </motion.div>
+
+                <motion.p variants={fadeUp} className="cs-blockquote csm-hero-summary">
+                  Founding Design Lead across Waystream&apos;s creator, listener and admin products, on iOS, Android, web and desktop. Creator onboarding completion rose from 30% to 50%, and creator subscriptions grew 25% after the website redesign.
+                </motion.p>
               </motion.div>
 
               <motion.div className="cs-hero-right" variants={staggerContainer}>
@@ -158,6 +162,9 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
                 />
+                <motion.p variants={fadeUp} className="csm-item-caption">
+                  Product screens show sample data.
+                </motion.p>
               </motion.div>
             </motion.div>
           </section>
@@ -167,9 +174,6 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
             <SectionHead num="01" title="Project overview">
               <Body>
                 Waystream is a live audio streaming platform that enables creators, including churches and independent broadcasters, to connect with audiences through live audio. Creators can broadcast, manage content, understand performance and earn when listeners give. Listeners can discover broadcasts, listen, participate in the live experience and send gifts to the creators they love.
-              </Body>
-              <Body>
-                I joined the product team as Founding Design Lead and led product design across the platform, shaping experiences for creators, listeners and administrators from the ground up.
               </Body>
               <Body>
                 My scope included creator and listener products, the admin platform, payment and subscription journeys, the marketing website and the product design system.
@@ -182,7 +186,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
           <section className="cs-section">
             <SectionHead num="02" title="The challenge">
               <Body>
-                Waystream evolved gradually from its early product offering towards a more self-service, product-led growth model. The product needed to support three user groups with different goals and operational needs.
+                Creators could go live, but growing and earning was harder than it should have been. Many left sign-up before finishing, the audiences they built on WhatsApp listened somewhere else, and paying for tools often needed a dollar card. As Waystream moved toward self-service growth, the product also had to serve three groups with very different needs.
               </Body>
             </SectionHead>
             <motion.div variants={fadeUp} {...inView} className="csm-trio csm-trio--wide">
@@ -216,6 +220,9 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </Body>
               <Body>
                 I used a combination of research methods, including user interviews, surveys, usability testing, competitor research and feedback from listeners, to understand user needs and inform design decisions. I considered the goals and context of each user group rather than treating the platform as a single audience.
+              </Body>
+              <Body>
+                Two findings shaped the product. Creators already promoted their streams on WhatsApp, but sent listeners elsewhere to listen, so the audience they built never landed anywhere of their own. And many creators wanted to go live from a phone, without a technical team. That&apos;s why sharing to WhatsApp is built into going live, and why the mobile app puts one large broadcast control within thumb reach.
               </Body>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Target user archetypes</motion.h3>
@@ -323,7 +330,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
           <section className="cs-section">
             <SectionHead num="08" title="Supporting product-led growth">
               <Body>
-                As Waystream evolved, the product team introduced improvements intended to make adoption easier and encourage organic growth. I contributed to several initiatives across onboarding, referrals, sharing and listener engagement.
+                As Waystream evolved, the product team introduced improvements intended to make adoption easier and encourage organic growth. I designed the product side of several initiatives across onboarding, referrals, sharing and listener engagement.
               </Body>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Reducing onboarding friction</motion.h3>
@@ -361,7 +368,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Encouraging creator referrals</motion.h3>
               <Body>
-                We introduced a referral programme that allowed existing creators to invite other creators to join Waystream, supporting organic user acquisition.
+                We introduced a referral programme so existing creators could invite other creators to Waystream. I designed the referral flow: a shareable link for WhatsApp, Facebook and X, with invites, joins and earnings tracked in one place.
               </Body>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Making livestreams easier to share</motion.h3>
