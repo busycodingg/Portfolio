@@ -159,7 +159,7 @@ export function Slot({ slot, variant }) {
     body = (
       <div className="csm-compare">
         {items.map((item, i) => (
-          <figure className={`csm-figure csm-compare-item ${i === 0 ? "csm-compare-item--before" : "csm-compare-item--after"}`} key={item.file}>
+          <figure className={`csm-figure csm-compare-item ${i === 0 ? "csm-compare-item--before" : "csm-compare-item--after"} ${item.wide ? "csm-compare-item--wide" : ""}`} key={item.file}>
             <Frame item={item} slot={slot} />
             <ItemCaption item={item} index={i} />
           </figure>
@@ -168,13 +168,17 @@ export function Slot({ slot, variant }) {
     );
   } else if (layout === "feature-grid") {
     const [lead, ...rest] = items;
+    // With a single supporting screen, size the columns by aspect ratio so both
+    // screens share a height and their captions line up.
+    const aspect = (ratio) => ratio.split("/").reduce((w, h) => Number(w) / Number(h));
+    const pairCols = rest.length === 1 ? `minmax(0, ${aspect(lead.ratio)}fr) minmax(0, ${aspect(rest[0].ratio)}fr)` : undefined;
     body = (
-      <div className="csm-feature-grid">
+      <div className="csm-feature-grid" style={pairCols && { "--csm-feature-cols": pairCols }}>
         <figure className="csm-figure csm-feature-lead">
           <Frame item={lead} slot={slot} />
           <ItemCaption item={lead} index={0} />
         </figure>
-        <div className="csm-grid" style={{ "--csm-cols": 2 }}>
+        <div className="csm-feature-side">
           {rest.map((item, i) => (
             <figure className="csm-figure" key={item.file}>
               <Frame item={item} slot={slot} />
@@ -243,28 +247,35 @@ export function Slot({ slot, variant }) {
 }
 
 // A simple before → after bar comparison for a single measured result.
-export function MetricShift({ label, from, to, note }) {
+// Pass `value` instead of from/to for a measured change with no baseline.
+export function MetricShift({ label, from, to, value, note }) {
   return (
     <div className="csm-metric-shift">
       <span className="csm-metric-tag">Measured</span>
       <div className="csm-metric-shift-head">
         <span className="csm-metric-shift-value">
-          {from}% <span aria-hidden="true">→</span> {to}%
+          {value ?? (
+            <>
+              {from}% <span aria-hidden="true">→</span> {to}%
+            </>
+          )}
         </span>
         <span className="csm-metric-shift-label">{label}</span>
       </div>
-      <div className="csm-bars" aria-hidden="true">
-        <div className="csm-bar-row">
-          <span className="csm-bar-name">Before</span>
-          <div className="csm-bar-track"><div className="csm-bar csm-bar--before" style={{ width: `${from}%` }} /></div>
-          <span className="csm-bar-value">{from}%</span>
+      {value == null && (
+        <div className="csm-bars" aria-hidden="true">
+          <div className="csm-bar-row">
+            <span className="csm-bar-name">Before</span>
+            <div className="csm-bar-track"><div className="csm-bar csm-bar--before" style={{ width: `${from}%` }} /></div>
+            <span className="csm-bar-value">{from}%</span>
+          </div>
+          <div className="csm-bar-row">
+            <span className="csm-bar-name">After</span>
+            <div className="csm-bar-track"><div className="csm-bar csm-bar--after" style={{ width: `${to}%` }} /></div>
+            <span className="csm-bar-value">{to}%</span>
+          </div>
         </div>
-        <div className="csm-bar-row">
-          <span className="csm-bar-name">After</span>
-          <div className="csm-bar-track"><div className="csm-bar csm-bar--after" style={{ width: `${to}%` }} /></div>
-          <span className="csm-bar-value">{to}%</span>
-        </div>
-      </div>
+      )}
       {note && <p className="csm-metric-note">{note}</p>}
     </div>
   );

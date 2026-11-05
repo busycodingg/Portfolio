@@ -184,21 +184,27 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               <Body>
                 Waystream evolved gradually from its early product offering towards a more self-service, product-led growth model. The product needed to support three user groups with different goals and operational needs.
               </Body>
-              <motion.div variants={fadeUp} className="csm-trio">
-                <div className="cs-card">
-                  <span className="cs-card-tag">Creators</span>
-                  <p>Needed to onboard, broadcast, schedule content, monitor performance and monetise their audiences.</p>
-                </div>
-                <div className="cs-card">
-                  <span className="cs-card-tag">Listeners</span>
-                  <p>Needed to discover broadcasts, follow creators, listen, chat, share streams and engage with live content.</p>
-                </div>
-                <div className="cs-card">
-                  <span className="cs-card-tag">Administrators</span>
-                  <p>Needed to manage users, creators, broadcasts, subscriptions, payments and content, and oversee platform activity.</p>
-                </div>
-              </motion.div>
             </SectionHead>
+            <motion.div variants={fadeUp} {...inView} className="csm-trio csm-trio--wide">
+              <div className="cs-card">
+                <span className="cs-card-tag">Creators</span>
+                <p>Needed to onboard, broadcast, schedule content, monitor performance and monetise their audiences.</p>
+              </div>
+              <div className="cs-card">
+                <span className="cs-card-tag">Listeners</span>
+                <p>Needed to discover broadcasts, follow creators, listen, chat, share streams and engage with live content.</p>
+              </div>
+              <div className="cs-card">
+                <span className="cs-card-tag">Administrators</span>
+                <p>Needed to manage users, creators, broadcasts, subscriptions, payments and content, and oversee platform activity.</p>
+              </div>
+            </motion.div>
+            <motion.div variants={fadeUp} {...inView} className="cs-statement csm-statement">
+              <span className="cs-card-tag">Problem statement</span>
+              <blockquote className="cs-blockquote">
+                &quot;How might we let a church or independent creator go live, grow an audience and earn, from any device, without technical help?&quot;
+              </blockquote>
+            </motion.div>
             <Visual slot={SLOTS.screen02} />
           </section>
 
@@ -266,7 +272,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                 I designed the end-to-end creator experience, from account creation through broadcasting and monetisation. The journey covered content uploads, going live, scheduling broadcasts, performance analytics, subscription plans, payment and billing management.
               </Body>
               <Body>
-                I organised the creator dashboard around quick actions, performance information and broadcast management, with going live prioritised as the primary action. I also integrated WhatsApp support into the dashboard so creators could reach the support team when they needed assistance.
+                I organised the creator dashboard around quick actions, performance information and broadcast management, with going live prioritised as the primary action. I also put WhatsApp support in the dashboard header. A creator stuck minutes before a broadcast can&apos;t wait for an email reply, so help needed to be one tap away.
               </Body>
             </SectionHead>
             <Visual slot={SLOTS.flow04a} />
@@ -288,7 +294,6 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
             </SectionHead>
             <Visual slot={SLOTS.flow05a} />
             <Visual slot={SLOTS.screen05b} />
-            <Visual slot={SLOTS.screen05c} />
           </section>
 
           {/* ── 06  DESIGNING THE ADMIN EXPERIENCE ── */}
@@ -305,10 +310,10 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
           <section className="cs-section">
             <SectionHead num="07" title="Payment and subscription journeys">
               <Body>
-                I designed end-to-end payment and subscription experiences for creators and listeners. My work covered payment method selection, entering payment details, checkout, transaction success and failure states, subscription renewals and billing management.
+                I designed end-to-end payment and subscription experiences for creators and listeners. My work covered payment method selection, entering payment details, checkout, transaction success states, subscription renewals and billing management.
               </Body>
               <Body>
-                Waystream&apos;s creator model allowed creators to broadcast for 15 minutes every day at no cost. Creators who needed longer broadcasts could subscribe to a paid plan. This gave people a way to experience the product before deciding whether to upgrade.
+                Waystream&apos;s creator model allowed creators to broadcast for 15 minutes every day at no cost. Creators who needed longer broadcasts could subscribe to a paid plan. The team wanted Waystream to be partly free, not totally free: every creator can broadcast daily without paying, and the paid plans sell one clear benefit, longer broadcasts. I designed the plans and upgrade flow around that line.
               </Body>
             </SectionHead>
             <Visual slot={SLOTS.flow07} />
@@ -323,7 +328,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Reducing onboarding friction</motion.h3>
               <Body>
-                Mixpanel funnel analysis showed that only 30% of users entering creator onboarding completed registration. We introduced Google and Apple sign-in alongside the existing registration process to reduce the effort required to create an account. Following the improvement, onboarding completion increased from 30% to 50%.
+                When we reviewed the creator funnel in Mixpanel, only 30% of people who started onboarding finished registration. To make sign-up faster, we added Google and Apple sign-in alongside the existing form, and I designed the updated sign-up screen. Completion rose from 30% to 50%.
               </Body>
             </SectionHead>
 
@@ -338,6 +343,22 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                 />
               </motion.div>
 
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Redesigning the marketing website</motion.h3>
+              <Body>
+                The old marketing website wasn&apos;t built around what creators get from Waystream. I worked with the marketing team on a redesign that listed creator features clearly, adapted language and imagery to each region, put pricing and the free 15 minutes up front, and repeated one call to action: Start for free. Creator subscriptions rose 25% after launch.
+              </Body>
+            </Narrative>
+
+            <Visual slot={SLOTS.flow08b} />
+            <Narrative>
+              <motion.div variants={fadeUp}>
+                <MetricShift
+                  label="Creator subscriptions"
+                  value="+25%"
+                  note="After the marketing website redesign."
+                />
+              </motion.div>
+
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Encouraging creator referrals</motion.h3>
               <Body>
                 We introduced a referral programme that allowed existing creators to invite other creators to join Waystream, supporting organic user acquisition.
@@ -349,7 +370,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </Body>
             </Narrative>
 
-            <Visual slot={SLOTS.screen08b} />
+            <Visual slot={SLOTS.screen08c} />
 
             <Narrative>
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Encouraging listeners to return</motion.h3>
@@ -358,7 +379,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </Body>
             </Narrative>
 
-            <Visual slot={SLOTS.screen08c} />
+            <Visual slot={SLOTS.screen08d} />
           </section>
 
           {/* ── 09  USABILITY TESTING AND ITERATION ── */}
@@ -435,10 +456,10 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
           <section className="cs-section">
             <SectionHead num="12" title="Reflection">
               <Body>
-                Working on Waystream gave me the opportunity to contribute to a product across its lifecycle, from early product definition and user research to design, implementation and continuous improvement. The work required balancing the needs of creators, listeners and administrators while considering adoption, engagement and monetisation.
+                Working on Waystream gave me the opportunity to contribute to a product across its lifecycle, from early product definition and user research to design, implementation and continuous improvement.
               </Body>
               <Body>
-                It reinforced that successful product design is not only about making individual features intuitive. It is about understanding how different parts of a product connect, how users move through those experiences and how design decisions contribute to wider business goals.
+                If I did it again, I&apos;d set up measurement earlier. Onboarding and subscriptions have numbers because tracking was already in place. The broadcast walkthrough doesn&apos;t, so I can only say support requests fell. On my next product, I&apos;d agree how each change will be measured before it ships.
               </Body>
             </SectionHead>
           </section>

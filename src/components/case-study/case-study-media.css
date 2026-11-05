@@ -275,9 +275,15 @@
 /* ── Feature grid (one lead screen + supporting screens) ── */
 .csm-feature-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    grid-template-columns: var(--csm-feature-cols, minmax(0, 1.35fr) minmax(0, 1fr));
     gap: 1.5rem;
     align-items: start;
+}
+
+/* Supporting screens stack beside the lead screen */
+.csm-feature-side {
+    display: grid;
+    gap: 1.5rem;
 }
 
 /* ── Compare (before / after) ── */
@@ -299,6 +305,11 @@
 
 .csm-compare-item--after .csm-item-caption strong {
     color: #ffffff;
+}
+
+/* A supporting screen below the before/after pair, at full content width */
+.csm-compare-item--wide {
+    grid-column: 1 / -1;
 }
 
 /* ── Platforms (same workflow across devices) ── */
@@ -555,7 +566,18 @@
     margin-bottom: 1rem;
 }
 
-@media (max-width: 1200px) {
+/* Full-width trio placed under a section head */
+.csm-trio--wide {
+    margin-top: 3rem;
+}
+
+/* Full-width problem statement: keep the quote to a readable measure. */
+.csm-statement {
+    margin-top: 4rem;
+    max-width: 56rem;
+}
+
+@media (max-width: 900px) {
     .csm-trio {
         grid-template-columns: 1fr;
     }
@@ -598,13 +620,18 @@
     overflow: hidden;
 }
 
-/* A step that spans two columns, e.g. to finish an uneven last row */
+/* Steps that span several columns, e.g. 3 + 2 rows on a 6-column sequence */
 .csm-span-2 {
     grid-column: span 2;
 }
 
-@media (max-width: 768px) {
-    .csm-span-2 {
+.csm-span-3 {
+    grid-column: span 3;
+}
+
+@media (max-width: 1024px) {
+    .csm-span-2,
+    .csm-span-3 {
         grid-column: auto;
     }
 }

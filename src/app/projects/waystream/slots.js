@@ -136,19 +136,6 @@ export const SLOTS = {
     ],
   },
 
-  screen05c: {
-    label: "Screen 05C",
-    title: "Following and notifications",
-    layout: "grid",
-    columns: 2,
-    device: "mobile",
-    show: "Follow/subscribe interaction and go-live notification. Use actual notification designs where available.",
-    items: [
-      { file: "screen-05c-1-follow-creator", ratio: MOBILE, title: "Subscribe to a creator", caption: "One tap on the live screen, confirmed with Subscribed", alt: "Listener subscribed to Lively Hub from the live screen" },
-      { file: "screen-05c-2-go-live-notification", ratio: MOBILE, title: "Go-live notification", caption: "Listeners hear when creators they subscribe to go live or post new audio", alt: "Notifications screen showing a creator is live now" },
-    ],
-  },
-
   screen06: {
     label: "Screen 06",
     title: "Admin platform",
@@ -156,7 +143,6 @@ export const SLOTS = {
     show: "Admin dashboard plus representative management screens.",
     items: [
       { file: "screen-06-1-admin-dashboard", ratio: "1673 / 1124", title: "Admin dashboard", caption: "Platform activity at a glance: users, creators, events, revenue, daily active users, and popular creators and categories", alt: "Waystream admin dashboard" },
-      { file: "screen-06-2-user-creator-management", ratio: "1994 / 1000", title: "User and creator management", caption: "Every account with its package, join date and status", alt: "Admin user management table" },
       { file: "screen-06-4-payments-subscriptions", ratio: "1994 / 1000", title: "Payments and subscriptions", caption: "Revenue in NGN and USD, and every subscription payment", alt: "Admin payments and subscriptions table" },
     ],
   },
@@ -165,14 +151,14 @@ export const SLOTS = {
     label: "Flow 07",
     title: "Payment and subscription journey",
     layout: "sequence",
-    columns: 3,
+    columns: 6,
     show: "Plan selection, order summary, payment method, success state, and renewal or billing management. Redact real payment details.",
     items: [
-      { file: "flow-07-1-plan-selection", ratio: DESKTOP, title: "Choose a plan", caption: "Free, Lite, Pro or 24/7, billed daily to yearly in local currency", alt: "Plan selection" },
-      { file: "flow-07-3-checkout", ratio: DESKTOP, title: "Order summary", caption: "Price, VAT and gateway charges itemised before paying, with the next charge date", alt: "Order summary before payment" },
-      { file: "flow-07-2-payment-details", ratio: "2000 / 1093", title: "Choose how to pay", caption: "Checkout through Paystack with local options: card, transfer, bank, USSD, OPay or Zap", alt: "Payment method selection in the Paystack checkout, with personal details blurred" },
-      { file: "flow-07-4-success", ratio: DESKTOP, title: "Payment successful", caption: "A clear confirmation that the payment went through, with one action to continue", alt: "Payment successful confirmation" },
-      { file: "flow-07-6-billing-renewal", ratio: "2000 / 1113", span: 2, title: "Renewal and billing", caption: "Current plan, expiry date and saved payment method in one place", alt: "Subscription renewal and billing management" },
+      { file: "flow-07-1-plan-selection", ratio: DESKTOP, span: 2, title: "Choose a plan", caption: "Free, Lite, Pro or 24/7, billed daily to yearly in local currency", alt: "Plan selection" },
+      { file: "flow-07-3-checkout", ratio: DESKTOP, span: 2, title: "Order summary", caption: "Price, VAT and gateway charges itemised before paying, with the next charge date", alt: "Order summary before payment" },
+      { file: "flow-07-2-payment-details", ratio: DESKTOP, span: 2, title: "Choose how to pay", caption: "Checkout through Paystack with local options: card, transfer, bank, USSD, OPay or Zap. Local options like bank transfer and USSD answered a frustration from research: church admins couldn't pay with dollar cards.", alt: "Payment method selection in the Paystack checkout, with personal details blurred" },
+      { file: "flow-07-4-success", ratio: DESKTOP, span: 3, title: "Payment successful", caption: "A clear confirmation that the payment went through, with one action to continue", alt: "Payment successful confirmation" },
+      { file: "flow-07-6-billing-renewal", ratio: DESKTOP, span: 3, title: "Renewal and billing", caption: "Current plan, expiry date and saved payment method in one place", alt: "Subscription renewal and billing management" },
     ],
   },
 
@@ -187,8 +173,20 @@ export const SLOTS = {
     ],
   },
 
-  screen08b: {
-    label: "Screen 08B",
+  flow08b: {
+    label: "Flow 08B",
+    title: "Marketing website: before and after",
+    layout: "compare",
+    show: "The previous marketing homepage and the redesigned homepage.",
+    items: [
+      { file: "flow-08b-1-website-before", ratio: "408 / 219", title: "Before", caption: "The previous homepage", alt: "The previous Waystream marketing homepage" },
+      { file: "flow-08b-2-website-after", ratio: "408 / 219", title: "After", caption: "The redesigned homepage, built around what creators get", alt: "The redesigned Waystream marketing homepage" },
+      { file: "flow-08b-3-website-pricing", ratio: "408 / 219", wide: true, caption: "Pricing and the free 15 minutes shown up front", alt: "Waystream pricing plans, with the free Talk plan's 15-minute daily limit" },
+    ],
+  },
+
+  screen08c: {
+    label: "Screen 08C",
     title: "Referral and social-sharing touchpoints",
     layout: "grid",
     columns: 3,
@@ -200,14 +198,14 @@ export const SLOTS = {
     ],
   },
 
-  screen08c: {
-    label: "Screen 08C",
+  screen08d: {
+    label: "Screen 08D",
     title: "Listener retention touchpoints",
     layout: "grid",
     columns: 2,
     device: "mobile",
     compact: true,
-    show: "Subscribe to a creator and go-live notification. These reuse the Screen 05C files.",
+    show: "Subscribe to a creator and go-live notification. These use the screen-05c files.",
     items: [
       { file: "screen-05c-1-follow-creator", ratio: MOBILE, title: "Subscribe to a creator", alt: "Listener subscribed to Lively Hub" },
       { file: "screen-05c-2-go-live-notification", ratio: MOBILE, title: "Go-live notification", alt: "Go-live notification" },
