@@ -1083,6 +1083,18 @@
     font-size: 1.5rem;
 }
 
+.cs-persona-avatar img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.cs-persona-avatar--icon {
+    background: linear-gradient(145deg, #fff4ee 0%, #ffd9c7 100%);
+    border: none;
+    box-shadow: 0 6px 18px rgba(246, 60, 0, 0.3);
+}
+
 .cs-persona-identity h4 {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-size: 1.25rem;

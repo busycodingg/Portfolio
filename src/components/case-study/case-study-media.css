@@ -1,0 +1,610 @@
+/* Case study media slots. Builds on the case study tokens in
+   src/app/projects/project.css (--cs-card-bg, Cabinet Grotesk, zinc greys). */
+
+.csm-slot {
+    width: 100%;
+    margin: 4rem 0 2rem;
+}
+
+.csm-slot--flush {
+    margin-top: 0;
+}
+
+.csm-slot-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.csm-slot-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #71717a;
+    white-space: nowrap;
+}
+
+.csm-slot-title {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #e4e4e7;
+}
+
+.csm-figure {
+    margin: 0;
+    min-width: 0;
+}
+
+/* ── Frames ── */
+.csm-frame {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--cs-card-bg);
+}
+
+.csm-frame--image {
+    padding: 0;
+    border: none;
+    cursor: zoom-in;
+}
+
+.csm-frame--image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.csm-frame--image:hover img {
+    transform: scale(1.015);
+}
+
+.csm-frame--image:focus-visible {
+    outline: 2px solid #facc15;
+    outline-offset: 3px;
+}
+
+.csm-frame--mobile {
+    border-radius: 20px;
+}
+
+/* ── Placeholders ── */
+.csm-placeholder {
+    border: 1px dashed rgba(255, 255, 255, 0.14);
+    background:
+        repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.015) 0 12px, transparent 12px 24px),
+        #0b0b0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.csm-placeholder-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    max-width: 30rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.csm-placeholder-label {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #facc15;
+}
+
+.csm-placeholder-label em {
+    font-style: normal;
+    color: #71717a;
+}
+
+.csm-placeholder-title {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e4e4e7;
+}
+
+.csm-placeholder-show {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: #71717a;
+}
+
+.csm-placeholder-file {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.72rem;
+    color: #a1a1aa;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.3rem 0.55rem;
+    border-radius: 6px;
+    word-break: break-all;
+}
+
+.csm-frame--mobile .csm-placeholder-show {
+    display: none;
+}
+
+/* ── Captions and annotations ── */
+.csm-item-caption {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    margin-top: 0.9rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #a1a1aa;
+}
+
+.csm-item-caption strong {
+    display: block;
+    font-weight: 600;
+    color: #e4e4e7;
+}
+
+.csm-item-caption-text {
+    display: block;
+}
+
+.csm-step-num {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 0.8rem;
+    color: #facc15;
+    letter-spacing: 0.05em;
+}
+
+.csm-caption {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #a1a1aa;
+}
+
+.csm-caption--below {
+    margin-top: 1.5rem;
+    max-width: 46rem;
+}
+
+.csm-annotations {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.csm-annotations li {
+    display: flex;
+    gap: 0.85rem;
+    align-items: baseline;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #d4d4d8;
+}
+
+.csm-annotation-num {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #facc15;
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transform: translateY(-1px);
+}
+
+/* ── Single ── */
+.csm-single--annotated {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 18rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.csm-single--mobile {
+    display: grid;
+    grid-template-columns: minmax(0, 20rem) minmax(0, 1fr);
+    gap: 3rem;
+    align-items: center;
+}
+
+.csm-single:not(.csm-single--annotated):not(.csm-single--mobile) .csm-single-notes {
+    margin-top: 1.25rem;
+}
+
+/* ── Foundations (tall style sheet + wide component sheets) ── */
+.csm-foundations {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.csm-foundations-lead {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* ── Sequence (flows) ── */
+.csm-sequence {
+    display: grid;
+    grid-template-columns: repeat(var(--csm-cols, 3), minmax(0, 1fr));
+    gap: 2rem 1.5rem;
+}
+
+.csm-sequence--mobile {
+    grid-template-columns: repeat(var(--csm-cols, 3), minmax(0, 17rem));
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+/* ── Grid ── */
+.csm-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--csm-cols, 3), minmax(0, 1fr));
+    gap: 2rem 1.5rem;
+}
+
+.csm-grid--mobile {
+    grid-template-columns: repeat(var(--csm-cols, 3), minmax(0, 16rem));
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.csm-grid--compact.csm-grid--mobile {
+    grid-template-columns: repeat(var(--csm-cols, 3), minmax(0, 12rem));
+}
+
+/* ── Feature grid (one lead screen + supporting screens) ── */
+.csm-feature-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* ── Compare (before / after) ── */
+.csm-compare {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.csm-compare-item .csm-item-caption strong {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.csm-compare-item--before .csm-item-caption strong {
+    color: #71717a;
+}
+
+.csm-compare-item--after .csm-item-caption strong {
+    color: #ffffff;
+}
+
+/* ── Platforms (same workflow across devices) ── */
+.csm-platforms {
+    display: grid;
+    grid-template-columns: minmax(0, 0.45fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: end;
+}
+
+/* Two platforms: column widths set so both screens share one height. */
+.csm-platforms--pair {
+    grid-template-columns: minmax(0, 0.23fr) minmax(0, 1fr);
+    align-items: start;
+}
+
+/* ── Measured shift ── */
+.csm-metric-shift {
+    position: relative;
+    background-color: var(--cs-card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.csm-metric-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    color: #ff6a33;
+    background: rgba(246, 60, 0, 0.14);
+    margin-bottom: 1.25rem;
+}
+
+.csm-metric-tag--qualitative {
+    color: #a1a1aa;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.csm-metric-shift-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.75rem;
+}
+
+.csm-metric-shift-value {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+}
+
+.csm-metric-shift-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #71717a;
+}
+
+.csm-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.csm-bar-row {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr 2.75rem;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    color: #a1a1aa;
+}
+
+.csm-bar-track {
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+}
+
+.csm-bar {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.csm-bar--before {
+    background: #52525b;
+}
+
+.csm-bar--after {
+    background: #e4e4e7;
+}
+
+.csm-bar-value {
+    text-align: right;
+    color: #e4e4e7;
+}
+
+.csm-metric-note {
+    margin: 1.25rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #a1a1aa;
+}
+
+/* Outcome cards: mark measured vs qualitative results */
+.csm-outcome-tag {
+    align-self: flex-start;
+    margin-bottom: 1.25rem;
+}
+
+.csm-outcomes .cs-outcome-delta {
+    color: #a1a1aa;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+
+
+/* ── Lightbox ── */
+.csm-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 4vw;
+    background: rgba(0, 0, 0, 0.92);
+    cursor: zoom-out;
+}
+
+.csm-lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: default;
+}
+
+.csm-lightbox-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .csm-single--annotated {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .csm-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .csm-sequence:not(.csm-sequence--mobile) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .csm-slot {
+        margin: 2.5rem 0 1rem;
+    }
+
+    .csm-slot-header {
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    .csm-sequence:not(.csm-sequence--mobile),
+    .csm-grid:not(.csm-grid--mobile),
+    .csm-compare {
+        grid-template-columns: 1fr;
+    }
+
+    .csm-grid:not(.csm-grid--mobile) > .csm-figure + .csm-figure,
+    .csm-sequence:not(.csm-sequence--mobile) > .csm-figure + .csm-figure {
+        margin-top: 0.5rem;
+    }
+
+    /* Phone screens stay legible: swipe through them instead of shrinking */
+    .csm-sequence--mobile,
+    .csm-grid--mobile,
+    .csm-grid--compact.csm-grid--mobile {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1rem;
+        margin-right: -16px;
+        padding-right: 16px;
+    }
+
+    .csm-sequence--mobile > .csm-figure,
+    .csm-grid--mobile > .csm-figure {
+        flex: 0 0 68%;
+        scroll-snap-align: start;
+    }
+
+    .csm-foundations-lead {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .csm-single--mobile {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1.5rem;
+    }
+
+    .csm-single--mobile .csm-figure {
+        width: 72%;
+    }
+
+    .csm-platforms,
+    .csm-platforms--pair {
+        grid-template-columns: 1fr;
+    }
+
+    .csm-platform--mobile {
+        width: 60%;
+        justify-self: center;
+    }
+
+    .csm-metric-shift {
+        padding: 1.5rem;
+    }
+}
+
+/* Three equal cards (e.g. user groups) */
+.csm-trio {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .csm-trio {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Numbered callouts placed on a screenshot (x / y in % of the image) */
+.csm-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: #facc15;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.25), 0 4px 12px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .csm-marker {
+        width: 1.35rem;
+        height: 1.35rem;
+        font-size: 0.68rem;
+        box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.25);
+    }
+}
+
+/* Small placeholders (e.g. the supporting screens beside a lead image)
+   only show their label, title and file name, so nothing overflows. */
+.csm-feature-grid .csm-grid .csm-placeholder-show {
+    display: none;
+}
+
+.csm-placeholder {
+    overflow: hidden;
+}
+
+/* A step that spans two columns, e.g. to finish an uneven last row */
+.csm-span-2 {
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .csm-span-2 {
+        grid-column: auto;
+    }
+}
