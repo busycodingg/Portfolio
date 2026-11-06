@@ -195,6 +195,21 @@
     color: #d4d4d8;
 }
 
+.csm-annotations--body {
+    margin: 0 0 3rem;
+    gap: 1.1rem;
+}
+
+.csm-annotations--body li {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.csm-annotations--body strong {
+    color: #fff;
+    font-weight: 600;
+}
+
 .csm-annotation-num {
     flex: none;
     display: inline-flex;

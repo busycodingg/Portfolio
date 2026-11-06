@@ -189,9 +189,31 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
           <section className="cs-section">
             <SectionHead num="02" title="The challenge">
               <Body>
-                Creators could go live, but growing and earning was harder than it should have been. Many left sign-up before finishing, the audiences they built on WhatsApp listened somewhere else, and paying for tools often needed a dollar card. As Waystream moved toward self-service growth, the product also had to serve three groups with very different needs.
+                African churches and independent creators were broadcasting to audiences at home and abroad, but the tools available weren&apos;t built for them. Waystream set out to build a live audio platform for Africa, and that meant solving five problems:
               </Body>
             </SectionHead>
+            <motion.ol variants={fadeUp} {...inView} className="csm-annotations csm-annotations--body">
+              <li>
+                <span className="csm-annotation-num">1</span>
+                <span><strong>Paying in foreign currency.</strong> Most streaming tools charged in dollars, and many creators couldn&apos;t pay with a local card.</span>
+              </li>
+              <li>
+                <span className="csm-annotation-num">2</span>
+                <span><strong>Hard technical setup.</strong> Going live on existing platforms took technical knowledge and setup that most churches and creators didn&apos;t have.</span>
+              </li>
+              <li>
+                <span className="csm-annotation-num">3</span>
+                <span><strong>Distraction.</strong> On general platforms, listeners were pulled toward unrelated content the moment a broadcast ended. Creators needed a focused space where their audience stayed with them.</span>
+              </li>
+              <li>
+                <span className="csm-annotation-num">4</span>
+                <span><strong>Live, then later.</strong> Listeners needed one place to join a broadcast live and come back afterwards to past livestreams and uploaded audio.</span>
+              </li>
+              <li>
+                <span className="csm-annotation-num">5</span>
+                <span><strong>Built for Africa.</strong> Local currency, local payment methods, and language and imagery that felt familiar, not borrowed.</span>
+              </li>
+            </motion.ol>
             <motion.div variants={fadeUp} {...inView} className="csm-trio csm-trio--wide">
               <div className="cs-card">
                 <span className="cs-card-tag">Creators</span>
@@ -209,7 +231,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
             <motion.div variants={fadeUp} {...inView} className="cs-statement csm-statement">
               <span className="cs-card-tag">Problem statement</span>
               <blockquote className="cs-blockquote">
-                &quot;How might we let a church or independent creator go live, grow an audience and earn, from any device, without technical help?&quot;
+                “How might we give African churches and creators one focused home to go live and keep their listeners, without technical help or paying in foreign currency?”
               </blockquote>
             </motion.div>
             <Visual slot={SLOTS.screen02} />
