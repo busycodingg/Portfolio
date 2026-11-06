@@ -10,7 +10,7 @@ Each frame keeps the ratio listed below so layouts stay stable; your image is fi
 
 Rules from the brief: use real Waystream exports only, no stock images or illustrative mockups. Redact payment details and personal information.
 
-- **Screen 08D** uses the `screen-05c-…` files (Screen 05C was removed; the file names were kept).
+- **Screen 07D** uses the `screen-05c-…` files (Screen 05C was removed; the file names were kept).
 
 | Slot | Screen | File name | Frame ratio |
 | --- | --- | --- | --- |
@@ -18,39 +18,39 @@ Rules from the brief: use real Waystream exports only, no stock images or illust
 | Screen 02 | The three product experiences · Creator | `screen-02a-creator-experience.png` | 4/3 |
 | Screen 02 | The three product experiences · Listener | `screen-02b-listener-experience.png` | 4/3 |
 | Screen 02 | The three product experiences · Administrator | `screen-02c-admin-experience.png` | 4/3 |
-| Flow 04A | Creator onboarding · Sign up (with Google and Apple) | `flow-04a-1-creator-sign-up.png` | 16/10 (added) |
+| Flow 04A | Creator onboarding · Sign up (email only) | `flow-08a-1-registration-before.png` | 16/10 (reuses the Flow 07A before image) |
 | Flow 04A | Creator onboarding · Into the dashboard | `flow-04a-3-into-dashboard.png` | 16/10 (added) |
 | Screen 04B | Creator dashboard | `screen-04b-creator-dashboard.png` | 16/10 |
 | Flow 04C | Upload, schedule and go live · Upload content | `flow-04c-1-upload-content.png` | 16/10 (added) |
 | Flow 04C | Upload, schedule and go live · Schedule it | `flow-04c-3-schedule-broadcast.png` | 16/10 (added) |
-| Flow 04C · Set up and go live | The desktop broadcast studio | `flow-04c-4-live-controls.png` | 2000/1003 (added from `Principle 01.png`) |
-| Screen 04D | Creator subscription and billing management · Subscription plans | `screen-04d-2-subscription-plans.png` | 16/10 (added) |
-| Screen 04D | Creator subscription and billing management · Billing management | `screen-04d-3-billing.png` | 16/10 (added) |
-| Flow 05A | Discover and listen · Discover | `flow-05a-1-discover.png` | 9/19.5 (added) |
-| Flow 05A | Discover and listen · Listen live | `flow-05a-3-live-listening.png` | 9/19.5 (added) |
-| Screen 05B | Live engagement · Live chat | `screen-05b-1-live-chat.png` | 9/19.5 (added) |
-| Screen 05B | Live engagement · Send a gift | `screen-05b-2-gifting.png` | 9/19.5 (added) |
-| Screen 08D | Listener retention touchpoints · Subscribe to a creator | `screen-05c-1-follow-creator.png` | 9/19.5 (added) |
-| Screen 08D | Listener retention touchpoints · Go-live notification | `screen-05c-2-go-live-notification.png` | 9/19.5 (added) |
-| Screen 06 | Admin platform · Admin dashboard | `screen-06-1-admin-dashboard.png` | 1673/1124 (added) |
-| Screen 06 | Admin platform · Payments and subscriptions | `screen-06-4-payments-subscriptions.png` | 1994/1000 (added) |
-| Flow 07 | Payment and subscription journey · Choose a plan | `flow-07-1-plan-selection.png` | 16/10 (reuses 04D plans) |
-| Flow 07 | Payment and subscription journey · Payment method and details | `flow-07-2-payment-details.png` | 2000/1093 (added, email, QR code, name and address blurred) |
-| Flow 07 | Payment and subscription journey · Checkout | `flow-07-3-checkout.png` | 16/10 (added: order summary) |
-| Flow 07 | Payment and subscription journey · Success | `flow-07-4-success.png` | 16/10 (added) |
-| Flow 07 | Payment and subscription journey · Renewal and billing | `flow-07-6-billing-renewal.png` | 16/10 (reuses 04D billing) |
-| Flow 08A | Onboarding improvement: before and after · Before | `flow-08a-1-registration-before.png` | 2000/1172 (added) |
-| Flow 08A | Onboarding improvement: before and after · After | `flow-08a-2-sign-in-after.png` | 2000/1172 (added) |
-| Flow 08B | Marketing website: before and after · Before | `flow-08b-1-website-before.png` | 408/219 (added, hero only) |
-| Flow 08B | Marketing website: before and after · After | `flow-08b-2-website-after.png` | 408/219 (added, hero only) |
-| Flow 08B | Marketing website: before and after · Pricing | `flow-08b-3-website-pricing.png` | 408/219 (added) |
-| Screen 08C | Referral and social-sharing touchpoints · Creator referral | `screen-08b-1-referral-invite.png` | 16/10 (added) |
-| Screen 08C | Referral and social-sharing touchpoints · Share prompt on going live | `screen-08b-2-go-live-share-modal.png` | 16/10 (added) |
-| Screen 09 | Broadcast controls: tested experience and improvements · Tested | `screen-09-1-controls-tested.png` | 2000/1003 (added) |
-| Screen 09 | Broadcast controls: tested experience and improvements · Improved | `screen-09-2-controls-improved.png` | 2000/1003 (added) |
-| Screen 10A | Design system foundations and components · Typography | `screen-10a-1-typography.png` | 1387/1770 (added) |
-| Screen 10A | Design system foundations and components · Colour | `screen-10a-2-colour.png` | 1387/1770 (added, built from colours sampled from real exports) |
-| Screen 10A | Design system foundations and components · Components and states | `screen-10a-3-components.png` | 2000/442 (added) |
-| Screen 10B | Cross-platform product consistency · Mobile | `screen-10b-1-mobile.png` | 9/19.5 (added) |
-| Screen 10B | Cross-platform product consistency · Desktop | `screen-10b-3-desktop.png` | 2000/1003 (added, desktop studio) |
-| Screen 11 | Outcome recap | `screen-11-outcome-image.png` | 3/2 (added, creator dashboard) |
+| Flow 04D · Set up and go live | The desktop broadcast studio | `flow-04c-4-live-controls.png` | 2000/1003 (added from `Principle 01.png`) |
+| Screen 06B | Creator subscription and billing management · Subscription plans | `screen-04d-2-subscription-plans.png` | 16/10 (added) |
+| Screen 06B | Creator subscription and billing management · Billing management | `screen-04d-3-billing.png` | 16/10 (added) |
+| Flow 04E | Discover and listen · Discover | `flow-05a-1-discover.png` | 9/19.5 (added) |
+| Flow 04E | Discover and listen · Listen live | `flow-05a-3-live-listening.png` | 9/19.5 (added) |
+| Screen 04F | Live engagement · Live chat | `screen-05b-1-live-chat.png` | 9/19.5 (added) |
+| Screen 07D | Listener retention touchpoints · Subscribe to a creator | `screen-05c-1-follow-creator.png` | 9/19.5 (added) |
+| Screen 07D | Listener retention touchpoints · Go-live notification | `screen-05c-2-go-live-notification.png` | 9/19.5 (added) |
+| Screen 07E | Listener giving · Send a gift | `screen-05b-2-gifting.png` | 9/19.5 (added) |
+| Screen 08A | Admin platform · Admin dashboard | `screen-06-1-admin-dashboard.png` | 1673/1124 (added) |
+| Screen 08A | Admin platform · Payments and subscriptions | `screen-06-4-payments-subscriptions.png` | 1994/1000 (added) |
+| Flow 06A | Payment and subscription journey · Choose a plan | `flow-07-1-plan-selection.png` | 16/10 (reuses 04D plans) |
+| Flow 06A | Payment and subscription journey · Payment method and details | `flow-07-2-payment-details.png` | 2000/1093 (added, email, QR code, name and address blurred) |
+| Flow 06A | Payment and subscription journey · Checkout | `flow-07-3-checkout.png` | 16/10 (added: order summary) |
+| Flow 06A | Payment and subscription journey · Success | `flow-07-4-success.png` | 16/10 (added) |
+| Flow 06A | Payment and subscription journey · Renewal and billing | `flow-07-6-billing-renewal.png` | 16/10 (reuses 04D billing) |
+| Flow 07A | Onboarding improvement: before and after · Before | `flow-08a-1-registration-before.png` | 2000/1172 (added) |
+| Flow 07A | Onboarding improvement: before and after · After | `flow-08a-2-sign-in-after.png` | 2000/1172 (added) |
+| Flow 07B | Marketing website: before and after · Before | `flow-08b-1-website-before.png` | 408/219 (added, hero only) |
+| Flow 07B | Marketing website: before and after · After | `flow-08b-2-website-after.png` | 408/219 (added, hero only) |
+| Flow 07B | Marketing website: before and after · Pricing | `flow-08b-3-website-pricing.png` | 408/219 (added) |
+| Screen 07C | Referral and social-sharing touchpoints · Creator referral | `screen-08b-1-referral-invite.png` | 16/10 (added) |
+| Screen 07C | Referral and social-sharing touchpoints · Share prompt on going live | `screen-08b-2-go-live-share-modal.png` | 16/10 (added) |
+| Screen 05 | Broadcast controls: tested experience and improvements · Tested | `screen-09-1-controls-tested.png` | 2000/1003 (added) |
+| Screen 05 | Broadcast controls: tested experience and improvements · Improved | `screen-09-2-controls-improved.png` | 2000/1003 (added) |
+| Screen 08B | Design system foundations and components · Typography | `screen-10a-1-typography.png` | 1387/1770 (added) |
+| Screen 08B | Design system foundations and components · Colour | `screen-10a-2-colour.png` | 1387/1770 (added, built from colours sampled from real exports) |
+| Screen 08B | Design system foundations and components · Components and states | `screen-10a-3-components.png` | 2000/442 (added) |
+| Screen 08C | Cross-platform product consistency · Mobile | `screen-10b-1-mobile.png` | 9/19.5 (added) |
+| Screen 08C | Cross-platform product consistency · Desktop | `screen-10b-3-desktop.png` | 2000/1003 (added, desktop studio) |
+| Screen 09 | Outcome recap | `screen-11-outcome-image.png` | 3/2 (added, creator dashboard) |

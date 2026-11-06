@@ -149,7 +149,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                 </motion.div>
 
                 <motion.p variants={fadeUp} className="cs-blockquote csm-hero-summary">
-                  Founding Design Lead across Waystream&apos;s creator, listener and admin products, on iOS, Android, web and desktop. Creator onboarding completion rose from 30% to 50%, and creator subscriptions grew 25% after the website redesign.
+                  Founding Design Lead. I designed Waystream from the founders&apos; idea in 2022 to a live product for creators, listeners and administrators on iOS, Android, web and desktop. Creator onboarding completion rose from 30% to 50%, and creator subscriptions grew 25% after the website redesign.
                 </motion.p>
               </motion.div>
 
@@ -174,6 +174,9 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
             <SectionHead num="01" title="Project overview">
               <Body>
                 Waystream is a live audio streaming platform that enables creators, including churches and independent broadcasters, to connect with audiences through live audio. Creators can broadcast, manage content, understand performance and earn when listeners give. Listeners can discover broadcasts, listen, participate in the live experience and send gifts to the creators they love.
+              </Body>
+              <Body>
+                When I joined in May 2022, Waystream was an idea. There were no designs and no product. I designed it from the ground up, working with the founders, the product team and engineers.
               </Body>
               <Body>
                 My scope included creator and listener products, the admin platform, payment and subscription journeys, the marketing website and the product design system.
@@ -272,11 +275,15 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
             </SectionHead>
           </section>
 
-          {/* ── 04  DESIGNING THE CREATOR EXPERIENCE ── */}
+          {/* ── 04  PHASE 1 · BUILDING THE FIRST VERSION ── */}
           <section className="cs-section">
-            <SectionHead num="04" title="Designing the creator experience">
+            <SectionHead num="04" title="Phase 1 · Building the first version (2022)">
               <Body>
-                I designed the end-to-end creator experience, from account creation through broadcasting and monetisation. The journey covered content uploads, going live, scheduling broadcasts, performance analytics, subscription plans, payment and billing management.
+                Creators need listeners and listeners need creators, so both sides had to work on day one. I designed the creator and listener experiences together for the first launch. The screens show these experiences as they look today.
+              </Body>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Creator experience</motion.h3>
+              <Body>
+                I designed the end-to-end creator experience, from account creation through broadcasting and monetisation. The journey covered content uploads, going live, scheduling broadcasts and performance analytics.
               </Body>
               <Body>
                 I organised the creator dashboard around quick actions, performance information and broadcast management, with going live prioritised as the primary action. I also put WhatsApp support in the dashboard header. A creator stuck minutes before a broadcast can&apos;t wait for an email reply, so help needed to be one tap away.
@@ -285,37 +292,48 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
             <Visual slot={SLOTS.flow04a} />
             <Visual slot={SLOTS.screen04b} />
             <Visual slot={SLOTS.flow04c} />
-            <Visual slot={SLOTS.flow04cLive} />
-            <Visual slot={SLOTS.screen04d} />
-          </section>
-
-          {/* ── 05  DESIGNING THE LISTENER EXPERIENCE ── */}
-          <section className="cs-section">
-            <SectionHead num="05" title="Designing the listener experience">
+            <Visual slot={SLOTS.flow04d} />
+            <Narrative>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Listener experience</motion.h3>
               <Body>
                 I designed the listener experience from scratch, focusing on content discovery, live listening and audience engagement. Listeners could discover and access broadcasts, follow or subscribe to creators, participate through live chat, share livestreams and receive notifications about creators and scheduled broadcasts.
               </Body>
               <Body>
                 The experience was designed to make listening participatory: people could do more than consume audio. They could engage during a broadcast, stay connected to creators and share streams with others.
               </Body>
-            </SectionHead>
-            <Visual slot={SLOTS.flow05a} />
-            <Visual slot={SLOTS.screen05b} />
+            </Narrative>
+            <Visual slot={SLOTS.flow04e} />
+            <Visual slot={SLOTS.screen04f} />
+            <Narrative>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Testing before launch</motion.h3>
+              <Body>
+                Before launch, I tested the going-live experience with three creators, including churches and independent creators. Some found parts of the broadcast controls hard to navigate.
+              </Body>
+            </Narrative>
           </section>
 
-          {/* ── 06  DESIGNING THE ADMIN EXPERIENCE ── */}
+          {/* ── 05  PHASE 2 · LAUNCHING FREE AND LEARNING ── */}
           <section className="cs-section">
-            <SectionHead num="06" title="Designing the admin experience">
+            <SectionHead num="05" title="Phase 2 · Launching free and learning">
               <Body>
-                Alongside the creator and listener products, I designed the administrative platform used to oversee Waystream&apos;s operations. It covered user and creator management, broadcast monitoring, subscription and payment management, content management and wider platform oversight.
+                Waystream launched in 2022, free for creators and listeners for its first months.
+              </Body>
+              <Body>
+                Once real creators started broadcasting, support requests about going live showed the problem from testing hadn&apos;t gone away: the broadcast controls weren&apos;t easy enough to learn. I designed a walkthrough that guides creators through each control, starting with the mic source. After it shipped, go-live support requests fell significantly.
+              </Body>
+              <Body>
+                Listener feedback also informed the evolution of the listening experience and helped us understand how people interacted with broadcasts and where engagement opportunities could be improved.
               </Body>
             </SectionHead>
-            <Visual slot={SLOTS.screen06} />
+            <Visual slot={SLOTS.screen05} />
           </section>
 
-          {/* ── 07  PAYMENT AND SUBSCRIPTION JOURNEYS ── */}
+          {/* ── 06  PHASE 3 · MAKING MONEY ── */}
           <section className="cs-section">
-            <SectionHead num="07" title="Payment and subscription journeys">
+            <SectionHead num="06" title="Phase 3 · Making money">
+              <Body>
+                Once creators were broadcasting regularly, Waystream introduced subscriptions.
+              </Body>
               <Body>
                 I designed end-to-end payment and subscription experiences for creators and listeners. My work covered payment method selection, entering payment details, checkout, transaction success states, subscription renewals and billing management.
               </Body>
@@ -323,12 +341,13 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                 Waystream&apos;s creator model allowed creators to broadcast for 15 minutes every day at no cost. Creators who needed longer broadcasts could subscribe to a paid plan. The team wanted Waystream to be partly free, not totally free: every creator can broadcast daily without paying, and the paid plans sell one clear benefit, longer broadcasts. I designed the plans and upgrade flow around that line.
               </Body>
             </SectionHead>
-            <Visual slot={SLOTS.flow07} />
+            <Visual slot={SLOTS.flow06a} />
+            <Visual slot={SLOTS.screen06b} />
           </section>
 
-          {/* ── 08  SUPPORTING PRODUCT-LED GROWTH ── */}
+          {/* ── 07  PHASE 4 · GROWING THE PRODUCT ── */}
           <section className="cs-section">
-            <SectionHead num="08" title="Supporting product-led growth">
+            <SectionHead num="07" title="Phase 4 · Growing the product">
               <Body>
                 As Waystream evolved, the product team introduced improvements intended to make adoption easier and encourage organic growth. I designed the product side of several initiatives across onboarding, referrals, sharing and listener engagement.
               </Body>
@@ -339,7 +358,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </Body>
             </SectionHead>
 
-            <Visual slot={SLOTS.flow08a} />
+            <Visual slot={SLOTS.flow07a} />
             <Narrative>
               <motion.div variants={fadeUp}>
                 <MetricShift
@@ -356,7 +375,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </Body>
             </Narrative>
 
-            <Visual slot={SLOTS.flow08b} />
+            <Visual slot={SLOTS.flow07b} />
             <Narrative>
               <motion.div variants={fadeUp}>
                 <MetricShift
@@ -377,7 +396,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </Body>
             </Narrative>
 
-            <Visual slot={SLOTS.screen08c} />
+            <Visual slot={SLOTS.screen07c} />
 
             <Narrative>
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Encouraging listeners to return</motion.h3>
@@ -386,25 +405,32 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </Body>
             </Narrative>
 
-            <Visual slot={SLOTS.screen08d} />
+            <Visual slot={SLOTS.screen07d} />
+
+            <Narrative>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Letting listeners support creators</motion.h3>
+              <Body>
+                As the audience grew, we added gifting, so listeners could support the creators they love during a live broadcast. I designed the gifting flow.
+              </Body>
+            </Narrative>
+
+            <Visual slot={SLOTS.screen07e} />
           </section>
 
-          {/* ── 09  USABILITY TESTING AND ITERATION ── */}
+          {/* ── 08  WHAT GREW ALONGSIDE ── */}
           <section className="cs-section">
-            <SectionHead num="09" title="Usability testing and iteration">
+            <SectionHead num="08" title="What grew alongside">
               <Body>
-                I conducted usability testing with three creators, including churches and independent creators, focusing on the experience of going live. During testing, I observed that users had difficulty navigating some broadcast controls. These observations informed design improvements, including a walkthrough that guides creators through the broadcast controls, which made the broadcasting experience easier to understand and use.
+                Some work didn&apos;t belong to one phase. It grew with the product the whole way through.
               </Body>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Admin platform</motion.h3>
               <Body>
-                Following the improvements, go-live-related support requests reduced significantly. Listener feedback also informed the evolution of the listening experience and helped us understand how people interacted with broadcasts and where engagement opportunities could be improved.
+                Alongside the creator and listener products, I designed the administrative platform used to oversee Waystream&apos;s operations. It covered user and creator management, broadcast monitoring, subscription and payment management, content management and wider platform oversight.
               </Body>
             </SectionHead>
-            <Visual slot={SLOTS.screen09} />
-          </section>
-
-          {/* ── 10  CROSS-PLATFORM DESIGN AND ENGINEERING COLLABORATION ── */}
-          <section className="cs-section">
-            <SectionHead num="10" title="Cross-platform design and engineering collaboration">
+            <Visual slot={SLOTS.screen08a} />
+            <Narrative>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Design system and cross-platform design</motion.h3>
               <Body>
                 I led design across iOS, Android, web, desktop and the marketing website, working to keep the product experience coherent across different environments.
               </Body>
@@ -414,14 +440,20 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               <Body>
                 Throughout development, I worked closely with engineers to clarify design decisions, explain interaction behaviours, review implementations and resolve discrepancies between designs and the built product.
               </Body>
-            </SectionHead>
-            <Visual slot={SLOTS.screen10a} />
-            <Visual slot={SLOTS.screen10b} />
+            </Narrative>
+            <Visual slot={SLOTS.screen08b} />
+            <Visual slot={SLOTS.screen08c} />
+            <Narrative>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Growing the design team</motion.h3>
+              <Body>
+                As the product grew, junior designers joined the team. I mentored them through design critiques, Figma best practices and how to use the design system.
+              </Body>
+            </Narrative>
           </section>
 
-          {/* ── 11  OUTCOMES AND IMPACT ── */}
+          {/* ── 09  OUTCOMES AND IMPACT ── */}
           <section className="cs-section">
-            <SectionHead num="11" title="Outcomes and impact">
+            <SectionHead num="09" title="Outcomes and impact">
               <Body>
                 The work contributed to improvements across onboarding, creator subscriptions, broadcasting usability and the overall product experience.
               </Body>
@@ -456,12 +488,12 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </motion.div>
             </motion.div>
 
-            <Visual slot={SLOTS.screen11} />
+            <Visual slot={SLOTS.screen09} />
           </section>
 
-          {/* ── 12  REFLECTION ── */}
+          {/* ── 10  REFLECTION ── */}
           <section className="cs-section">
-            <SectionHead num="12" title="Reflection">
+            <SectionHead num="10" title="Reflection">
               <Body>
                 Working on Waystream gave me the opportunity to contribute to a product across its lifecycle, from early product definition and user research to design, implementation and continuous improvement.
               </Body>

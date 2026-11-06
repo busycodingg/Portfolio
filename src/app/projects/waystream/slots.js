@@ -42,9 +42,9 @@ export const SLOTS = {
     label: "Flow 04A",
     title: "Creator onboarding",
     layout: "sequence",
-    show: "Creator sign-up, Google and Apple sign-in, and the transition into the creator dashboard.",
+    show: "Creator sign-up and the transition into the creator dashboard.",
     items: [
-      { file: "flow-04a-1-creator-sign-up", ratio: DESKTOP, title: "Sign up", caption: "Continue with Google or Apple, or create an account with email", alt: "Creator sign-up with Google, Apple or email" },
+      { file: "flow-08a-1-registration-before", ratio: DESKTOP, title: "Sign up", caption: "Create an account with a username, email and password", alt: "Creator sign-up with username, email and password" },
       { file: "flow-04a-3-into-dashboard", ratio: DESKTOP, title: "Into the dashboard", caption: "A welcome to Waystream Studio, with Go live offered straight away", alt: "Welcome to Waystream Studio modal over the creator dashboard" },
     ],
   },
@@ -78,8 +78,8 @@ export const SLOTS = {
     ],
   },
 
-  flow04cLive: {
-    label: "Flow 04C · Set up and go live",
+  flow04d: {
+    label: "Flow 04D · Set up and go live",
     title: "The desktop broadcast studio",
     layout: "single",
     caption: "Creators set up and run a broadcast from one screen: audio sources and quality, category, the live timer and controls, sharing and live chat.",
@@ -97,8 +97,8 @@ export const SLOTS = {
     ],
   },
 
-  screen04d: {
-    label: "Screen 04D",
+  screen06b: {
+    label: "Screen 06B",
     title: "Creator subscription and billing management",
     layout: "grid",
     columns: 2,
@@ -109,34 +109,33 @@ export const SLOTS = {
     ],
   },
 
-  flow05a: {
-    label: "Flow 05A",
+  flow04e: {
+    label: "Flow 04E",
     title: "Discover and listen",
     layout: "sequence",
     device: "mobile",
     show: "Listener home or discovery screen and the live listening screen.",
     items: [
       { file: "flow-05a-1-discover", ratio: MOBILE, title: "Discover", caption: "Browse by genre in a full-screen feed, with likes, comments and sharing", alt: "Listener home feed with genre filters" },
-      { file: "flow-05a-3-live-listening", ratio: MOBILE, title: "Listen live", caption: "Tune in live with playback controls, likes, comments, giving and one-tap subscribe", alt: "Listener live streaming screen for Lively Hub" },
+      { file: "flow-05a-3-live-listening", ratio: MOBILE, title: "Listen live", caption: "Tune in live with playback controls, likes, comments and one-tap subscribe", alt: "Listener live streaming screen for Lively Hub" },
     ],
   },
 
-  screen05b: {
-    label: "Screen 05B",
+  screen04f: {
+    label: "Screen 04F",
     title: "Live engagement",
     layout: "grid",
-    columns: 2,
+    columns: 1,
     device: "mobile",
-    caption: "Listening is participatory: listeners chat with each other and the creator, or send a gift, without leaving the live stream.",
+    caption: "Listening is participatory: listeners chat with each other and the creator without leaving the live stream.",
     show: "Live chat, share control and other engagement features, with the live audio context clear.",
     items: [
       { file: "screen-05b-1-live-chat", ratio: MOBILE, title: "Live chat", caption: "Listeners and the creator talk in real time", alt: "Live chat during a Lively Hub broadcast" },
-      { file: "screen-05b-2-gifting", ratio: MOBILE, title: "Send a gift", caption: "Preset gifts from ₦500 to ₦50,000, or a custom amount", alt: "Listener sending a gift to a creator during a live broadcast" },
     ],
   },
 
-  screen06: {
-    label: "Screen 06",
+  screen08a: {
+    label: "Screen 08A",
     title: "Admin platform",
     layout: "feature-grid",
     show: "Admin dashboard plus representative management screens.",
@@ -146,8 +145,8 @@ export const SLOTS = {
     ],
   },
 
-  flow07: {
-    label: "Flow 07",
+  flow06a: {
+    label: "Flow 06A",
     title: "Payment and subscription journey",
     layout: "sequence",
     columns: 6,
@@ -161,8 +160,8 @@ export const SLOTS = {
     ],
   },
 
-  flow08a: {
-    label: "Flow 08A",
+  flow07a: {
+    label: "Flow 07A",
     title: "Onboarding improvement: before and after",
     layout: "compare",
     show: "The previous registration experience and the updated sign-in experience with Google and Apple.",
@@ -172,8 +171,8 @@ export const SLOTS = {
     ],
   },
 
-  flow08b: {
-    label: "Flow 08B",
+  flow07b: {
+    label: "Flow 07B",
     title: "Marketing website: before and after",
     layout: "compare",
     show: "The previous marketing homepage and the redesigned homepage.",
@@ -184,8 +183,8 @@ export const SLOTS = {
     ],
   },
 
-  screen08c: {
-    label: "Screen 08C",
+  screen07c: {
+    label: "Screen 07C",
     title: "Referral and social-sharing touchpoints",
     layout: "grid",
     columns: 2,
@@ -196,8 +195,8 @@ export const SLOTS = {
     ],
   },
 
-  screen08d: {
-    label: "Screen 08D",
+  screen07d: {
+    label: "Screen 07D",
     title: "Listener retention touchpoints",
     layout: "grid",
     columns: 2,
@@ -210,8 +209,20 @@ export const SLOTS = {
     ],
   },
 
-  screen09: {
-    label: "Screen 09",
+  screen07e: {
+    label: "Screen 07E",
+    title: "Listener giving",
+    layout: "grid",
+    columns: 1,
+    device: "mobile",
+    show: "The listener gifting sheet during a live broadcast.",
+    items: [
+      { file: "screen-05b-2-gifting", ratio: MOBILE, title: "Send a gift", caption: "Preset gifts from ₦500 to ₦50,000, or a custom amount, sent during a live broadcast", alt: "Listener sending a gift to a creator during a live broadcast" },
+    ],
+  },
+
+  screen05: {
+    label: "Screen 05",
     title: "Broadcast controls: tested experience and improvements",
     layout: "compare",
     show: "The tested live-broadcast controls and the improved version with the walkthrough, with concise annotations of the friction observed and what changed.",
@@ -221,8 +232,8 @@ export const SLOTS = {
     ],
   },
 
-  screen10a: {
-    label: "Screen 10A",
+  screen08b: {
+    label: "Screen 08B",
     title: "Design system foundations and components",
     layout: "foundations",
     show: "Colour and typography styles, spacing or layout foundations, and a selection of representative components and states.",
@@ -233,8 +244,8 @@ export const SLOTS = {
     ],
   },
 
-  screen10b: {
-    label: "Screen 10B",
+  screen08c: {
+    label: "Screen 08C",
     title: "Cross-platform product consistency: going live",
     layout: "platforms",
     caption: "The same Panel Session broadcast, live on mobile and desktop. Both share the same structure, broadcast details, timer and controls, but each is shaped around its device: mobile puts one large control within thumb reach, while desktop shows the whole studio on a single screen.",
@@ -244,8 +255,8 @@ export const SLOTS = {
     ],
   },
 
-  screen11: {
-    label: "Screen 11",
+  screen09: {
+    label: "Screen 09",
     title: "Outcome recap",
     layout: "single",
     caption: "The creator dashboard, where onboarding leads and where creators run their broadcasts and subscription: the two journeys behind the measured results above.",
