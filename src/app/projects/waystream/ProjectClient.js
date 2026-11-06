@@ -217,15 +217,15 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
             <motion.div variants={fadeUp} {...inView} className="csm-trio csm-trio--wide">
               <div className="cs-card">
                 <span className="cs-card-tag">Creators</span>
-                <p>Needed to onboard, broadcast, schedule content, monitor performance and monetise their audiences.</p>
+                <p>A simple way to go live from any device, a home that keeps their audience, and tools priced in their own currency.</p>
               </div>
               <div className="cs-card">
                 <span className="cs-card-tag">Listeners</span>
-                <p>Needed to discover broadcasts, follow creators, listen, chat, share streams and engage with live content.</p>
+                <p>One place to join a broadcast live and come back later to past livestreams and uploads, without being pulled away to unrelated content.</p>
               </div>
               <div className="cs-card">
                 <span className="cs-card-tag">Administrators</span>
-                <p>Needed to manage users, creators, broadcasts, subscriptions, payments and content, and oversee platform activity.</p>
+                <p>One view of creators, listeners and broadcasts, to keep the platform running smoothly as it grew.</p>
               </div>
             </motion.div>
             <motion.div variants={fadeUp} {...inView} className="cs-statement csm-statement">
@@ -247,7 +247,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                 I used a combination of research methods, including user interviews, surveys, usability testing, competitor research and feedback from listeners, to understand user needs and inform design decisions. I considered the goals and context of each user group rather than treating the platform as a single audience.
               </Body>
               <Body>
-                Two findings shaped the product. Creators already promoted their streams on WhatsApp, but sent listeners elsewhere to listen, so the audience they built never landed anywhere of their own. And many creators wanted to go live from a phone, without a technical team. That&apos;s why sharing to WhatsApp is built into going live, and why the mobile app puts one large broadcast control within thumb reach.
+                Two findings shaped the product. Creators already promoted their streams on WhatsApp, but sent listeners elsewhere to listen, so the audience they built never landed anywhere of their own. And many creators wanted to go live from a phone, without a technical team. That&apos;s why the broadcast studio has sharing to WhatsApp built in, and why the mobile app puts one large broadcast control within thumb reach.
               </Body>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Target user archetypes</motion.h3>
@@ -265,11 +265,11 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                   </div>
                   <div className="cs-persona-detail">
                     <span className="cs-persona-label">Core need</span>
-                    <p>A reliable Sunday broadcast to members at home and abroad, with no technical friction and donations in Naira.</p>
+                    <p>A reliable Sunday broadcast to members at home and abroad, with no technical friction.</p>
                   </div>
                   <div className="cs-persona-detail">
                     <span className="cs-persona-label">Primary frustration</span>
-                    <p>Existing tools need dollar cards and stable 4G. YouTube pushes members toward unrelated content after the service, breaking the communal experience.</p>
+                    <p>Existing tools need dollar cards. YouTube pushes members toward unrelated content after the service, breaking the communal experience.</p>
                   </div>
                 </div>
 
@@ -305,10 +305,10 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
               </Body>
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Creator experience</motion.h3>
               <Body>
-                I designed the end-to-end creator experience, from account creation through broadcasting and monetisation. The journey covered content uploads, going live, scheduling broadcasts and performance analytics.
+                I designed the end-to-end creator experience, from account creation through broadcasting. The journey covered content uploads, going live, scheduling broadcasts and performance analytics.
               </Body>
               <Body>
-                I organised the creator dashboard around quick actions, performance information and broadcast management, with going live prioritised as the primary action. I also put WhatsApp support in the dashboard header. A creator stuck minutes before a broadcast can&apos;t wait for an email reply, so help needed to be one tap away.
+                I organised the creator dashboard around quick actions, performance information and broadcast management, with going live prioritised as the primary action.
               </Body>
             </SectionHead>
             <Visual slot={SLOTS.flow04a} />
@@ -326,6 +326,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
             </Narrative>
             <Visual slot={SLOTS.flow04e} />
             <Visual slot={SLOTS.screen04f} />
+            <Visual slot={SLOTS.screen04g} />
             <Narrative>
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Testing before launch</motion.h3>
               <Body>
@@ -357,7 +358,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                 Once creators were broadcasting regularly, Waystream introduced subscriptions.
               </Body>
               <Body>
-                I designed end-to-end payment and subscription experiences for creators and listeners. My work covered payment method selection, entering payment details, checkout, transaction success states, subscription renewals and billing management.
+                I designed end-to-end payment and subscription experiences for creators. My work covered payment method selection, entering payment details, checkout, transaction success states, subscription renewals and billing management.
               </Body>
               <Body>
                 Waystream&apos;s creator model allowed creators to broadcast for 15 minutes every day at no cost. Creators who needed longer broadcasts could subscribe to a paid plan. The team wanted Waystream to be partly free, not totally free: every creator can broadcast daily without paying, and the paid plans sell one clear benefit, longer broadcasts. I designed the plans and upgrade flow around that line.
@@ -371,7 +372,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
           <section className="cs-section">
             <SectionHead num="07" title="Phase 4 · Growing the product">
               <Body>
-                As Waystream evolved, the product team introduced improvements intended to make adoption easier and encourage organic growth. I designed the product side of several initiatives across onboarding, referrals, sharing and listener engagement.
+                As Waystream evolved, the product team introduced improvements intended to make adoption easier and encourage organic growth. I designed the product side of several initiatives across onboarding, the marketing website, referrals, sharing, creator support and listener gifting.
               </Body>
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Reducing onboarding friction</motion.h3>
@@ -414,29 +415,25 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
 
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Making livestreams easier to share</motion.h3>
               <Body>
-                I designed a modal that prompted creators to share their livestream when they went live, alongside a share option available within the livestream experience. These touchpoints made it easier to distribute broadcasts beyond Waystream and bring existing audiences onto the platform.
+                Creators could share from the broadcast studio from launch. To make sharing part of every broadcast, I designed a prompt that appears the moment a creator goes live, with WhatsApp, Facebook and X one tap away. Sharing brought creators&apos; existing audiences onto Waystream.
               </Body>
             </Narrative>
 
             <Visual slot={SLOTS.screen07c} />
 
             <Narrative>
-              <motion.h3 variants={fadeUp} className="cs-sub-heading">Encouraging listeners to return</motion.h3>
+              <motion.h3 variants={fadeUp} className="cs-sub-heading">Help when creators need it</motion.h3>
               <Body>
-                I designed creator-following, notifications when followed creators went live, and reminders for scheduled broadcasts. These features helped listeners stay connected to creators and upcoming content.
+                We later added WhatsApp support to the creator dashboard. A creator stuck minutes before a broadcast can&apos;t wait for an email reply, so help needed to be one tap away.
               </Body>
-            </Narrative>
 
-            <Visual slot={SLOTS.screen07d} />
-
-            <Narrative>
               <motion.h3 variants={fadeUp} className="cs-sub-heading">Letting listeners support creators</motion.h3>
               <Body>
                 As the audience grew, we added gifting, so listeners could support the creators they love during a live broadcast. I designed the gifting flow.
               </Body>
             </Narrative>
 
-            <Visual slot={SLOTS.screen07e} />
+            <Visual slot={SLOTS.screen07d} />
           </section>
 
           {/* ── 08  WHAT GREW ALONGSIDE ── */}
@@ -498,7 +495,7 @@ export default function WaystreamCaseStudy({ mediaPath, media }) {
                 <div className="cs-outcome-card">
                   <span className="csm-metric-tag csm-metric-tag--qualitative csm-outcome-tag">Qualitative</span>
                   <span className="cs-outcome-value cs-outcome-value--text">Reduced support requests</span>
-                  <span className="cs-outcome-delta">Go-live-related support requests reduced significantly after usability-led improvements; no percentage is available</span>
+                  <span className="cs-outcome-delta">Go-live support requests fell significantly after the broadcast walkthrough; no percentage is available</span>
                   <span className="cs-outcome-label">Broadcasting experience</span>
                 </div>
                 <div className="cs-outcome-card">

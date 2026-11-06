@@ -10,7 +10,7 @@ Each frame keeps the ratio listed below so layouts stay stable; your image is fi
 
 Rules from the brief: use real Waystream exports only, no stock images or illustrative mockups. Redact payment details and personal information.
 
-- **Screen 07D** uses the `screen-05c-…` files (Screen 05C was removed; the file names were kept).
+- **Screen 04G** uses the `screen-05c-…` files (Screen 05C was removed; the file names were kept).
 
 | Slot | Screen | File name | Frame ratio |
 | --- | --- | --- | --- |
@@ -27,11 +27,12 @@ Rules from the brief: use real Waystream exports only, no stock images or illust
 | Screen 06B | Creator subscription and billing management · Subscription plans | `screen-04d-2-subscription-plans.png` | 16/10 (added) |
 | Screen 06B | Creator subscription and billing management · Billing management | `screen-04d-3-billing.png` | 16/10 (added) |
 | Flow 04E | Discover and listen · Discover | `flow-05a-1-discover.png` | 9/19.5 (added) |
+| Flow 04E | Discover and listen · Creator channel | `flow-05a-2-creator-detail.png` | 9/19.5 (added) |
 | Flow 04E | Discover and listen · Listen live | `flow-05a-3-live-listening.png` | 9/19.5 (added) |
 | Screen 04F | Live engagement · Live chat | `screen-05b-1-live-chat.png` | 9/19.5 (added) |
-| Screen 07D | Listener retention touchpoints · Subscribe to a creator | `screen-05c-1-follow-creator.png` | 9/19.5 (added) |
-| Screen 07D | Listener retention touchpoints · Go-live notification | `screen-05c-2-go-live-notification.png` | 9/19.5 (added) |
-| Screen 07E | Listener giving · Send a gift | `screen-05b-2-gifting.png` | 9/19.5 (added) |
+| Screen 04G | Following and notifications · Subscribe to a creator | `screen-05c-1-follow-creator.png` | 9/19.5 (added) |
+| Screen 04G | Following and notifications · Go-live notification | `screen-05c-2-go-live-notification.png` | 9/19.5 (added) |
+| Screen 07D | Listener giving · Send a gift | `screen-05b-2-gifting.png` | 9/19.5 (added) |
 | Screen 08A | Admin platform · Admin dashboard | `screen-06-1-admin-dashboard.png` | 1673/1124 (added) |
 | Screen 08A | Admin platform · Payments and subscriptions | `screen-06-4-payments-subscriptions.png` | 1994/1000 (added) |
 | Flow 06A | Payment and subscription journey · Choose a plan | `flow-07-1-plan-selection.png` | 16/10 (reuses 04D plans) |

@@ -29,7 +29,7 @@ export const SLOTS = {
     title: "The three product experiences",
     layout: "grid",
     columns: 3,
-    caption: "One platform, three experiences: creators broadcast and earn, listeners discover and take part, administrators keep the platform running.",
+    caption: "One platform, three experiences: creators broadcast, listeners discover and take part, administrators keep the platform running.",
     show: "One creator screen, one listener screen and one admin screen, using actual product screens.",
     items: [
       { file: "screen-02a-creator-experience", ratio: "3 / 2", title: "Creator", alt: "Waystream creator experience" },
@@ -53,14 +53,14 @@ export const SLOTS = {
     label: "Screen 04B",
     title: "Creator dashboard",
     layout: "single",
-    caption: "Going live is the primary action. Performance information and broadcast management sit alongside it, with WhatsApp support built into the dashboard.",
+    caption: "Going live is the primary action. Performance information and broadcast management sit alongside it.",
     show: "The main creator dashboard, with callouts for the go-live action, analytics/performance area, broadcast management and WhatsApp support entry point.",
     // x / y place each numbered marker on the screenshot (% of width / height)
     annotations: [
       { text: "Go live: the primary action on the dashboard", x: 46.6, y: 15.6 },
       { text: "Performance information at a glance", x: 21.1, y: 15.6 },
       { text: "Broadcast management: upcoming events", x: 32.8, y: 55.2 },
-      { text: "WhatsApp support entry point", x: 75.8, y: 4.7 },
+      { text: "WhatsApp support, added later (see Phase 4)", x: 75.8, y: 4.7 },
     ],
     items: [
       { file: "screen-04b-creator-dashboard", ratio: "3 / 2", alt: "Waystream creator dashboard" },
@@ -90,7 +90,7 @@ export const SLOTS = {
       { text: "Live timer with stop and broadcast controls", x: 64.5, y: 67 },
       { text: "Share to WhatsApp, Facebook and X, or copy the link", x: 79, y: 21.3 },
       { text: "Live chat and listener count", x: 77.5, y: 40.2 },
-      { text: "WhatsApp support in the header", x: 81.6, y: 7.8 },
+      { text: "WhatsApp support in the header, added later", x: 81.6, y: 7.8 },
     ],
     items: [
       { file: "flow-04c-4-live-controls", ratio: "2000 / 1003", alt: "Waystream desktop broadcast studio during a live broadcast" },
@@ -117,6 +117,7 @@ export const SLOTS = {
     show: "Listener home or discovery screen and the live listening screen.",
     items: [
       { file: "flow-05a-1-discover", ratio: MOBILE, title: "Discover", caption: "Browse by genre in a full-screen feed, with likes, comments and sharing", alt: "Listener home feed with genre filters" },
+      { file: "flow-05a-2-creator-detail", ratio: MOBILE, title: "Creator channel", caption: "A creator's own page: subscribe, browse past audio and playlists, or join the live broadcast", alt: "Lively Hub channel page with a live broadcast" },
       { file: "flow-05a-3-live-listening", ratio: MOBILE, title: "Listen live", caption: "Tune in live with playback controls, likes, comments and one-tap subscribe", alt: "Listener live streaming screen for Lively Hub" },
     ],
   },
@@ -131,6 +132,20 @@ export const SLOTS = {
     show: "Live chat, share control and other engagement features, with the live audio context clear.",
     items: [
       { file: "screen-05b-1-live-chat", ratio: MOBILE, title: "Live chat", caption: "Listeners and the creator talk in real time", alt: "Live chat during a Lively Hub broadcast" },
+    ],
+  },
+
+  screen04g: {
+    label: "Screen 04G",
+    title: "Following and notifications",
+    layout: "grid",
+    columns: 2,
+    device: "mobile",
+    compact: true,
+    show: "Subscribe to a creator and go-live notification. These use the screen-05c files.",
+    items: [
+      { file: "screen-05c-1-follow-creator", ratio: MOBILE, title: "Subscribe to a creator", alt: "Listener subscribed to Lively Hub" },
+      { file: "screen-05c-2-go-live-notification", ratio: MOBILE, title: "Go-live notification", alt: "Go-live notification" },
     ],
   },
 
@@ -197,20 +212,6 @@ export const SLOTS = {
 
   screen07d: {
     label: "Screen 07D",
-    title: "Listener retention touchpoints",
-    layout: "grid",
-    columns: 2,
-    device: "mobile",
-    compact: true,
-    show: "Subscribe to a creator and go-live notification. These use the screen-05c files.",
-    items: [
-      { file: "screen-05c-1-follow-creator", ratio: MOBILE, title: "Subscribe to a creator", alt: "Listener subscribed to Lively Hub" },
-      { file: "screen-05c-2-go-live-notification", ratio: MOBILE, title: "Go-live notification", alt: "Go-live notification" },
-    ],
-  },
-
-  screen07e: {
-    label: "Screen 07E",
     title: "Listener giving",
     layout: "grid",
     columns: 1,
@@ -259,7 +260,7 @@ export const SLOTS = {
     label: "Screen 09",
     title: "Outcome recap",
     layout: "single",
-    caption: "The creator dashboard, where onboarding leads and where creators run their broadcasts and subscription: the two journeys behind the measured results above.",
+    caption: "The creator dashboard, where onboarding leads and where creators run their broadcasts and subscriptions: the two journeys behind the measured results above.",
     items: [
       { file: "screen-11-outcome-image", ratio: "3 / 2", alt: "Waystream creator dashboard" },
     ],
